@@ -1,0 +1,3 @@
+test -d root || mkdir root
+cd root
+zcat ../../initrd-multiboot.gz | cpio -i --make-directories

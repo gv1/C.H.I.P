@@ -1,0 +1,22 @@
+== Install Slackware 14.2 under FEL boot, from a host PC in minicom or so ==
+
+Connect CHIP in FEL mode, 
+	FEL->GND
+	USB serial like pl2303 to PC.
+and issue ./upload.sh
+
+Make sure all required files are downloaded:
+
+	# Makefile
+	# README
+	boot.scr
+	# boot.txt
+	sun5i-r8-chip.dtb
+	sunxi-spl.bin
+	u-boot-dtb.bin
+	uImage-4.4.11
+	uInitrd-4.4.11
+	# update.sh
+	upload.sh
+
+Look for slackware setup login in minicom ( minicom -D /dev/ttyUSB0 ) on host PC

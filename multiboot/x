@@ -1,9 +1,0 @@
-cp ~/chip/ubi/Makefile .
-cp ~/chip/ubi/flash.buildroot.log .
-cp ~/chip/ubi/rootfs.tgz .
-cp ~/chip/ubi/sun5i-r8-chip.dtb .
-cp ~/chip/ubi/sunxi-spl.bin .
-cp ~/chip/ubi/u-boot-dtb.bin .
-cp ~/chip/ubi/ubinize.cfg .
-cp ~/chip/ubi/uboot-env.bin .
-cp ~/chip/ubi/zImage .
