@@ -1,0 +1,41 @@
+qt\baudrate=115200
+boot_a_script=load ${devtype} ${devnum}:${bootpart} ${scriptaddr} ${prefix}${script}; source ${scriptaddr}
+boot_extlinux=sysboot ${devtype} ${devnum}:${bootpart} any ${scriptaddr} ${prefix}extlinux/extlinux.conf
+boot_prefixes=/ /boot/
+boot_script_dhcp=boot.scr.uimg
+boot_scripts=boot.scr.uimg boot.scr
+boot_targets=fel usb0 pxe dhcp 
+bootargs=root=ubi0:rootfs rootfstype=ubifs rw earlyprintk ubi.mtd=4
+bootcmd=if test -n ${fel_booted} && test -n ${scriptaddr}; then echo (FEL boot); source ${scriptaddr}; fi; mtdparts; ubi part UBI; ubifsmount ubi0:rootfs; ubifsload $fdt_addr_r /boot/sun5i-r8-chip.dtb; ubifsload $kernel_addr_r /boot/zImage; bootz $kernel_addr_r - $fdt_addr_r
+bootcmd_dhcp=usb start; if dhcp ${scriptaddr} ${boot_script_dhcp}; then source ${scriptaddr}; fi
+bootcmd_fel=if test -n ${fel_booted} && test -n ${scriptaddr}; then echo '(FEL boot)'; source ${scriptaddr}; fi
+bootcmd_pxe=usb start; dhcp; if pxe get; then pxe boot; fi
+bootcmd_usb0=setenv devnum 0; run usb_boot
+bootdelay=2
+bootm_size=0xa000000
+console=ttyS0,115200
+distro_bootcmd=for target in ${boot_targets}; do run bootcmd_${target}; done
+ethact=usb_ether
+ethaddr=02:8d:02:42:61:56
+fdt_addr_r=0x43000000
+fdtfile=sun5i-r8-chip.dtb
+fel_booted=0
+kernel_addr_r=0x42000000
+mtdids=nand0=sunxi-nand.0
+mtdparts=mtdparts=sunxi-nand.0:4m(spl),4m(spl-backup),4m(uboot),4m(env),-(UBI)
+preboot=usb start
+pxefile_addr_r=0x43200000
+ramdisk_addr_r=0x43300000
+scan_dev_for_boot=echo Scanning ${devtype} ${devnum}:${bootpart}...; for prefix in ${boot_prefixes}; do run scan_dev_for_extlinux; run scan_dev_for_scripts; done
+scan_dev_for_boot_part=part list ${devtype} ${devnum} -bootable devplist; env exists devplist || setenv devplist 1; for bootpart in ${devplist}; do if fstype ${devtype} ${devnum}:${bootpart} bootfstype; then run scan_dev_for_boot; fi; done
+scan_dev_for_extlinux=if test -e ${devtype} ${devnum}:${bootpart} ${prefix}extlinux/extlinux.conf; then echo Found ${prefix}extlinux/extlinux.conf; run boot_extlinux; echo SCRIPT FAILED: continuing...; fi
+scan_dev_for_scripts=for script in ${boot_scripts}; do if test -e ${devtype} ${devnum}:${bootpart} ${prefix}${script}; then echo Found U-Boot script ${prefix}${script}; run boot_a_script; echo SCRIPT FAILED: continuing...; fi; done
+scriptaddr=0x43100000
+serial#=1625428d02426156
+splashpos=m,m
+stderr=serial
+stdin=serial,usbkbd
+stdout=serial
+usb_boot=usb start; if usb dev ${devnum}; then setenv devtype usb; run scan_dev_for_boot_part; fi
+usbnet_devaddr=de:ad:be:af:00:01
+video-mode=sunxi:640x480-24@60,monitor=composite-ntsc,overscan_x=40,overscan_y=20

@@ -1,8 +1,14 @@
 == Install Slackware 14.2 under FEL boot, from a host PC in minicom or so ==
 
 Connect CHIP in FEL mode, 
-	FEL->GND
-	USB serial like pl2303 to PC.
+        CHIP                    Linux HOST
+        ----------------------------------
+        micro USB -> -------->  USB 
+        rx,tx,gnd -> pl2303 ->  USB
+        FEL -> GND
+
+
+	
 and issue ./upload.sh
 
 Make sure all required files are downloaded:

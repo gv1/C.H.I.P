@@ -1,0 +1,5717 @@
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Js@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+J7@-
+Jp@-
+J0@-
+Js@-
+Jp@-
+J7@-
+Js@-
+J7@-
+Jp@-
+Jp@-
+Jp@-
+J7@-
+Jp@-
+Jp@-
+J0@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Js@-
+Js@-
+J7@-
+Js@-
+J7@-
+J7@-
+Jp@-
+JUSBCUSBS
+Js@-
+Jp@-
+Jp@-
+Jp@-
+J0@-
+J7@-
+Jp@-
+J0@-
+Jp@-
+J00@
+Jp@-
+PARTEFI 
+J0H-
+Js@-
+Jp@-
+J7@-
+Js@-
+UUWWww
+J7@-
+Js@-
+Jp@-
+/!p@-
+Jp@-
+J7@-
+Jp@-
+Jp@-
+@c <0
+Jp@-
+J0@-
+UUUU3333
+pc P
+Js@-
+Jp@-
+UBI#
+UBI!
+Js@-
+UBI#
+UBI!
+Jp@-
+Jp@-
+Jp@-
+USBS3F
+JUSBC
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Js@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+J7@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+J7@-
+Jp@-
+Js@-
+J7@-
+J7@-
+J0@-
+J7@-
+Jp@-
+J0@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+Jp@-
+@BpG
+@BpG8
+@BpG
+CRBcF
+CcFRB
+CRBcF
+D)5:
+ n;^
+Qkkbal
+i]Wb
+9a&g
+MGiI
+wn>Jj
+#.zf
++o*7
+ n;^
+Qkkbal
+i]Wb
+9a&g
+MGiI
+wn>Jj
+#.zf
++o*7
+B c0
+s2R"
+b$C4 
+S6r&
+>2.Q
+P%@Fpg`
+RwbVr
+ftGd$T
+Wfvv
+F4VL
+DXeH
+uJTZ7j
+ld\EL
+n6~UNt^
+#$#hLd_V&N:
+n-*	
+:28d
+F$V[
+y[&b0
+z0F7K
+xvW{"
+o(u[^
+)N^jJt2
+<6V(Y
+<5lgA
+|kue
+f_$~=
+d:'l3
+xD\~J
+b!r:g
+'6$"y
+-ZI*
+CNKE/n!
+\0q?*
+bVzm"
+ro;7 i
+oVh8Y
+W/TbOTt
+/ZCR.d |c
+}=N8
+PMEMv
+B+&.-
+FAIL
+OKAY
+nand_fill_oob
+composite_unbind
+allocate_instance
+nand_scan_tail
+fdt_fixup_memory_banks
+create_bbt
+verify_bbt_descr
+self_vtbl_check
+allocate_partition
+eth_get_dev_by_name
+nand_select_chip
+nand_transfer_oob
+do_readpage
+ubifs_load
+musb_g_ep0_irq
+g_dnl_register
+sparse_parse_chunk
+print_part_efi
+get_partition_info_efi
+store_sparse_image
+set_default_env
+env_import
+env_export
+ext4fs_devread
+is_gpt_valid
+alloc_read_gpt_entries
+is_pte_valid
+do_env_export
+do_env_import
+do_bootvx_fdt
+fdt_find_or_add_subnode
+cb_getvar
+cb_flash
+cb_erase
+rx_handler_command
+raw_access
+fb_nand_lookup
+_fb_nand_raw_write
+fb_nand_flash_write
+fb_nand_erase
+device_remove
+device_probe_child
+dev_get_platdata
+dev_get_parent_platdata
+dev_get_uclass_platdata
+dev_get_priv
+dev_get_uclass_priv
+dev_get_parentdata
+do_fastboot
+do_usb_mass_storage
+usb_get_configuration_no
+rndis_command_complete
+rx_submit
+alloc_requests
+eth_bind
+usb_eth_init
+usb_eth_send
+usb_eth_recv
+usb_eth_halt
+filldir
+ubifs_finddir
+ubifs_ls
+(((((
+AAAAAA
+BBBBBB
+SunMonTueWedThuFriSatbootcmd=run distro_bootcmd
+bootdelay=2
+baudrate=115200
+preboot=
+preboot=usb start
+stdin=serial,usbkbd
+stdout=serial,vga
+stderr=serial,vga
+bootm_size=0xa000000
+kernel_addr_r=0x42000000
+fdt_addr_r=0x43000000
+scriptaddr=0x43100000
+pxefile_addr_r=0x43200000
+ramdisk_addr_r=0x43300000
+fdtfile=sun5i-r8-chip.dtb
+console=ttyS0,115200
+usbnet_devaddr=de:ad:be:af:00:01
+mtdids=nand0=sunxi-nand.0
+mtdparts=mtdparts=sunxi-nand.0:4m(spl),4m(spl-backup),4m(uboot),4m(env),-(UBI)
+usb_boot=usb start; if usb dev ${devnum}; then setenv devtype usb; run scan_dev_for_boot_part; fi
+boot_prefixes=/ /boot/
+boot_scripts=boot.scr.uimg boot.scr
+boot_script_dhcp=boot.scr.uimg
+boot_targets=fel usb0 pxe dhcp 
+boot_extlinux=sysboot ${devtype} ${devnum}:${bootpart} any ${scriptaddr} ${prefix}extlinux/extlinux.conf
+scan_dev_for_extlinux=if test -e ${devtype} ${devnum}:${bootpart} ${prefix}extlinux/extlinux.conf; then echo Found ${prefix}extlinux/extlinux.conf; run boot_extlinux; echo SCRIPT FAILED: continuing...; fi
+boot_a_script=load ${devtype} ${devnum}:${bootpart} ${scriptaddr} ${prefix}${script}; source ${scriptaddr}
+scan_dev_for_scripts=for script in ${boot_scripts}; do if test -e ${devtype} ${devnum}:${bootpart} ${prefix}${script}; then echo Found U-Boot script ${prefix}${script}; run boot_a_script; echo SCRIPT FAILED: continuing...; fi; done
+scan_dev_for_boot=echo Scanning ${devtype} ${devnum}:${bootpart}...; for prefix in ${boot_prefixes}; do run scan_dev_for_extlinux; run scan_dev_for_scripts; done
+scan_dev_for_boot_part=part list ${devtype} ${devnum} -bootable devplist; env exists devplist || setenv devplist 1; for bootpart in ${devplist}; do if fstype ${devtype} ${devnum}:${bootpart} bootfstype; then run scan_dev_for_boot; fi; done
+bootcmd_fel=if test -n ${fel_booted} && test -n ${scriptaddr}; then echo '(FEL boot)'; source ${scriptaddr}; fi
+bootcmd_usb0=setenv devnum 0; run usb_boot
+bootcmd_pxe=usb start; dhcp; if pxe get; then pxe boot; fi
+bootcmd_dhcp=usb start; if dhcp ${scriptaddr} ${boot_script_dhcp}; then source ${scriptaddr}; fi
+distro_bootcmd=for target in ${boot_targets}; do run bootcmd_${target}; done
+0123456789ABCDEFuoinEthernet Gadget
+aroc
+sdxbim
+Android Fastboot
+Mass Storage
+0123456789abcdef
+Allwinner Technology
+JanFebMarAprMayJunJulAugSepOctNovDecmusb-hdrc
+~EPTGMK
+e03f<ij??ji<f30ef30e?ji<<ij?e03f
+i<?j0ef33fe0j?<i
+j?<i3fe00ef3i<?jj?<i3fe00ef3i<?j
+i<?j0ef33fe0j?<i
+f30e?ji<<ij?e03fe03f<ij??ji<f30e
+USB download gadget
+ERROR: %s - start address is not aligned - 0x%08x
+ERROR: %s - stop address is not aligned - 0x%08x
+Error %d registering USB_ETHER
+CPU:   Allwinner A12 (SUN5I)
+CPU:   Allwinner A13 (SUN5I)
+CPU:   Allwinner A10s (SUN5I)
+CPU:   Allwinner A1X (SUN5I)
+Timeout initialising DRAM
+PB10
+usb_vbus
+usb_vbus_det
+usb_id_det
+(fake run for tracing)
+machid
+Using machid 0x%lx from environment
+Starting kernel ...%s
+bootargs
+FDT creation failed! hanging...
+Bad Linux ARM zImage magic!
+Kernel image @ %#08lx [ %#08lx - %#08lx ]
+/memory
+## WARNING: fixup memory failed!
+Resetting CPU ...
+reloc pc : [<%08lx>]	   lr : [<%08lx>]
+sp : %08lx  ip : %08lx	 fp : %08lx
+r10: %08lx  r9 : %08lx	 r8 : %08lx
+r7 : %08lx  r6 : %08lx	 r5 : %08lx  r4 : %08lx
+r3 : %08lx  r2 : %08lx	 r1 : %08lx  r0 : %08lx
+Flags: %c%c%c%c
+  IRQs %s  FIQs %s  Mode %s%s
+undefined instruction
+software interrupt
+prefetch abort
+data abort
+not used
+fast interrupt request
+USER_26
+FIQ_26
+IRQ_26
+SVC_26
+UK4_26
+UK5_26
+UK6_26
+UK7_26
+UK8_26
+UK9_26
+UK10_26
+UK11_26
+UK12_26
+UK13_26
+UK14_26
+UK15_26
+USER_32
+FIQ_32
+IRQ_32
+SVC_32
+UK4_32
+UK5_32
+UK6_32
+ABT_32
+UK8_32
+UK9_32
+HYP_32
+UND_32
+UK12_32
+UK13_32
+UK14_32
+SYS_32
+resetting ...
+WARNING: Caches not enabled
+serial#
+fel_booted
+fel_scriptaddr
+eGON.BT0
+sunxi SPL version mismatch: expected %u, got %u
+%08x%08x
+preboot
+%s for %08lx ... %08lx ==> 
+CRC32 for %08lx ... %08lx ==> %08lx
+crc32
+syntax error
+ERROR : memory not allocated
+%s=%s
+ ** Abort
+## Error: "%s" not defined
+*?[\
+ERROR: There is a global environment variable with the same name.
+%s: readonly variable
+%s=%s
+HUSH_NO_EVAL
+Unknown command '%s' - try 'help' or use 'run' command
+\$'"
+;&|#
+;$&|
+exit not allowed from main input shell.
+<INTERRUPT>
+HUSH_VERSION
+0.01
+showvar
+print local hushshell variables
+    - print values of all hushshell variables
+showvar name ...
+    - print value of hushshell variable 'name'
+then
+elif
+else
+while
+until
+done
+bootdelay
+bootcmd
+kernel-offset
+kernaddr
+rootdisk-offset
+rootaddr
+Hit any key to stop autoboot: %2d 
+%2d 
+DRAM:  
+I2C:   
+baudrate
+Net:   
+load-environment
+loadaddr
+NAND:  
+## Starting application at 0x%08lX ...
+## Application terminated, rc = 0x%lX
+Perform RESET of the CPU
+start application at address 'addr'
+addr [arg ...]
+    - start application at address 'addr'
+      passing 'arg' as arguments
+Trying to execute a command out of order
+## Checking Image at %08lx ...
+   Legacy image found
+   Bad Magic Number
+   Bad Header Checksum
+   Verifying Checksum ... 
+   Bad Data CRC
+Unknown image format!
+autostart
+Automatic boot of image at addr 0x%08lX ...
+Your platform's zImage format isn't supported yet!
+bootz
+boot Linux zImage image from memory
+iminfo
+print header information for application image
+addr [addr ...]
+    - print header information for application image starting at
+      address 'addr' in memory; this includes verification of the
+      image contents (magic number, header and payload checksums)
+bootd
+boot default, i.e., run 'bootcmd'
+bootm
+boot application image from memory
+loados
+ramdisk
+cmdline
+prep
+fake
+Ramdisk image is corrupt or invalid
+Could not find a valid device tree
+Loading
+   %s %s ... 
+   Uncompressing %s ... 
+Unimplemented compression type %d
+Image too large: increase CONFIG_SYS_BOOTM_LEN
+%s: uncompress error %d
+Must RESET board to recover
+## Booting kernel from Legacy Image at %08lx ...
+Unsupported Architecture 0x%x
+Wrong Image Type for %s command
+## Booting Android Image at 0x%08lx ...
+Wrong Image Format for %s command
+ERROR: can't get kernel image!
+ERROR: unknown image format type!
+Could not find a valid setup.bin for x86
+Could not find kernel entry point!
+WARNING: legacy format multi component image overwritten
+ERROR: new format image overwritten - must RESET the board to recover
+initrd_start
+initrd_end
+ERROR: booting os '%s' (%d) is not supported
+subcommand not supported
+## Transferring control to RTEMS (at address %08lx) ...
+confaddr
+## Transferring control to Plan 9 (at address %08lx) ...
+filesize
+## Transferring control to NetBSD stage-2 loader (at address %08lx) ...
+/chosen
+## ERROR: %s : %s
+## Starting vxWorks at 0x%08lx, device tree at 0x%08lx ...
+## vxWorks terminated
+alias for 'help'
+help
+print command description/usage
+	- print brief description of all commands
+help command ...
+	- print detailed usage of 'command'
+arm-linux-gnueabihf-gcc (crosstool-NG linaro-1.13.1-4.9-2014.09 - Linaro GCC 4.9-2014.09) 4.9.2 20140904 (prerelease)
+GNU ld (crosstool-NG linaro-1.13.1-4.9-2014.09 - Linaro GCC 4.9-2014.09) 2.24.0.20140829 Linaro 2014.09
+print monitor, compiler and linker version
+^%s$
+Error compiling regex: %s
+\.callbacks:callbacks,\.flags:flags,baudrate:baudrate,bootfile:bootfile,ipaddr:ipaddr,gatewayip:gatewayip,netmask:netmask,serverip:serverip,nvlan:nvlan,vlan:vlan,eth\d?addr:ethaddr,loadaddr:loadaddr,stdin:console,stdout:console,stderr:console,
+.callbacks
+eth\d?addr:mo,ipaddr:i,gatewayip:i,netmask:i,serverip:i,nvlan:i,vlan:i,dnsip:i,serial#:so,
+## Warning: Unknown environment variable type '%c'
+## Warning: Unknown environment variable access method '%c'
+.flags
+## Error: flags type check failure for "%s" <= "%s" (type: %c)
+## Error: Can't delete "%s"
+## Error: Can't overwrite "%s"
+oldval: %s  defval: %s
+## Error: Can't create "%s"
+FAILED!
+NAND
+Erasing %s...
+Writing to %s... 
+!readenv() failed
+Bad magic number
+Bad header crc
+Bad data crc
+Bad image type
+Empty Script
+Wrong image format for "source" command
+## Executing script at %08lx
+source
+run script from memory
+%-12s= 0x%08lX
+(not set)
+arch_number
+boot_params
+DRAM bank
+-> start
+-> size
+eth%dname    = %s
+eth%iaddr
+%-12s= %s
+current eth = %s
+ipaddr
+ip_addr     = %s
+baudrate    = %u bps
+TLB addr
+relocaddr
+reloc off
+irq_sp
+sp start 
+FB base  
+bdinfo
+print Board Info structure
+There is no valid bmp file at the given address
+Image size    : %d x %d
+Bits per pixel: %d
+Compression   : %d
+manipulate BMP image data
+info <imageAddr>          - display image info
+bmp display <imageAddr> [x y] - display image at x,y
+List of available devices:
+%-8s %08x %c%c%c 
+coninfo
+print console devices and information
+echo args to console
+[args..]
+    - echo args to console; \c suppresses newline
+## No elf image at address 0x%08lx
+## Not a 32-bit elf image at address 0x%08lx
+## Starting application at 0x%08lx ...
+## Application terminated, rc = 0x%lx
+tftp
+Automatic boot of VxWorks image at address 0x%08lx ...
+## Ethernet MAC address not copied to NV RAM
+bootaddr
+eth(0,0)
+bootfile
+%s:%s 
+%s:file 
+e=%s 
+serverip
+h=%s 
+hostname
+tn=%s 
+## Not an ELF image, assuming binary
+## Using bootline (@ 0x%lx): %s
+## Starting vxWorks at 0x%08lx ...
+bootvx
+Boot vxWorks from an ELF image
+ [address] - load address of vxWorks ELF image.
+bootelf
+Boot from an ELF image in memory
+[-p|-s] [address]
+	- load ELF image at [address] via program headers (-p)
+	  or via section headers (-s)
+exit
+exit script
+ext4load
+load binary file from a Ext4 filesystem
+<interface> [<dev[:part]> [addr [filename [bytes [pos]]]]]
+    - load binary file 'filename' from 'dev' on 'interface'
+      to address 'addr' from ext4 filesystem
+ext4ls
+list files in a directory (default /)
+<interface> <dev[:part]> [directory]
+    - list files from 'dev' on 'interface' in a 'directory'
+ext4size
+determine a file's size
+<interface> <dev[:part]> <filename>
+    - Find file 'filename' from 'dev' on 'interface'
+      and determine its size.
+ext2load
+load binary file from a Ext2 filesystem
+<interface> [<dev[:part]> [addr [filename [bytes [pos]]]]]
+    - load binary file 'filename' from 'dev' on 'interface'
+      to address 'addr' from ext2 filesystem.
+ext2ls
+usage: fatinfo <interface> [<dev[:part]>]
+** Unable to use %s %d:%d for fatinfo **
+** Unable to use %s %d:%d for fatwrite **
+** Unable to write "%s" from %s %d:%d **
+%llu bytes written
+fatwrite
+write file into a dos filesystem
+<interface> <dev[:part]> <addr> <filename> <bytes>
+    - write file 'filename' from the address 'addr' in RAM
+      to 'dev' on 'interface'
+fatinfo
+print information about filesystem
+<interface> [<dev[:part]>]
+    - print information about filesystem from 'dev' on 'interface'
+fatls
+<interface> [<dev[:part]>] [directory]
+    - list files from 'dev' on 'interface' in a 'directory'
+fatload
+load binary file from a dos filesystem
+<interface> [<dev[:part]> [<addr> [<filename> [bytes [pos]]]]]
+    - Load binary file 'filename' from 'dev' on 'interface'
+      to address 'addr' from dos filesystem.
+      'pos' gives the file position to start loading from.
+      If 'pos' is omitted, 0 is used. 'pos' requires 'bytes'.
+      'bytes' gives the size to load. If 'bytes' is 0 or omitted,
+      the load stops on end of file.
+      If either 'pos' or 'bytes' are not aligned to
+      ARCH_DMA_MINALIGN then a misaligned buffer warning will
+      be printed and performance will suffer for the load.
+fatsize
+The address of the fdt is invalid (NULL).
+libfdt fdt_check_header(): %s
+ - too old, fdt %d < %d
+ - too new, fdt %d > %d
+", "
+* 0x%p [0x%08x]
+0x%08x%s
+%02x%s
+fdtaddr
+/* NULL pointer error */
+The address of the fdt is %#08lx
+New length %d < existing length %d, ignoring.
+libfdt fdt_open_into(): %s
+No FDT memory address configured. Please configure
+the FDT address via "fdt addr <address>" command.
+Aborting!
+New length 0x%X < existing length 0x%X, aborting.
+libfdt fdt_path_offset() returned %s
+libfdt fdt_add_subnode(): %s
+Sorry, I could not convert "%s"
+Unexpected character '%c'
+libfdt fdt_setprop(): %s
+libfdt node not found
+0x%08X
+error: unprintable value
+0x%p
+libfdt fdt_getprop(): %s
+%s%s {
+Nested too deep, aborting.
+%s};
+%s%s;
+%s%s = 
+%s/* NOP */
+Unknown tag 0x%08X
+libfdt fdt_delprop():  %s
+libfdt fdt_del_node():  %s
+magic:			0x%x
+totalsize:		0x%x (%d)
+off_dt_struct:		0x%x
+off_dt_strings:		0x%x
+off_mem_rsvmap:		0x%x
+version:		%d
+last_comp_version:	%d
+boot_cpuid_phys:	0x%x
+size_dt_strings:	0x%x
+size_dt_struct:		0x%x
+number mem_rsv:		0x%x
+index		   start		    size
+------------------------------------------------
+libfdt fdt_get_mem_rsv():  %s
+    %x	%08x%08x	%08x%08x
+libfdt fdt_add_mem_rsv():  %s
+libfdt fdt_del_mem_rsv():  %s
+Failed to update board information in FDT: %s
+flattened device tree utility commands
+#size-cells
+%s: %s: %s
+fdt_root: %s
+serial-number
+WARNING: could not set serial-number %s.
+fdt_initrd: %s
+linux,initrd-start
+WARNING: could not set linux,initrd-start %s.
+WARNING: could not set linux,initrd-end %s.
+linux,initrd-end
+fdt_chosen: %s
+WARNING: could not set bootargs %s.
+/soc@01c00000/serial@01c28400:115200
+linux,stdout-path
+Unable to update property %s:%s, err=%s
+%s: num banks %d exceeds hardcoded limit %d. Recompile with higher MEMORY_BANKS_MAX?
+device_type
+WARNING: could not set %s %s.
+/aliases
+usbethaddr
+ethernet%d
+eth%daddr
+local-mac-address
+%s: Bad cell count for %s
+ranges
+linux,phandle
+Can't set phandle %u: %s
+okay
+disabled
+fail
+fail-%d
+Invalid fdt status: %x
+edid
+Can't add property: %s
+Can't increase blob size: %s
+Warning: device tree alias '%s' points to invalid node %s.
+Warning: device tree node '%s' has no address.
+Warning: U-Boot configured device %s at address %llx,
+ but the device tree has it address %llx.
+#address-cells
+framebuffer@%llx
+height
+stride
+format
+display-timings
+native-mode
+default
+protect
+enable or disable FLASH write protection
+on  start end
+    - protect FLASH from addr 'start' to addr 'end'
+protect on start +len
+    - protect FLASH from addr 'start' to end of sect w/addr 'start'+'len'-1
+protect on  N:SF[-SL]
+    - protect sectors SF-SL in FLASH bank # N
+protect on  bank N
+    - protect FLASH bank # N
+protect on <part-id>
+    - protect partition
+protect on  all
+    - protect all FLASH banks
+protect off start end
+    - make FLASH from addr 'start' to addr 'end' writable
+protect off start +len
+    - make FLASH from addr 'start' to end of sect w/addr 'start'+'len'-1 wrtable
+protect off N:SF[-SL]
+    - make sectors SF-SL writable in FLASH bank # N
+protect off bank N
+    - make FLASH bank # N writable
+protect off <part-id>
+    - make partition writable
+protect off all
+    - make all FLASH banks writable
+erase
+erase FLASH memory
+start end
+    - erase FLASH from addr 'start' to addr 'end'
+erase start +len
+    - erase FLASH from addr 'start' to the end of sect w/addr 'start'+'len'-1
+erase N:SF[-SL]
+    - erase sectors SF-SL in FLASH bank # N
+erase bank N
+    - erase FLASH bank # N
+erase <part-id>
+    - erase partition
+erase all
+    - erase all FLASH banks
+flinfo
+print FLASH memory information
+    - print information for all FLASH memory banks
+flinfo N
+    - print information for FLASH memory bank # N
+fstype
+Look up a filesystem type
+<interface> <dev>:<part>
+- print filesystem type
+fstype <interface> <dev>:<part> <varname>
+- set environment variable to filesystem type
+<interface> [<dev[:part]> [directory]]
+    - List files in directory 'directory' of partition 'part' on
+      device type 'interface' instance 'dev'.
+save
+save file to a filesystem
+<interface> <dev[:part]> <addr> <filename> bytes [pos]
+    - Save binary file 'filename' to partition 'part' on device
+      type 'interface' instance 'dev' from addr 'addr' in memory.
+      'bytes' gives the size to save in bytes and is mandatory.
+      'pos' gives the file byte position to start writing to.
+      If 'pos' is 0 or omitted, the file is written from the start.
+load binary file from a filesystem
+<interface> [<dev[:part]> [<addr> [<filename> [bytes [pos]]]]]
+    - Load binary file 'filename' from partition 'part' on device
+       type 'interface' instance 'dev' to address 'addr' in memory.
+      'bytes' gives the size to load in bytes.
+      If 'bytes' is 0 or omitted, the file is read until the end.
+      'pos' gives the file byte position to start reading from.
+      If 'pos' is 0 or omitted, the file is read from the start.
+Bank %s:
+cmd_gpio
+gpio: requesting pin %u failed
+gpio: pin %s (gpio %i) value is %lu
+query and control gpio pins
+<input|set|clear|toggle> <pin>
+    - input/set/clear/toggle the specified pin
+gpio status [-a] [<bank> | <pin>]  - show [all/claimed] GPIOs
+Valid chip addresses:
+ %02X
+Current bus is %d
+Invalid bus %d
+Setting bus to %d
+Failure changing bus number (%d)
+Current bus speed=%d
+Setting bus speed to %d Hz
+Failure changing bus speed (%d)
+Bus %d:	%s
+CRC32 for %08lx ... %08lx ==> 
+reading
+Error %s the chip: %d
+%04x:
+ %02x
+writing
+Content isn't valid EDID.
+%08lx:
+ %02lx
+ %04lx
+I2C sub-system
+loop
+probe
+Unknown operator '%s'
+Invalid data width specifier
+itest
+return true/false on integer compare
+[.b, .w, .l, .s] [*]value1 <op> [*]value2
+## Total Size      = 0x%08x = %d Bytes
+## First Load Addr = 0x%08lX
+## Last  Load Addr = 0x%08lX
+## Total Size      = 0x%08lX = %ld Bytes
+loads_echo
+## Ready for S-Record download ...
+## S-Record download aborted
+## Start Addr      = 0x%08lX
+## Switch baudrate to %d bps and press ENTER ...
+loady
+## Ready for binary (ymodem) download to 0x%08lX at %d bps...
+loadx
+## Ready for binary (xmodem) download to 0x%08lX at %d bps...
+## Ready for binary (kermit) download to 0x%08lX at %d bps...
+## Binary (kermit) download aborted
+## Switch baudrate to %d bps and press ESC ...
+load binary file over serial line (ymodem mode)
+[ off ] [ baud ]
+    - load binary file over serial line with offset 'off' and baudrate 'baud'
+load binary file over serial line (xmodem mode)
+loadb
+load binary file over serial line (kermit mode)
+loads
+load S-Record file over serial line
+[ off ]
+    - load S-Record file over serial line with offset 'off'
+double word
+byte
+halfword
+%s at 0x%08lx (%#0*lx) != %s at 0x%08lx (%#0*lx)
+Total of %ld %s(s) were the same
+Base Address: 0x%08lx
+Zero length ???
+ %08x
+ %04x
+infinite loop on address range
+[.b, .w, .l] address number_of_objects
+base
+print or set address offset
+    - print address offset for memory commands
+base off
+    - set address offset for memory commands to 'off'
+checksum calculation
+address count [addr]
+    - compute CRC32 checksum [save at addr]
+memory compare
+[.b, .w, .l] addr1 addr2 count
+memory copy
+[.b, .w, .l] source target count
+memory write (fill)
+[.b, .w, .l] address value [count]
+memory modify (constant address)
+[.b, .w, .l] address
+memory modify (auto-incrementing address)
+memory display
+[.b, .w, .l] address [# of objects]
+NULL device name!
+common/miiphyutil.c
+BUG: failure at %s:%d/%s()!
+BUG!
+miiphy_register: non unique device name '%s'
+miiphy_register: cannot allocate memory for '%s'
+mdio_register: non unique device name '%s'
+%d - %s
+ <--> %s
+No such device: %s
+%s is not a known ethernet
+MII devices: 
+'%s' 
+Current device: '%s'
+PHY reset timed out
+PHY speed
+PHY AN speed
+ read failed, assuming 10BASE-T
+PHY duplex
+PHY AN duplex
+ read failed, assuming half duplex
+full
+half
+IEEE 802.3
+IEEE 802.9 ISLAN-16T
+PHY 0x%02X: OUI = 0x%04X, Model = 0x%02X, Rev = 0x%02X, %3dbase%s, %s
+Error reading from the PHY addr=%02x reg=%02x
+addr=%02x reg=%02x data=
+%04X
+Error writing to the PHY addr=%02x reg=%02x
+Error reading from the PHY
+ addr=%02x
+Error writing to the PHY
+The MII dump command only formats the standard MII registers, 0-5.
+%u.     (%04hx)                 -- %s --
+  (%04hx:%04x) %u.
+%2u,%2u =   b%u%u    speed selection = %s Mbps
+%2u    = %5u    duplex = %s
+%2u-%2u = %5u    selector = %s
+%2u-%2u =     %u    selector = %s
+%2u   
+%2u-%2u
+ = %5u    %s
+MII utility commands
+device                            - list available devices
+mii device <devname>                  - set current device
+mii info   <addr>                     - display MII PHY info
+mii read   <addr> <reg>               - read  MII PHY <addr> register <reg>
+mii write  <addr> <reg> <data>        - write MII PHY <addr> register <reg>
+mii modify <addr> <reg> <data> <mask> - modify MII PHY <addr> register <reg>
+                                        updating bits identified in <mask>
+mii dump   <addr> <reg>               - pretty-print <addr> <reg> (0-5 only)
+Addr and/or reg may be ranges, e.g. 2-7.
+next page able
+acknowledge
+remote fault
+(reserved)
+asymmetric pause able
+100BASE-T4 able
+100BASE-X full duplex able
+100BASE-TX able
+10BASE-T full duplex able
+10BASE-T able
+xxx to do
+asymmetric pause
+pause enable
+100BASE-TX full duplex able
+10BASE-T   full duplex able
+10BASE-T   able
+OUI portion
+manufacturer part number
+manufacturer rev. number
+100BASE-X  full duplex able
+100BASE-X  half duplex able
+10 Mbps    full duplex able
+10 Mbps    half duplex able
+100BASE-T2 full duplex able
+100BASE-T2 half duplex able
+extended status
+MF preamble suppression
+A/N complete
+A/N able
+link status
+jabber detect
+extended capabilities
+loopback
+speed selection
+A/N enable
+power-down
+isolate
+restart A/N
+collision test enable
+PHY control register
+PHY status register
+PHY ID 1 register
+PHY ID 2 register
+Autonegotiation advertisement register
+Autonegotiation partner abilities register
+sleep
+delay execution for some time
+    - delay execution for N seconds (N is _decimal_ !!!)
+onenand
+Device %s not found!
+%s: offset %08llx beyond flash size %08llx
+%s%d: partition (%s) size too big
+%s: partitioning exceeds flash size
+%s%d: partition (%s) start offsetalignment incorrect
+%s%d: partition (%s) size alignment incorrect
+%s%d: partition (%s) start offset alignment incorrect
+invalid partition number %d for device %s%d (%s)
+%llug
+%llum
+%lluk
+%llu
+mtddevnum
+mtddevname
+%s%d,%d
+cannot add second partition at offset 0
+mtdparts=
+invalid mtd device '%.*s'
+partition size too small (%llx)
+no closing ) found in partition name
+empty partition name
+no partitions allowed after a fill-up partition
+unexpected character '%c' at the end of partition
+out of memory
+0x%08llx@0x%08llx
+no partitions for device %s%d (%s)
+unexpected character '%c' at the end of device
+incorrect device type in %s
+incorrect device number in %s
+no partition number specified
+unexpected trailing character '%c'
+no such device %s%d
+no such partition
+mtdids
+mtdids not defined, no default present
+mtdids too long (> %d)
+mtdparts variable not set, see 'help mtdparts'
+mtdparts too long (> %d)
+mtdids: incorrect <dev-num>
+mtdids: no <mtd-id> identifier
+device id %s%d redefined, please correct mtdids variable
+could not initialise device list
+mtdparts variable doesn't start with 'mtdparts='
+device %s%d redefined, please correct mtdparts variable
+mtdparts_init: no valid partitions
+no partition id specified
+partition changed to %s%d,%d
+delall
+device %s%d <%s>, # parts = %d
+ #: name		size		offset		mask_flags
+%2d: %-20s0x%08llx	0x%08llx	%d
+no partitions defined
+active partition: %s%d,%d - (%s) 0x%08llx @ 0x%08llx
+could not get current partition info
+defaults:
+none
+mtdids  : %s
+mtdparts: 
+no such device %s defined in mtdids variable
+too long partition description
+%s:%s(%s)%s
+generated mtdparts too long, resetting to null
+current partition deleted, resetting current to 0
+partition %s not found
+define flash/nand partitions
+chpart
+change active partition
+part-id
+    - change active partition (e.g. part-id = nand0,1)
+No such device
+Device %d: %s
+... is now current device
+%dx 
+%s, sector size %u KiB
+  Page size   %8d b
+  OOB size    %8d b
+  Erase size  %8d b
+  subpagesize %8d b
+  options     0x%8x
+  bbt options 0x%8x
+nand_writesize
+nand_oobsize
+nand_erasesize
+ERROR
+quiet
+dump
+no devices available
+Device %d bad blocks:
+  %08llx
+scrub
+clean
+.spread
+.part
+.chip
+NAND %s: 
+Warning: scrub option will erase all factory set bad blocks!
+         There is no reliable way to recover them.
+         Use this command only for testing purposes if you
+         are sure of what you are doing!
+Really scrub this NAND flash? <y/N>
+scrub aborted
+.oob
+No memory for page buffer
+Error (%d) reading page %08lx
+Page %08lx dump:
+OOB:
+	%02x %02x %02x %02x %02x %02x %02x %02x  %02x %02x %02x %02x %02x %02x %02x %02x
+	%02x %02x %02x %02x %02x %02x %02x %02x
+.slc-mode
+.raw
+.raw.noverify
+'%s' is not a number
+Size exceeds partition or device limit
+size adjusted to 0x%llx (%d bad blocks)
+.jffs2
+.trimffs
+Unknown nand command suffix '%s'
+%s: error at offset %llx, ret %d
+Unknown nand command suffix '%s'.
+ %zu bytes %s: %s
+markbad
+block 0x%08lx NOT marked as bad! ERROR %d
+block 0x%08lx successfully marked as bad
+biterr
+Unknown nand load suffix '%s'
+Loading from %s, offset 0x%lx
+** Read error
+** Unknown image type
+Not a NAND device
+bootdevice
+** No boot device **
+** Device %d not available
+nboot
+boot from NAND device
+[partition] | [[[loadAddr] dev] offset]
+NAND sub-system
+gatewayip
+netmask
+rootpath
+dnsip
+domain
+ping failed; host %s is not alive
+host %s is alive
+ping
+send ICMP ECHO_REQUEST to network host
+pingAddress
+boot image via network using NFS protocol
+[loadAddress] [[hostIPaddr:]bootfilename]
+dhcp
+boot image via network using DHCP/TFTP protocol
+tftpboot
+boot image via network using TFTP protocol
+bootp
+boot image via network using BOOTP/TFTP protocol
+-bootable
+Unknown option %s
+list
+disk partition related commands
+uuid <interface> <dev>:<part>
+    - print partition UUID
+part uuid <interface> <dev>:<part> <varname>
+    - set environment variable to partition UUID
+part list <interface> <dev>
+    - print a device's partition table
+part list <interface> <dev> [flags] <varname>
+    - set environment variable to the list of partitions
+      flags can be -bootable (list only bootable partitions)
+part start <interface> <dev> <part> <varname>
+    - set environment variable to the start of the partition (in blocks)
+part size <interface> <dev> <part> <varname>
+    - set environment variable to the size of the partition (in blocks)
+%s:	%s
+missing environment variable: %s
+Expected string literal: %.*s
+Expected string: %.*s
+01-%02x-%02x-%02x-%02x-%02x-%02x
+bootfile_path too small. (%zd < %zd)
+Base path too long (%s%s)
+Retrieving file: %s
+Expected include path: %.*s
+Couldn't retrieve %s
+Maximum nesting (%d) exceeded
+Ignoring malformed menu command: %.*s
+Expected label name: %.*s
+initrd=
+Ignoring unknown command: %.*s
+pxelinux.cfg/
+path (%s%s) too long, skipping
+pxelinux.cfg/%s
+pxefile_addr_r
+pxeuuid
+Config file found
+Config file not found
+.dtb
+localcmd
+No kernel given, skipping %s
+ramdisk_addr_r
+Skipping %s for failure retrieving initrd
+kernel_addr_r
+Skipping %s for failure retrieving kernel
+ ip=%s:%s:%s:%s
+ BOOTIF=
+bootarg overflow %zd+%zd+%zd+1 > %zd
+append: %s
+fdt_addr_r
+fdtfile
+malloc fail (FDT filename)
+%s%s%s%s%s%s
+Skipping %s for failure retrieving fdt
+fdt_addr
+Missing default: %s
+Invalid pxefile address: %s
+Error parsing config file
+ext2
+Invalid filesystem: %s
+Error reading config file
+sysboot
+command to get and boot from syslinux files
+[-p] <interface> <dev[:part]> <ext2|fat|any> [addr] [filename]
+    - load and parse syslinux menu file 'filename' from ext2, fat
+      or any filesystem on 'dev' on 'interface' to address 'addr'
+commands to get and boot from pxe files
+get - try to retrieve a pxe file using tftp
+pxe boot [pxefile_addr_r] - boot from the pxe file at pxefile_addr_r
+menu
+title
+prompt
+label
+kernel
+linux
+localboot
+initrd
+include
+devicetree
+devicetreedir
+fdtdir
+ontimeout
+ipappend
+default-arm-sunxi
+default-arm
+## error: substitution buffer overflow
+## Error: variable "%s" not defined
+## error: subst buffer overflow: have %d, need %d
+%s: No match
+## error: pattern buffer overflow: have %d, need %d
+gsub
+invalid op
+setexpr
+set environment variable as the result of eval expression
+[.b, .w, .l] name [*]value1 <op> [*]value2
+    - set environment variable 'name' to the result of the evaluated
+      expression specified by <op>.  <op> can be &, |, ^, +, -, *, /, %
+      size argument is only meaningful if value1 and/or value2 are
+      memory addresses (*)
+setexpr[.b, .w, .l] name [*]value
+    - load a value into a variable
+setexpr name gsub r s [t]
+    - For each substring matching the regular expression <r> in the
+      string <t>, substitute the string <s>.  The result is
+      assigned to <name>.  If <t> is not supplied, use the old
+      value of <name>
+setexpr name sub r s [t]
+    - Just like gsub(), but replace only the first matching substring
+true
+do nothing, successfully
+false
+do nothing, unsuccessfully
+minimal test like /bin/sh
+[args..]
+Volume %s not found!
+Couldnt or partially wrote data
+size > volume size! Aborting!
+Cannot start volume update
+updating
+damaged volume, update marker is set
+No size specified -> Using max size (%lld)
+read from corrupted volume %d
+NO MEM
+read err %x
+Error initializing mtdparts!
+Partition %s not found!
+Partition %s not found on device %s!
+mtd=%d
+mtd=%d,%s
+UBI init error %d
+dynamic
+static
+Error, no UBI device/partition selected!
+Device %d: %s, partition %s
+Error, no volume name passed
+create
+Incorrect type
+No space left in UBI device!
+Name too long!
+verify_mkvol_req failed %d
+Creating %s volume %s of size %lld
+remove
+Remove UBI volume %s (id %d)
+It's read-only mode
+Error changing Vol tabel record err=%x
+UBI: reserve more %d PEBs
+Please see usage
+%lld bytes written to volume %s
+Read %lld bytes from volume %s to %lx
+UBI: MTD device name:            "%s"
+UBI: MTD device size:            %llu MiB
+UBI: physical eraseblock size:   %d bytes (%d KiB)
+UBI: logical eraseblock size:    %d bytes
+UBI: number of good PEBs:        %d
+UBI: number of bad PEBs:         %d
+UBI: smallest flash I/O unit:    %d
+UBI: VID header offset:          %d (aligned %d)
+UBI: data offset:                %d
+UBI: max. allowed volumes:       %d
+UBI: wear-leveling threshold:    %d
+UBI: number of internal volumes: %d
+UBI: number of user volumes:     %d
+UBI: available PEBs:             %d
+UBI: total number of reserved PEBs: %d
+UBI: number of PEBs reserved for bad PEB handling: %d
+UBI: max/mean erase counter: %d/%d
+ubi commands
+part [part] [offset]
+ - Show or set current partition (with optional VID header offset)
+ubi info [l[ayout]] - Display volume and ubi layout information
+ubi check volumename - check if volumename exists
+ubi create[vol] volume [size] [type] - create volume name with size
+ubi write[vol] address volume size - Write volume from address with size
+ubi write.part address volume size [fullsize]
+ - Write part of a volume from address
+ubi read[vol] address volume [size] - Read volume to address with size
+ubi remove[vol] volume - Remove volume
+[Legends]
+ volume: character name
+ size: specified in bytes
+ type: s[tatic] or d[ynamic] (default=dynamic)
+UBIFS not mounted, use ubifsmount to mount volume first!
+** File not found %s **
+UBIFS not mounted, use ubifs mount to mount volume first!
+Unmounting UBIFS volume %s!
+No UBIFS volume mounted!
+ubifsload
+load file from an UBIFS filesystem
+<addr> <filename> [bytes]
+    - load file 'filename' to address 'addr'
+ubifsls
+list files in a directory
+[directory]
+    - list files in a 'directory' (default '/')
+ubifsumount
+unmount UBIFS volume
+    - unmount current volume
+ubifsmount
+<volume-name>
+    - mount 'volume-name' volume
+See Interface
+Audio
+Communication
+Human Interface
+Printer
+Mass Storage
+CDC Data
+Vendor specific
+Human Interface, Subclass: 
+None
+Boot 
+Keyboard
+Mouse
+reserved
+Mass Storage, 
+RBC 
+SFF-8020i (ATAPI)
+QIC-157 (Tape)
+SFF-8070
+Transp. SCSI
+Command/Bulk
+Command/Bulk/Int
+Bulk only
+12 Mb/s
+ %s (%s, %dmA)
+ %s  %s %s %s
+String: "%s"
+Self Powered 
+Bus Powered 
+Remote Wakeup 
+   Configuration: %d
+   - Interfaces: %d %s%s%dmA
+     Interface: %d
+     - Alternate Setting %d, Endpoints: %d
+     - Class 
+     - 
+     - Endpoint %d %s 
+Isochronous
+Interrupt
+ MaxPacket %d
+ Interval %dms
+%d: %s,  USB Revision %x.%x
+ - %s %s %s
+ - Class: 
+ - Class: (from Interface) %s
+ - PacketSize: %d  Configurations: %d
+ - Vendor: 0x%04x  Product 0x%04x Version %d.%d
+starting USB...
+resetting USB...
+USB not stopped: usbkbd still using USB
+stop
+serial
+USB is stopped. Please issue 'usb start' first.
+USB device tree:
+config for device %d
+*** No device available ***
+Device %d does not exist.
+Device is no hub or does not have %d ports.
+Setting Test_J mode
+Setting Test_K mode
+Setting Test_SE0_NAK mode
+Setting Test_Packet mode
+Setting Test_Force_Enable mode
+Unrecognized test mode: %s
+Available modes: J, K, S[E0_NAK], P[acket], F[orce_Enable]
+ on downstream facing port %d...
+ on upstream facing port...
+Error during SET_FEATURE.
+Test mode successfully set. Use 'usb start' to return to normal operation.
+stor
+no USB devices available
+no current device selected
+USB read: device %d block # %ld, count %ld ... 
+%ld blocks read: %s
+USB write: device %d block # %ld, count %ld ... 
+%ld blocks write: %s
+USB device %d: 
+unknown device
+    Device %d: 
+stopping USB..
+1.5 Mb/s
+480 Mb/s
+5 Gb/s
+usbboot
+boot from USB device
+loadAddr dev:part
+USB sub-system
+start - start (scan) USB controller
+usb reset - reset (rescan) USB controller
+usb stop [f] - stop USB [f]=force stop
+usb tree - show USB device tree
+usb info [dev] - show available USB devices
+usb test [dev] [port] [mode] - set USB 2.0 test mode
+    (specify port 0 to indicate the device's upstream port)
+    Available modes: J, K, S[E0_NAK], P[acket], F[orce_Enable]
+usb storage - show details of USB storage devices
+usb dev [dev] - show or set current USB storage device
+usb part [dev] - print partition table of one or all USB storage    devices
+usb read addr blk# cnt - read `cnt' blocks starting at block `blk#'
+    to memory address `addr'
+usb write addr blk# cnt - write `cnt' blocks starting at block `blk#'
+    from memory address `addr'
+unable to get device descriptor (error=%d)
+USB device descriptor short read (expected %i, got %i)
+unable to get descriptor, error %lX
+config descriptor too short (expected %i, got %i)
+%s: failed to get descriptor - too long: %d
+selecting invalid interface %d
+usb_new_device: Cannot read configuration, skipping device %04x:%04x
+ ERROR: NOT USB_CONFIG_DESC %x
+ERROR: Invalid USB CFG length (%d)
+ERROR: Invalid USB IF length (%d)
+USB IF descriptor overflowed buffer!
+Too many USB interfaces!
+ERROR: Invalid USB EP length (%d)
+USB EP descriptor overflowed buffer!
+Endpoint descriptor out of order!
+Interface %d has too many endpoints!
+ERROR: Invalid USB EPC length (%d)
+USB EPC descriptor overflowed buffer!
+EPC descriptor out of order!
+failed to set default configuration len %d, status %lX
+Cannot allocate device context to get SLOT_ID
+usb_new_device: invalid max packet size
+     Couldn't reset port %i
+      USB device not accepting new address (error=%lX)
+usb_pgood_delay
+cannot reset port %i!?
+ERROR: USB_MAX_HUB (%d) reached
+usb_hub
+usb-hub
+	Did not get interrupt on CBI
+cmd 0x%02X returned 0x%02X 0x%02X 0x%02X 0x%02X (NOT READY)
+cmd 0x%02X returned 0x%02X 0x%02X 0x%02X 0x%02X
+No storage devices, perhaps not 'usb start'ed..?
+USB Storage Transport unknown / not yet implemented
+Sorry, protocol %d not yet supported.
+error in inquiry
+Device NOT ready
+   Request Sense returned %02X %02X %02X
+READ_CAP ERROR
+max USB Storage Device reached: %d stopping
+usb_mass_storage
+usb-mass-storage
+common/cmd_fastboot.c
+ERROR: USB init failed: %d
+at %s:%d/%s()
+usb_dnl_fastboot
+USB cable not detected.
+Command exit.
+use USB Fastboot protocol
+<USB_controller>
+    - run as a fastboot usb device
+UMS: disk start sector: %#x, count: %#x
+common/cmd_usb_mass_storage.c
+ERROR: Couldn't init USB controller.
+at %s:%d/%s()
+ERROR: fsg_init failed
+at %s:%d/%s()
+usb_dnl_ums
+ERROR: g_dnl_register failed
+at %s:%d/%s()
+Please connect USB cable.
+CTRL+C - Operation aborted.
+Auto exit in: %.2d s.
+Check USB cable connection
+CTRL+C - Operation aborted
+Use the UMS [USB Mass Storage]
+<USB_controller> [<devtype>] <devnum>  e.g. ums 0 mmc 0
+    devtype defaults to mmc
+UMS disk
+## Copying part %d from legacy image at %08lx ...
+Must specify load address for %s command with compressed image
+Bad Image Part
+Invalid image type for imxtract
+   Loading part %d ... 
+   Uncompressing part %d ... 
+GUNZIP ERROR - image not loaded
+fileaddr
+imxtract
+extract a part of a multi-image
+digital signal, 
+analog signal, 
+, blank to black
+, separate sync
+, composite sync
+, sync on green
+, serration v
+non-RGB
+Not a valid EDID
+EDID version: %d.%d
+Product ID code: %04x
+Manufacturer: %s
+Serial number: %08x
+Manufactured in week: %d year: %d
+Video input definition: %svoltage level %d%s%s%s%s%s
+Monitor is %s
+Maximum visible display size: %d cm x %d cm
+active off
+Power management features: %s%s, %s%s, %s%s
+standby
+suspend
+Estabilished timings:
+	720x400		70 Hz (VGA 640x400, IBM)
+	720x400		88 Hz (XGA2)
+	640x480		60 Hz (VGA)
+	640x480		67 Hz (Mac II, Apple)
+	640x480		72 Hz (VESA)
+	640x480		75 Hz (VESA)
+	800x600		56 Hz (VESA)
+	800x600		60 Hz (VESA)
+	800x600		72 Hz (VESA)
+	800x600		75 Hz (VESA)
+	832x624		75 Hz (Mac II)
+	1024x768	87 Hz Interlaced (8514A)
+	1024x768	60 Hz (VESA)
+	1024x768	70 Hz (VESA)
+	1024x768	75 Hz (VESA)
+	1280x1024	75 (VESA)
+	1152x870	75 (Mac II)
+Standard timings:
+	%dx%d%c	%d Hz
+Monitor serial number: %s
+Monitor ID: %s
+Monitor name: %s
+Monitor range limits, horizontal sync: %d-%d kHz, vertical refresh: %d-%d Hz, max pixel clock: %d MHz
+	%dx%d%c	%d Hz (detailed)
+	None
+splashpos
+Enter choice: 
+usbkbd
+USB KBD: Error allocating private data
+Failed to get keyboard state from device %04x:%04x
+stdin
+Saving Environment to %s...
+## Error: cannot export environment
+Environment size: %d/%ld bytes
+## Warning: defaulting to text format
+## Error: external checksum format must pass size
+## Info: input data size = %zu = 0x%zX
+## Error: bad CRC, import failed
+common/cmd_nvedit.c
+ERROR: Environment import failed: errno = %d
+at %s:%d/%s()
+## %s: only one of "-b", "-c" or "-t" allowed
+## Warning: Input data exceeds %d bytes - truncated
+## Resetting to default environment
+## Error: illegal character '='in variable name "%s"
+## Can't malloc %d bytes
+## Error inserting "%s" variable, errno=%d
+setenv
+ERROR: Cannot export environment: errno = %d
+at %s:%d/%s()
+env_buf [%d bytes] too small for value of "%s"
+edit: 
+run commands in an environment variable
+var [...]
+    - run the commands in the environment variable(s) 'var'
+set environment variables
+[-f] name value ...
+    - [forcibly] set environment variable 'name' to 'value ...'
+setenv [-f] name
+    - [forcibly] delete environment variable 'name'
+printenv
+print environment variables
+[-a]
+    - print [all] values of all environment variables
+printenv name ...
+    - print value of environment variable 'name'
+editenv
+edit environment variable
+name
+    - edit environment variable 'name'
+environment handling commands
+delete
+edit
+export
+import
+print
+exists
+saveenv
+save environment variables to persistent storage
+*** Warning - %s, using default environment
+Using default environment
+common/env_common.c
+!bad CRC
+ERROR: Cannot import environment: errno = %d
+at %s:%d/%s()
+!import failed
+stdout
+stderr
+In:    
+No input devices available!
+Out:   
+No output devices available!
+Err:   
+No error devices available!
+pre-reloc realloc() is not supported
+bootm_low
+bootm_size
+bootm_mapsize
+%d Bytes = 
+Unknown OS
+Unknown Architecture
+Unknown Image
+unknown
+Unknown Compression
+%sImage Name:   %.*s
+%sImage Type:   
+%s %s %s (%s)
+%sData Size:    
+%sLoad Address: %08x
+%sEntry Point:  %08x
+%sContents:
+%s   Image %d: 
+%s    Offset = 0x%08lx
+## Loading init Ramdisk from Legacy Image at %08lx ...
+No Linux %s Ramdisk Image
+Wrong Ramdisk Image Format
+## Loading init Ramdisk from multi component Legacy Image at %08lx ...
+initrd_high
+ramdisk - allocation error
+   Loading Ramdisk to %08lx, end %08lx ... 
+uncompressed
+bzip2
+bzip2 compressed
+gzip
+gzip compressed
+lzma
+lzma compressed
+lzo compressed
+lz4 compressed
+aisimage
+Davinci AIS image
+Filesystem Image
+firmware
+Firmware
+flat_dt
+Flat Device Tree
+gpimage
+TI Keystone SPL Image
+Kernel Image
+kernel_noload
+Kernel Image (no loading done)
+kwbimage
+Kirkwood Boot Image
+imximage
+Freescale i.MX Boot Image
+Invalid Image
+multi
+Multi-File Image
+omapimage
+TI OMAP SPL With GP CH
+pblimage
+Freescale PBL Boot Image
+RAMDisk Image
+Script
+socfpgaimage
+Altera SOCFPGA preloader
+standalone
+Standalone Program
+ublimage
+Davinci UBL image
+mxsimage
+Freescale MXS Boot Image
+atmelimage
+ATMEL ROM-Boot Image
+x86_setup
+x86 setup.bin
+lpc32xximage
+LPC32XX Boot Image
+rkimage
+Rockchip Boot Image
+rksd
+Rockchip SD Boot Image
+rkspi
+Rockchip SPI Boot Image
+Invalid OS
+Linux
+netbsd
+NetBSD
+Enea OSE
+plan9
+Plan 9
+rtems
+RTEMS
+u-boot
+U-Boot
+vxworks
+VxWorks
+Invalid ARCH
+alpha
+Alpha
+Intel x86
+ia64
+IA64
+m68k
+M68K
+microblaze
+MicroBlaze
+mips
+MIPS
+mips64
+MIPS 64 Bit
+nios2
+NIOS II
+powerpc
+PowerPC
+s390
+IBM S390
+SuperH
+sparc
+SPARC
+sparc64
+SPARC 64 Bit
+blackfin
+Blackfin
+avr32
+AVR32
+nds32
+NDS32
+or1k
+OpenRISC 1000
+sandbox
+Sandbox
+arm64
+AArch64
+AMD x86_64
+Android's image name: %s
+Kernel load addr 0x%08x size %u KiB
+Kernel command line: %s
+Error: malloc in android_image_get_kernel failed!
+ANDROID!
+RAM disk load addr 0x%08x size %u KiB
+ERROR: 
+ - must RESET the board to recover.
+   reserving fdt memory region: addr=%llx size=%llx
+image is not a fdt
+fdt_high
+Failed using fdt_high value for Device Tree
+device tree - allocation error
+   Using Device Tree in place at %p, end %p
+   Loading Device Tree to %p, end %p ... 
+fdt move failed
+## Flattened Device Tree from Legacy Image at %08lx
+fdt header checksum invalid
+fdt checksum invalid
+uImage is not a fdt
+uImage is compressed
+uImage data is not a fdt
+fdt overwritten
+## Flattened Device Tree blob at %08lx
+ERROR: Did not find a cmdline Flattened Device Tree
+   Booting using the fdt blob at %#08lx
+## Flattened Device Tree from multi component Image at %08lX
+   Booting using the fdt at 0x%p
+fdt size != image size
+ERROR: root node setup failed
+ERROR: /chosen node create failed
+ERROR: arch-specific fdt fixup failed
+ERROR: board-specific fdt fixup failed: %s
+ - must RESET the board to recover.
+nulldev
+sparse header issue
+%s: Sparse image block size issue [%u]
+Flashing sparse image on partition %s at offset 0x%x (ID: %d)
+%s: Unknown chunk type: %x
+Unknown chunk type
+start 0x%x blkcnt 0x%x partition 0x%x size 0x%x
+%s: Request would exceed partition size!
+%s: Write %d failed %d
+%s: Wrote less blocks (%d) than expected (%lu)
+........ wrote %d blocks to '%s'
+sparse image write failure
+spl-backup
+Writing at offset 0x%x
+Failed to write sparse chunk
+New offset 0x%x
+common/fb_nand.c
+ERROR: Cannot initialize MTD partitions
+at %s:%d/%s()
+cannot init mtdparts
+ERROR: cannot find partition: '%s'
+at %s:%d/%s()
+cannot find partition
+ERROR: partition '%s' is not stored on a NAND device
+at %s:%d/%s()
+not a NAND device
+ERROR: invalid NAND device
+at %s:%d/%s()
+invalid NAND device
+error writing the image
+Flashing raw image at offset 0x%llx
+........ wrote %u bytes to '%s'
+Erasing blocks 0x%llx to 0x%llx
+........ erased 0x%llx bytes from '%s'
+ERROR: failed erasing from device %s
+at %s:%d/%s()
+failed erasing from device
+** Too many args (max. %d) **
+## Command too long!
+bootsecure
+## Error: Secure boot command not specified
+## Error: "%s" returned (code %d)
+%.*s
+%s - %s
+Usage:
+- No additional help available.
+%-*s- %s
+Unknown command '%s' - try 'help' without arguments for list of all known commands
+Unknown command '%s' - try 'help'
+'bootd' recursion detected
+Command '%s' failed: Error %d
+Cksum
+xyzModem - %s mode, %d(SOH)/%d(STX)/%d(CAN) packets, %d retries
+Unknown error
+Block sequence error
+CRC/checksum error
+Invalid framing
+Cancelled
+End of file
+Timed out
+Sorry, zModem not available yet
+Can't access file
+Loading from %s device %d, partition %d: Name: %.32s  Type: %.32s
+** Read error on %d:%d
+** Bad Header Checksum **
+Partition Map for 
+SATA
+ATAPI
+HOST
+UNKNOWN
+ device %d  --   Partition Type: %s
+(%d:%d) Vendor: %s Prod.: %s Rev: %s
+Model: %s Firm: %s Ser#: %s
+Vendor: %s Rev: %s Prod: %s
+device type DOC
+device type unknown
+Unhandled device type: %i
+            Type: 
+Removable 
+Hard Disk
+CD ROM
+Optical Device
+Tape
+# %02X #
+            Capacity: %ld.%ld MB = %ld.%ld GB (%ld x %ld)
+            Capacity: not available
+## Unknown partition table
+** Bad device specification %s %s **
+** Bad HW partition specification %s %s **
+** Bad device %s %s **
+hostfs
+Sandbox host
+** No device specified **
+auto
+** Bad partition specification %s %s **
+** Bad device size - %s %s **
+** No partition table - %s %s **
+Whole Disk
+** Invalid partition %d **
+** No valid partitions found **
+** Invalid partition type "%.32s" (expect "U-Boot")
+FAT32
+ Extd
+ Boot
+** Can't read partition table on %d:%d **
+bad MBR sector signature 0x%02x%02x
+%3d	%-10d	%-10d	%08x-%02x	%02x%s%s
+hd%c%d
+sd%c%d
+usbd%c%d
+docd%c%d
+xx%c%d
+%08x-%02x
+Part	Start Sector	Num Sectors	UUID		Type
+%s: calloc failed!
+** Can't write to device %d **
+GUID Partition Table Entry Array CRC is wrong
+%s: 0x%x != 0x%x
+GUID Partition Table Header
+%s signature is wrong: 0x%llX != 0x%llX
+%s CRC is wrong: 0x%x != 0x%x
+GPT: my_lba incorrect: %llX != %lx
+GPT: first_usable_lba incorrect: %llX > %lx
+GPT: last_usable_lba incorrect: %llX > %lx
+%s: Invalid Argument(s)
+*** ERROR: Can't read GPT header ***
+%s: ERROR: Can't allocate 0x%zX bytes for GPT Entries
+*** ERROR: Can't read GPT Entries ***
+GPT: Failed to allocate memory for PTE
+%s: *** ERROR: Invalid GPT ***
+%s: *** ERROR: Invalid Backup GPT ***
+%s: ***        Using Backup GPT ***
+Part	Start LBA	End LBA		Name
+	Attributes
+	Type GUID
+	Partition GUID
+%3d	0x%08llx	0x%08llx	"%s"
+	attrs:	0x%016llx
+	type:	%s
+	guid:	%s
+Partition overlap
+Partitions layout exceds disk size
+Partition no. %d: invalid guid: %s
+%s: failed writing '%s' (%d blks at 0x%lx)
+Primary GPT Header
+Primary GPT Entries
+Backup GPT Entries
+Backup GPT Header
+unbind() method failed on dev '%s' on error path
+Failed to unbind dev '%s' on error path
+%s: Device '%s' failed to remove on error path
+%s: null device
+No match for driver '%s'
+Device tree error at offset %d
+Error binding driver '%s'
+Virtual root driver does not exist!
+Virtual root driver already exists!
+Some drivers were not found
+u-boot,dm-pre-reloc
+Some drivers failed to bind
+root
+root_driver
+Device '%s': seq %d is in use by '%s'
+%s: Device '%s' failed child_post_remove()
+%s: Device '%s' failed to remove, but children are gone
+%s: Device '%s' failed to post_probe on error path
+generic_simple_bus
+simple-bus
+ %-11s [ %c ]    
+|   
+`-- 
+|-- 
+ Class       Probed   Name
+uclass %d: %s
+- %c %s @ %08lx
+, seq %d, (req %d)
+Error: no valid bmp image at %lx
+Error: compression type %ld not supported
+4bpp bitmap unsupported with current video mode
+Error: 24 bits/pixel bitmap incompatible with current video mode
+Error: %d bit/pixel bitmaps not supported by U-Boot
+clrlogo
+fill the boot logo area with black
+overscan_x
+overscan_y
+monitor
+composite-pal
+Unknown monitor: '%s', falling back to '%s'
+HDMI/DVI not supported on this board
+LCD not supported on this board
+VGA not supported on this board
+Error need %dkB for fb, but only %dkB is reserved
+Setting up a %dx%d%s %s console (overscan %dx%d)
+lcd_backlight_enable
+lcd_backlight_pwm
+lcd_reset
+AXP0-1
+lcd_power
+de_be0-lcd0-hdmi
+de_be0-lcd0
+de_be0-lcd0-tve0
+allwinner,simple-framebuffer
+allwinner,pipeline
+Cannot setup simplefb: Error reserving memory
+x8r8g8b8
+Cannot setup simplefb: Error setting properties
+Cannot setup simplefb: node not found
+composite-ntsc
+composite-pal-m
+composite-pal-nc
+video=ctfb:
+refresh:
+sync:
+vmode:
+pclk:
+pclk_khz:
+depth:
+video-mode
+video-mode %dx%d-%d@%d not available, falling back to %dx%d-%d@%d
+linux,keymap
+linux,fn-keymap
+AXP0-
+AXP-gpio
+gpio_axp
+%s: %s: error: gpio %s%d not reserved
+dir_input
+dir_output
+get_value
+set_value
+set_dir
+%s.%s%d
+%s.%s
+#gpio-cells
+%s%d: %s
+: %d [%c]%s%s
+unused
+func
+allwinner,sun6i-a31-r-pinctrl
+allwinner,sun8i-a23-r-pinctrl
+AXP0-VBUS-DETECT
+AXP0-%d
+AXP0-VBUS-ENABLE
+gpio_sunxi
+allwinner,sun4i-a10-pinctrl
+allwinner,sun5i-a10s-pinctrl
+allwinner,sun5i-a13-pinctrl
+allwinner,sun6i-a31-pinctrl
+allwinner,sun6i-a31s-pinctrl
+allwinner,sun7i-a20-pinctrl
+allwinner,sun8i-a23-pinctrl
+allwinner,sun8i-a33-pinctrl
+allwinner,sun9i-a80-pinctrl
+Error, wrong i2c adapter %d max %d possible
+Missing mvtwsi controller %d base
+twsi0
+Removing MTD device #%d (%s) with use count %d
+drivers/mtd/mtdcore.c
+U-Boot BUG at %s:%d!
+%s: unlock failed, writes may not work
+not same typ %d != %d
+Offset exceeds device limit
+device %d 
+whole chip
+offset 0x%llx, size 0x%llx
+memory allocation error while creating partitions for "%s"
+mtd: partition "%s" is out of reach -- disabled
+mtd: partition "%s" extends beyond the end of device "%s" -- size truncated to %#llx
+drivers/mtd/mtdpart.c
+mtd: partition "%s" doesn't start on an erase block boundary -- force read-only
+mtd: partition "%s" doesn't end on an erase block -- force read-only
+nand%d
+%lu MiB
+drivers/mtd/nand/nand_bbt.c
+Toshiba
+Samsung
+Fujitsu
+National
+Renesas
+ST Micro
+Hynix
+Micron
+AMD/Spansion
+Macronix
+SanDisk
+Intel
+Unknown
+TC58NVG2S0F 4G 3.3V 8-bit
+TC58NVG3S0F 8G 3.3V 8-bit
+TC58NVG5D2 32G 3.3V 8-bit
+TC58NVG6D2 64G 3.3V 8-bit
+SDTNRGAMA 64G 3.3V 8-bit
+H27UCG8T2ATR-BC 64G 3.3V 8-bit
+H27QCG8T2E5R
+BCF 64G 3.3V 8-bit
+NAND 4MiB 5V 8-bit
+NAND 4MiB 3,3V 8-bit
+NAND 8MiB 3,3V 8-bit
+NAND 16MiB 1,8V 8-bit
+NAND 16MiB 3,3V 8-bit
+NAND 16MiB 1,8V 16-bit
+NAND 16MiB 3,3V 16-bit
+NAND 32MiB 1,8V 8-bit
+NAND 32MiB 3,3V 8-bit
+NAND 32MiB 1,8V 16-bit
+NAND 32MiB 3,3V 16-bit
+NAND 64MiB 1,8V 8-bit
+NAND 64MiB 3,3V 8-bit
+NAND 64MiB 1,8V 16-bit
+NAND 64MiB 3,3V 16-bit
+NAND 128MiB 1,8V 8-bit
+NAND 128MiB 3,3V 8-bit
+NAND 128MiB 1,8V 16-bit
+NAND 128MiB 3,3V 16-bit
+NAND 256MiB 3,3V 8-bit
+NAND 256MiB 1,8V 8-bit
+NAND 256MiB 1,8V 16-bit
+NAND 256MiB 3,3V 16-bit
+NAND 512MiB 1,8V 8-bit
+NAND 512MiB 3,3V 8-bit
+NAND 512MiB 1,8V 16-bit
+NAND 512MiB 3,3V 16-bit
+NAND 1GiB 1,8V 8-bit
+NAND 1GiB 3,3V 8-bit
+NAND 1GiB 1,8V 16-bit
+NAND 1GiB 3,3V 16-bit
+NAND 2GiB 1,8V 8-bit
+NAND 2GiB 3,3V 8-bit
+NAND 2GiB 1,8V 16-bit
+NAND 2GiB 3,3V 16-bit
+NAND 4GiB 1,8V 8-bit
+NAND 4GiB 3,3V 8-bit
+NAND 4GiB 1,8V 16-bit
+NAND 4GiB 3,3V 16-bit
+NAND 8GiB 1,8V 8-bit
+NAND 8GiB 3,3V 8-bit
+NAND 8GiB 1,8V 16-bit
+NAND 8GiB 3,3V 16-bit
+NAND 16GiB 1,8V 8-bit
+NAND 16GiB 3,3V 8-bit
+NAND 16GiB 1,8V 16-bit
+NAND 16GiB 3,3V 16-bit
+NAND 32GiB 1,8V 8-bit
+NAND 32GiB 3,3V 8-bit
+NAND 32GiB 1,8V 16-bit
+NAND 32GiB 3,3V 16-bit
+NAND 64GiB 1,8V 8-bit
+NAND 64GiB 3,3V 8-bit
+NAND 64GiB 1,8V 16-bit
+NAND 64GiB 3,3V 16-bit
+Attempt to erase non block-aligned data
+Size of erase exceeds limit
+Skipping bad block at  0x%08llx                                          
+%s: MTD get bad block failed: %d
+%s: MTD Erase failure: %d
+%s: MTD writeoob failure: %d
+Erasing at 0x%llx -- %3d%% complete.
+ Cleanmarker written at 0x%llx.
+Attempt to write non page-aligned data
+Attempt to write outside the flash area
+Size of write exceeds partition or device limit
+NAND write to offset %llx failed %d
+Skip bad block 0x%08llx
+Attempt to read non page-aligned data
+Attempt to read outside the flash area
+Size of read exceeds partition or device limit
+NAND read from offset %llx failed %d
+Skipping bad block 0x%08llx
+drivers/mtd/nand/nand_base.c
+WARNING in %s line %d
+nand-bus-width
+nand-on-flash-bbt
+nand-ecc-mode
+soft
+hw_syndrome
+hw_oob_first
+soft_bch
+nand-ecc-strength
+nand-ecc-step-size
+EPPS
+wait for empty cmd FIFO timedout
+cannot check R/B NAND status!
+unsupported strength
+unsupported tADL
+unsupported tWHR
+unsupported tWB
+unsupported tRHW
+wait for NAND controller reset timedout
+too many NAND chips: %d (max = 8)
+invalid reg property size
+could not allocate chip
+could not retrieve reg property: %d
+allwinner,rb
+invalid reg value: %u (max CS = 7)
+CS %d already assigned
+rb-gpios
+allwinner,randomize
+could not retrieve timings for ONFI mode 0: %d
+could not configure chip timings: %d
+nand_scan_tail failed: %d
+failed to register mtd device: %d
+ECC init failed: %d
+failed to init nand chips
+drivers/mtd/ubi/attach.c
+UBI: "delete" compatible internal volume %d:%d found, will remove it
+UBI: read-only compatible internal volume %d:%d found, switch to read-only mode
+UBI: "preserve" compatible internal volume %d:%d found
+UBI: scanning is finished
+UBI: empty MTD device detected
+UBI: attaching mtd%d to ubi%d
+UBI: MTD device %d is write-protected, attach in read-only mode
+ubi%d
+UBI: volume %d ("%s") re-sized from %d to %d LEBs
+UBI: attached mtd%d (name "%s", size %llu MiB) to ubi%d
+UBI: PEB size: %d bytes (%d KiB), LEB size: %d bytes
+UBI: min./max. I/O unit sizes: %d/%d, sub-page size %d
+UBI: VID header offset: %d (aligned %d), data offset: %d
+UBI: good PEBs: %d, bad PEBs: %d, corrupted PEBs: %d
+UBI: user volume: %d, internal volumes: %d, max. volumes count: %d
+UBI: max/mean erase counter: %d/%d, WL threshold: %d, image sequence number: %u
+UBI: available PEBs: %d, total reserved PEBs: %d, PEBs reserved for bad PEB handling: %d
+UBI: detaching mtd%d from ubi%d
+UBI: mtd%d is detached from ubi%d
+drivers/mtd/ubi/vtbl.c
+UBI: volume table was restored
+layout volume
+UBI: finish volume %d removal
+UBI: force data checking
+UBI: recover PEB %d, move data to PEB %d
+UBI: data was successfully recovered
+UBI: try again
+UBI: try another PEB
+UBI: fixable bit-flip detected at PEB %d
+UBI: hex dump of the %d-%d region
+UBI: data differ at position %d
+UBI: hex dump of the original buffer from %d to %d
+UBI: hex dump of the read buffer from %d to %d
+UBI: run torture test for PEB %d
+UBI: PEB %d passed torture test, do not mark it as bad
+UBI: mark PEB %d as bad
+UBI: %d PEBs left in the reserve
+UBI: scrubbed PEB %d (LEB %d:%d), data moved to PEB %d
+UBI: schedule PEB %d for scrubbing
+UBI: background thread "%s" started, PID %d
+UBI: %s: %d consecutive failures
+ubi_bgt%dd
+UBI: reserved more %d PEBs for bad PEB handling
+UBI: dumping %d bytes of data from PEB %d, offset %d
+Volume information dump:
+	vol_id          %d
+	reserved_pebs   %d
+	alignment       %d
+	data_pad        %d
+	vol_type        %d
+	name_len        %d
+	usable_leb_size %d
+	used_ebs        %d
+	used_bytes      %lld
+	last_eb_bytes   %d
+	corrupted       %d
+	upd_marker      %d
+	name            %s
+	1st 5 characters of name: %c%c%c%c%c
+No serial driver found
+## Baudrate %d bps not supported
+## Baudrate may not be deleted
+serial_dw
+snps,dw-apb-uart
+reg-shift
+drivers/usb/gadget/composite.c
+composite
+usb_dnload
+musb-hdrc
+%s: failed!, error: %d
+drivers/usb/gadget/f_mass_storage.c
+nwritten:%zd amount:%u
+, H%c=%u
+File-Store Gadget
+Linux   
+%-8s%-16s%04x
+Mass Storage Function
+Unknown x%02x
+f_fastboot
+status: %d ep '%s' trans: %d
+Booting kernel..
+0x%lx
+Error %d on queue
+drivers/usb/gadget/f_fastboot.c
+ERROR: unknown command: %s
+at %s:%d/%s()
+FAILunknown command
+ERROR: buffer overflow
+at %s:%d/%s()
+FAILbuffer overflow
+unlock
+FAILnot implemented
+FAILunknown oem command
+OKAY
+Starting download of %d bytes
+FAILdata invalid size
+FAILdata too large
+DATA%08x
+Bad status: %d
+downloading of %d bytes finished
+ERROR: missing variable
+at %s:%d/%s()
+FAILmissing var
+bootloader-version
+U-Boot 2015.10-00003-gaf62f4a-dirty
+downloadsize
+0x%08x
+max-download-size
+serialno
+FAILValue not set
+ERROR: unknown variable: %s
+at %s:%d/%s()
+FAILVariable not implemented
+failed to enable out ep
+failed to alloc out req
+failed to enable in ep
+failed alloc req in
+ERROR: missing partition name
+at %s:%d/%s()
+FAILmissing partition name
+FAILno flash device defined
+ERROR: missing partition name
+at %s:%d/%s()
+reboot-bootloader
+FAILCannot set reboot flag
+getvar:
+download:
+continue
+drivers/usb/gadget/ether.c
+ERROR: %s: rndis parse error %d
+at %s:%d/%s()
+USB RNDIS network up!
+ERROR: can't autoconfigure on %s
+at %s:%d/%s()
+ERROR: can't run RNDIS on %s
+at %s:%d/%s()
+%02X%02X%02X%02X%02X%02X
+ERROR: can't init RNDIS, %d
+at %s:%d/%s()
+using %s, OUT %s IN %s%s%s
+ STATUS 
+HOST MAC %02x:%02x:%02x:%02x:%02x:%02x
+RNDIS ready
+ERROR: %s failed, status = %d
+at %s:%d/%s()
+RNDIS/%s
+U-boot
+ERROR: controller '%s' not recognized
+at %s:%d/%s()
+ERROR: No memory to alloc RNDIS packet
+at %s:%d/%s()
+timeout sending packets to usb ethernet
+ERROR: can't alloc requests
+at %s:%d/%s()
+ERROR: received NULL ptr
+at %s:%d/%s()
+ERROR: rx submit --> %d
+at %s:%d/%s()
+ERROR: dev->rx_req invalid
+at %s:%d/%s()
+RNDIS
+CDC Ethernet
+%s speed config #%d: %d mA, %s, using %s
+de:ad:be:af:00:00
+usbnet_devaddr
+usbnet_hostaddr
+ERROR: Need valid 'usbnet_devaddr' to be set
+at %s:%d/%s()
+ERROR: Need valid 'usbnet_hostaddr' to be set
+at %s:%d/%s()
+cdc_connect_timeout
+ERROR: The remote end did not respond in time.
+at %s:%d/%s()
+usb_ether
+Ethernet Data
+RNDIS Communications Control
+usb,device-class
+usb,interface-class
+generic_bus_%x_dev_%x
+usb_dev_generic_drv
+scanning bus %d for devices... 
+No USB Device found
+%d USB Device(s) found
+USB%d:   
+Port not available.
+probe failed, error %d
+No controllers found
+USB error: all controllers failed lowlevel init
+usb_dev_generic
+ep%d%s
+%s %d: SetupEnd came in a wrong ep0stage %s
+%s %d: SETUP packet len %d != 8 ?
+%s: peripheral reset irq lost!
+drivers/usb/musb-new/musb_gadget_ep0.c
+idle
+in/status
+out/status
+wait
+UTMI-16
+UTMI-8
+drivers/usb/musb-new/musb_core.c
+, dyn FIFOs
+, bulk combine
+, bulk split
+, HB-ISO Rx
+, HB-ISO Tx
+, SoftConn
+%s: kernel must blacklist external hubs
+%d.%d%s
+musb_init_controller failed with status %d
+bad parameter.
+Controller uninitialized
+gadget_start failed with %d
+bind failed with %d
+Failed to init the controller
+A charger is plugged into the OTG: 
+No host cable detected: 
+** Unrecognized filesystem type **
+** %s shorter than offset + len **
+** Unable to write file %s **
+** No boot file defined **
+%llu bytes read in %lu ms
+%llu bytes written in %lu ms
+ext4
+unsupported
+** Can not find directory. **
+** Cannot support non-zero offset **
+invalid extent block
+Extent Error
+** SI ext2fs read block (indir 1)malloc failed. **
+** SI ext2fs read block (indir 1):malloc failed. **
+** SI ext2fs read block (indir 1)failed. **
+** DI ext2fs read block (indir 2 1)malloc failed. **
+** DI ext2fs read block (indir 2 1)failed. **
+** DI ext2fs read block (indir 2 2)malloc failed. **
+** DI ext2fs read block (indir 2 2)failed. **
+** TI ext2fs read block (indir 2 1)malloc failed. **
+** TI ext2fs read block (indir 2 1)failed. **
+** TI ext2fs read block (indir 2 2)malloc failed. **
+** TI ext2fs read block (indir 2 2)failed. **
+<DIR> 
+<SYM> 
+      
+< ? > 
+%10u %s
+Failed to mount ext2 filesystem...
+** Invalid Block Device Descriptor (NULL)
+%s read outside partition %lu
+ ** ext2fs_devread() read error **
+ ** %s read error - block
+* %s read error - last part
+error: overflow occurs
+Error: Invalid FAT entry: 0x%08x
+FAT: Misaligned buffer address (%p)
+FAT32   
+FAT12   
+FAT16   
+Invalid FAT entry
+error: wrinting directory entry
+Error: reading directory block
+Error: %llu overflow
+Error: finding empty cluster
+Error: flush fat buffer
+Error: writing directory entry
+Error: clearing FAT entries
+Error: writing contents
+** Partition %d not valid on device %d **
+Error: FAT sector size mismatch (fs=%hu, dev=%lu)
+            %s%c
+ %8u   %s%c
+%d file(s), %d dir(s)
+Error reading cluster
+No current device
+Interface:  
+  Device %d: 
+No valid FAT fs found
+Filesystem: %s "%s"
+reading %s
+** Unable to read file %s **
+Error: non zero offset is currently not suported.
+writing %s
+Can't list files without a filesystem!
+%s/%s
+Can't load file without a filesystem!
+%s: Error, no memory for malloc!
+Symlink recursion, aborting
+<DIR>	
+<LNK>	
+other	
+%s: Error in ubifs_iget(), ino=%lld ret=%p!
+%.3s %.3s %.2d %.2d:%.2d:%.2d %d
+%9lld  %24.24s  
+%s: Error reading inode %ld!
+Loading file '%s' to addr 0x%08x with size %d (0x%08x)...
+%s: Error, malloc fails!
+Error reading file '%s'
+Done
+zlib
+deflate
+UBIFS: only ro mode in U-Boot allowed.
+ubifs_bgt%d_%d
+Error reading superblock on volume '%s' errno=%d!
+ubifs
+No UBIFS filesystem found!
+fs/ubifs/tnc.c
+unknown/invalid key
+(%lu, %s)
+(%lu, %s, %#08x)
+(%lu, %s, %u)
+(bad key type: %#08x, %#08x)
+bad key format %d
+unknown node
+unknown commit state
+unknown journal head
+0 (GC)
+1 (base)
+2 (data)
+commit resting
+background commit requested
+commit required
+BACKGROUND commit running
+commit running and required
+broken commit
+inode node
+data node
+direntry node
+xentry node
+truncate node
+padding node
+superblock node
+master node
+reference node
+indexing node
+commit start node
+orphan node
+inode
+direntry
+xentry
+truncate
+invalid distance too far back
+invalid distance code
+invalid literal/length code
+incorrect header check
+unknown compression method
+invalid window size
+unknown header flags set
+header crc mismatch
+invalid block type
+invalid stored block lengths
+too many length or distance symbols
+invalid code lengths set
+invalid bit length repeat
+invalid literal/lengths set
+invalid distances set
+incorrect data check
+incorrect length check
+need dictionary
+stream end
+file error
+stream error
+data error
+insufficient memory
+buffer error
+incompatible version
+compatible
+<valid offset/length>
+<no error>
+<unknown error>
+FDT_ERR_NOTFOUND
+FDT_ERR_EXISTS
+FDT_ERR_NOSPACE
+FDT_ERR_BADOFFSET
+FDT_ERR_BADPATH
+FDT_ERR_BADSTATE
+FDT_ERR_TRUNCATED
+FDT_ERR_BADMAGIC
+FDT_ERR_BADVERSION
+FDT_ERR_BADSTRUCTURE
+FDT_ERR_BADLAYOUT
+%.*s%d
+No valid device tree binary found - please append one to U-Boot binary, use u-boot-dtb.bin or define CONFIG_OF_EMBED. For sandbox, use -d <file.dtb>
+/config
+compress
+hash
+%s-memory%s
+%s-offset%s
+hback-porch
+hfront-porch
+hactive
+hsync-len
+vback-porch
+vfront-porch
+vactive
+vsync-len
+clock-frequency
+vsync-active
+hsync-active
+de-active
+pixelclk-active
+interlaced
+doublescan
+doubleclk
+fdtcontroladdr
+<none>
+nvidia,tegra20-emc
+nvidia,tegra20-emc-table
+nvidia,tegra20-kbc
+nvidia,tegra20-nand
+nvidia,tegra20-pwm
+nvidia,tegra124-dc
+nvidia,tegra124-sor
+nvidia,tegra124-pmc
+nvidia,tegra20-dc
+nvidia,tegra210-sdhci
+nvidia,tegra124-sdhci
+nvidia,tegra30-sdhci
+nvidia,tegra20-sdhci
+nvidia,tegra124-pcie
+nvidia,tegra30-pcie
+nvidia,tegra20-pcie
+nvidia,tegra124-xusb-padctl
+nvidia,tegra210-xusb-padctl
+smsc,lan9215
+samsung,exynos-sromc
+samsung,s3c2440-i2c
+samsung,exynos-sound
+wolfson,wm8994-codec
+google,cros-ec-keyb
+samsung,exynos-usb-phy
+samsung,exynos5250-usb3-phy
+samsung,exynos-tmu
+samsung,exynos-fimd
+samsung,exynos-mipi-dsi
+samsung,exynos5-dp
+samsung,exynos-dwmmc
+samsung,exynos-mmc
+samsung,exynos4210-uart
+maxim,max77686
+spi-flash
+maxim,max98095-codec
+samsung,exynos5-hsi2c
+sandbox,lcd-sdl
+samsung,sysmmu-v3.3
+intel,microcode
+memory-spd
+intel,pantherpoint-ahci
+intel,model-206ax
+intel,gma
+ams,as3722
+intel,ich-spi
+intel,quark-mrc
+intel,x86-pinctrl
+socionext,uniphier-xhci
+intel,bd82x6x
+intel,irq-router
+altr,socfpga-stmmac
+altr,socfpga-dw-mshc
+intel,baytrail-fsp
+intel,baytrail-fsp-mdp
+allwinner,sun4i-a10-nand
+%llu/%llu
+	%llu bytes, crc 0x%08x
+	uncompressed %llu of %llu
+	crcs == 0x%08x/0x%08x
+%s: size %lu not a multiple of %lu
+%s: start offset %llu not a multiple of %lu
+Error: Bad gzipped data
+Error: gunzip out of data in header
+size of %llx doesn't match trailer low bits %x
+%s: uncompressed size %llu exceeds device size
+1.2.3
+Error: inflateInit2() returned %d
+%s: weird termination with result %d
+Error: inflate() returned %d
+Error: gunzip out of data in header
+initcall sequence %p failed at call %p (err=%d)
+ERROR: Failed to allocate 0x%lx bytes below 0x%lx.
+.%03ld
+list passed to list_sort() too long for efficiency
+## ERROR: unsupported match method: 0x%02x
+Env export buffer too small: %zu, but need %zu
+himport_r: can't insert "%s=%s" into hash table
+WARNING: '%s' neither in running nor in imported env!
+WARNING: '%s' not in imported env, deleting it!
+%llu Hz%s
+.%ld
+ %cHz%s
+%llu Bytes%s
+ %ciB%s
+ %0*x
+### ERROR ### Please RESET the board ###
+RE is too long (code overflow)
+RE is too long (data overflow)
+unknown cmd (%d) at %d
+Jump offset is too big
+No closing ']' bracket
+No closing bracket
+Unbalanced brackets
+|.^$*+?()[\
+<NULL>
+%s:%u: %s: Assertion `%s' failed.
+%*llu
+## Warning: gatewayip needed but not set
+ARP Retry count exceeded; starting again
+bad length %d < %d
+Invalid pxeuuid: %s
+U-boot.armv7
+Host Name
+*** WARNING: %s is too long (%d - max: %d) - truncated
+Root Path
+Opt Boot File
+*** WARNING: using vendor optional boot file
+*** Unhandled DHCP Option in OFFER/ACK: %d
+DHCP client bound to address %pI4 (%lu ms)
+DHCP: INVALID STATE
+BOOTP broadcast %d
+Retry time exceeded; starting again
+%s%daddr
+%saddr
+net/eth.c
+eth%dmacskip
+ethmacskip
+Warning: %s MAC addresses don't match:
+Address in SROM is         %pM
+Address in environment is  %pM
+Warning: %s using MAC address from net device
+Error: %s address not set.
+Warning: %s failed to set MAC address
+Error: %s address %pM illegal value
+ethact
+Board Net Initialization Failed
+CPU Net Initialization Failed
+Net Initialization Skipped
+ethprime
+ [PRIME]
+Warning: eth device name has a space!
+ethrotate
+autoload
+netretry
+once
+*** ERROR: ping address not given
+*** ERROR: `serverip' not set
+*** ERROR: `ipaddr' not set
+*** ERROR: No ethernet found.
+*** ERROR: `ethaddr' not set
+*** ERROR: `eth%daddr' not set
+Abort
+Bytes transferred = %d (%x hex)
+ ICMP Host Redirect to %pI4 
+%d.%d.%d.%d
+nvlan
+*** ERROR: Cannot mount
+*** ERROR: Cannot umount
+done
+*** ERROR: File lookup fail
+*** ERROR: Symlink fail
+Retry count exceeded; starting again
+*** ERROR: Fail allocate memory
+/nfsroot/%02X%02X%02X%02X.img
+*** Warning: no boot file name; using '%s'
+Using %s device
+File transfer via NFS from server %pI4; our IP address is %pI4
+; sending through gateway %pI4
+Filename '%s/%s'.
+ Size is 0x%x Bytes = 
+Load address: 0x%lx
+Loading: *
+octet
+blksize%c%d%c
+File too large
+File has bad magic
+blksize
+TFTP error: 
+First block is not block 1 (%ld)
+Starting again
+TFTP error: '%s' (%d)
+Not retrying...
+Retry count exceeded
+%s; starting again
+tftpblocksize
+tftptimeout
+TFTP timeout (%ld ms) too low, set min = 1000 ms
+from
+TFTP %s server %pI4; our IP address is %pI4
+Filename '%s'.
+Load address: 0x%lx
+Driver model low level access
+tree         Dump driver model tree ('*' = activated)
+dm uclass        Dump list of instances for each uclass
+dm devres        Dump list of device resources for each device
+uclass
+devres
+raise: Signal # %d caught
+ (08<@        
+/*-+
+1234567890.
+=1234567890
+	 -=[]\#;'`,./!@#$%^&*()
+	 _+{}|~:"~<>?Linux   
+U-Boot 2015.10-00003-gaf62f4a-dirty (Feb 19 2016 - 16:54:25 -0800) Allwinner Technology
+J[addr [arg ...]]
+    - boot application image stored in memory
+	passing arguments 'arg ...'; when booting a Linux kernel,
+	'arg' can be the address of an initrd image
+	When booting a Linux kernel which requires a flat device-tree
+	a third argument is required which is the address of the
+	device-tree blob. To boot that kernel without an initrd image,
+	use a '-' for the second argument. If you do not pass a third
+	a bd_info struct will be passed instead
+Sub-commands to do part of the bootm sequence.  The sub-commands must be
+issued in the order below (it's ok to not issue all sub-commands):
+	start [addr [arg ...]]
+	loados  - load OS image
+	ramdisk - relocate initrd, set env initrd_start/initrd_end
+	fdt     - relocate flat device tree
+	cmdline - OS specific command line processing/setup
+	bdt     - OS specific bd_t processing
+	prep    - OS specific prep before relocation or go
+	go      - start OS
+[addr [initrd[:size]] [fdt]]
+    - boot Linux zImage stored in memory
+	The argument 'initrd' is optional and specifies the address
+	of the initrd in memory. The optional argument ':size' allows
+	specifying the size of RAW initrd.
+	When booting a Linux kernel which requires a flat device-tree
+	a third argument is required which is the address of the
+	device-tree blob. To boot that kernel without an initrd image,
+	use a '-' for the second argument. If you do not pass a third
+	a bd_info struct will be passed instead
+J[addr]
+	- run script starting at addr
+	- A valid image header must be present
+																																
+addr [-c]  <addr> [<length>]   - Set the [control] fdt location to <addr>
+fdt boardsetup                      - Do board-specific set up
+fdt move   <fdt> <newaddr> <length> - Copy the fdt to <addr> and make it active
+fdt resize                          - Resize fdt to size + padding to 4k addr
+fdt print  <path> [<prop>]          - Recursive print starting at <path>
+fdt list   <path> [<prop>]          - Print one level starting at <path>
+fdt get value <var> <path> <prop>   - Get <property> and store in <var>
+fdt get name <var> <path> <index>   - Get name of node <index> and store in <var>
+fdt get addr <var> <path> <prop>    - Get start address of <property> and store in <var>
+fdt get size <var> <path> [<prop>]  - Get size of [<property>] or num nodes and store in <var>
+fdt set    <path> <prop> [<val>]    - Set <property> [to <val>]
+fdt mknode <path> <node>            - Create a new node after <path>
+fdt rm     <path> [<prop>]          - Delete the node or <property>
+fdt header                          - Display header info
+fdt bootcpu <id>                    - Set boot cpuid
+fdt memory <addr> <size>            - Add/Update memory node
+fdt rsvmem print                    - Show current mem reserves
+fdt rsvmem add <addr> <size>        - Add a mem reserve
+fdt rsvmem delete <index>           - Delete a mem reserves
+fdt chosen [<start> <end>]          - Add/update the /chosen branch in the tree
+                                        <start>/<end> - initrd start/end addr
+NOTE: Dereference aliases by omiting the leading '/', e.g. fdt print ethernet0.
+bus [muxtype:muxaddr:muxchannel] - show I2C bus info
+crc32 chip address[.0, .1, .2] count - compute CRC32 checksum
+i2c dev [dev] - show or set current I2C bus
+i2c edid chip - print EDID configuration information
+i2c loop chip address[.0, .1, .2] [# of objects] - looping read of device
+i2c md chip address[.0, .1, .2] [# of objects] - read from I2C device
+i2c mm chip address[.0, .1, .2] - write to I2C device (auto-incrementing)
+i2c mw chip address[.0, .1, .2] value [count] - write to I2C device (fill)
+i2c nm chip address[.0, .1, .2] - write to I2C device (constant address)
+i2c probe [address] - test for and show device(s) on the I2C bus
+i2c read chip address[.0, .1, .2] length memaddress - read to memory
+i2c write memaddress chip address[.0, .1, .2] length [-s] - write memory
+          to I2C; the -s option selects bulk write in a single transaction
+i2c reset - re-init the I2C Controller
+i2c speed [speed] - show or set I2C bus speed
+    - list partition table
+mtdparts delall
+    - delete all partitions
+mtdparts del part-id
+    - delete partition (e.g. part-id = nand0,1)
+mtdparts add <mtd-dev> <size>[@<offset>] [<name>] [ro]
+    - add partition
+mtdparts default
+    - reset partition table to defaults
+-----
+this command uses three environment variables:
+'partition' - keeps current partition identifier
+partition  := <part-id>
+<part-id>  := <dev-id>,part_num
+'mtdids' - linux kernel mtd device id <-> u-boot device id mapping
+mtdids=<idmap>[,<idmap>,...]
+<idmap>    := <dev-id>=<mtd-id>
+<dev-id>   := 'nand'|'nor'|'onenand'<dev-num>
+<dev-num>  := mtd device number, 0...
+<mtd-id>   := unique device tag used by linux kernel to find mtd device (mtd->name)
+'mtdparts' - partition list
+mtdparts=mtdparts=<mtd-def>[;<mtd-def>...]
+<mtd-def>  := <mtd-id>:<part-def>[,<part-def>...]
+<mtd-id>   := unique device tag used by linux kernel to find mtd device (mtd->name)
+<part-def> := <size>[@<offset>][<name>][<ro-flag>]
+<size>     := standard linux memsize OR '-' to denote all remaining space
+<offset>   := partition start offset within the device
+<name>     := '(' NAME ')'
+<ro-flag>  := when set to 'ro' makes partition read-only (not used, passed to kernel)
+info - show available NAND devices
+nand device [dev] - show or set current device
+nand read[.slc-mode] - addr off|partition size
+nand write[.slc-mode] - addr off|partition size
+    With '.slc-mode, the operation is done in SLC mode
+    'size' includes skipped bad blocks.
+    read/write 'size' bytes starting at offset 'off'
+    to/from memory address 'addr', skipping bad blocks.
+nand read.raw - addr off|partition [count]
+nand write.raw[.noverify] - addr off|partition [count]
+    Use read.raw/write.raw to avoid ECC and access the flash as-is.
+nand write[.slc-mode].trimffs - addr off|partition size
+    With '.slc-mode, the operation is done in SLC mode
+    write 'size' bytes starting at offset 'off' from memory address
+    'addr', skipping bad blocks and dropping any pages at the end
+    of eraseblocks that contain only 0xFF
+nand erase[.spread] [clean] off size - erase 'size' bytes from offset 'off'
+    With '.spread', erase enough for given file size, otherwise,
+    'size' includes skipped bad blocks.
+nand erase.part [clean] partition - erase entire mtd partition'
+nand erase.chip [clean] - erase entire chip'
+nand bad - show bad blocks
+nand dump[.oob] off - dump page
+nand scrub [-y] off size | scrub.part partition | scrub.chip
+    really clean NAND erasing bad blocks (UNSAFE)
+nand markbad off [...] - mark bad block(s) at offset (UNSAFE)
+nand biterr off - make a bit error at offset (UNSAFE)
+addr part [dest]
+    - extract <part> from legacy image at <addr> and copy to <dest>
+default [-f] -a - [forcibly] reset default environment
+env default [-f] var [...] - [forcibly] reset variable(s) to their default values
+env delete [-f] var [...] - [forcibly] delete variable(s)
+env edit name - edit environment variable
+env exists name - tests for existence of variable
+env export [-t | -b | -c] [-s size] addr [var ...] - export environment
+env import [-d] [-t [-r] | -b | -c] addr [size] - import environment
+env print [-a | name ...] - print environment
+env run var [...] - run commands in an environment variable
+env save - save environment
+env set [-f] name [arg ...]
+<fBBf<
+<ffff<
+?3?0000p
+ccccg
+fffffff
+88||
+||88
+fff$
+8ll8v
+000`
+000000
+0000
+fff|ffff
+lffffffl
+fbhxh`bf
+fbhxh```
+fflxxlff
+``````bf
+fff|````
+fff|lfff
+l|88|l
+ffff<
+<00000000<
+``xlffff|
+620x0000x
+``lvffff
+``flxxlf
+ffffff
+fffff|``
+vf```
+00006
+l888l
+fbhxhbf
+8ld`
+````
+ffffff
+<ll>
+8ll8
+6666666
+66666666
+66666666
+66666
+666666666666666666666666
+6666666666666
+6666666
+66666667666666666666670?
+?076666666666666
+666666666666670766666666
+66666
+66666666
+6666666
+666666666666666?
+?666666666666666
+66666666
+llllll
+ffffff|``
+<ffff<
+llll
+>ffff<
+0``|```0
+8ll8
+l66666
+~~~~~~~
+J1tbB
+JBbt0$1
+2vV	
+J89:;
+Ethernet Gadget
+,NextThing C.H.I.P.
+2nextthing,chip
+allwinner,sun5i-r8
+chosen
+Dserial0:115200n8
+framebuffer@0
+2allwinner,simple-framebuffer
+simple-framebuffer
+Pde_be0-lcd0
+jdisabled
+framebuffer@1
+2allwinner,simple-framebuffer
+simple-framebuffer
+Pde_be0-lcd0-tve0
+jdisabled
+aliases
+q/soc@01c00000/i2c@01c2ac00
+v/soc@01c00000/i2c@01c2b400
+{/soc@01c00000/serial@01c28400
+/soc@01c00000/serial@01c28c00
+memory
+memory
+cpus
+cpu@0
+2arm,cortex-a8
+clocks
+dummy
+2fixed-clock
+clk@01c20050
+2allwinner,sun4i-a10-osc-clk
+osc24M
+clk@0
+2fixed-clock
+osc32k
+clk@01c20000
+2allwinner,sun4i-a10-pll1-clk
+pll1
+clk@01c20018
+2allwinner,sun4i-a10-pll1-clk
+pll4
+clk@01c20020
+2allwinner,sun4i-a10-pll5-clk
+pll5_ddr
+pll5_other
+clk@01c20028
+2allwinner,sun4i-a10-pll6-clk
+pll6_sata
+pll6_other
+pll6
+cpu@01c20054
+2allwinner,sun4i-a10-cpu-clk
+axi@01c20054
+2allwinner,sun4i-a10-axi-clk
+ahb@01c20054
+2allwinner,sun5i-a13-ahb-clk
+apb0@01c20054
+2allwinner,sun4i-a10-apb0-clk
+apb0
+clk@01c20058
+2allwinner,sun4i-a10-apb1-clk
+apb1
+clk@01c2005c
+2allwinner,sun4i-a10-axi-gates-clk
+axi_dram
+clk@01c20080
+2allwinner,sun4i-a10-mod0-clk
+nand
+clk@01c20084
+2allwinner,sun4i-a10-mod0-clk
+clk@01c20088
+2allwinner,sun4i-a10-mmc-clk
+mmc0
+mmc0_output
+mmc0_sample
+clk@01c2008c
+2allwinner,sun4i-a10-mmc-clk
+mmc1
+mmc1_output
+mmc1_sample
+clk@01c20090
+2allwinner,sun4i-a10-mmc-clk
+mmc2
+mmc2_output
+mmc2_sample
+clk@01c20098
+2allwinner,sun4i-a10-mod0-clk
+clk@01c2009c
+2allwinner,sun4i-a10-mod0-clk
+clk@01c200a0
+2allwinner,sun4i-a10-mod0-clk
+spi0
+clk@01c200a4
+2allwinner,sun4i-a10-mod0-clk
+spi1
+clk@01c200a8
+2allwinner,sun4i-a10-mod0-clk
+spi2
+clk@01c200b0
+2allwinner,sun4i-a10-mod0-clk
+clk@01c200cc
+2allwinner,sun5i-a13-usb-clk
+usb_ohci0
+usb_phy
+clk@01c2015c
+2allwinner,sun5i-a13-mbus-clk
+mbus
+clk@01c20060
+2allwinner,sun5i-a13-ahb-gates-clk
+ahb_usbotg
+ahb_ehci
+ahb_ohci
+ahb_ss
+ahb_dma
+ahb_bist
+ahb_mmc0
+ahb_mmc1
+ahb_mmc2
+ahb_nand
+ahb_sdram
+ahb_spi0
+ahb_spi1
+ahb_spi2
+ahb_stimer
+ahb_ve
+ahb_lcd
+ahb_csi
+ahb_de_be
+ahb_de_fe
+ahb_iep
+ahb_mali400
+clk@01c20068
+2allwinner,sun5i-a13-apb0-gates-clk
+apb0_codec
+apb0_pio
+apb0_ir
+clk@01c2006c
+2allwinner,sun5i-a13-apb1-gates-clk
+apb1_i2c0
+apb1_i2c1
+apb1_i2c2
+apb1_uart1
+apb1_uart3
+soc@01c00000
+2simple-bus
+sram-controller@01c00000
+2allwinner,sun4i-a10-sram-controller
+sram@00000000
+2mmio-sram
+sram@00010000
+2mmio-sram
+sram-section@0000
+2allwinner,sun4i-a10-sram-d
+jokay
+dma-controller@01c02000
+2allwinner,sun4i-a10-dma
+nand@01c03000
+2allwinner,sun4i-a10-nand
+jokay
+default
+nand@0
+spi@01c05000
+2allwinner,sun4i-a10-spi
+jdisabled
+spi@01c06000
+2allwinner,sun4i-a10-spi
+jdisabled
+mmc@01c0f000
+2allwinner,sun5i-a13-mmc
+output
+sample
+jokay
+default
+mmc@01c10000
+2allwinner,sun5i-a13-mmc
+output
+sample
+jdisabled
+mmc@01c11000
+2allwinner,sun5i-a13-mmc
+output
+sample
+jdisabled
+usb@01c13000
+2allwinner,sun4i-a10-musb
+Cusb
+jokay
+cotg
+phy@01c13400
+2allwinner,sun5i-a13-usb-phy
+vphy_ctrl
+pmu1
+usb_phy
+usb0_reset
+usb1_reset
+jokay
+default
+usb@01c14000
+2allwinner,sun5i-a13-ehci
+generic-ehci
+Cusb
+jokay
+usb@01c14400
+2allwinner,sun5i-a13-ohci
+generic-ohci
+Cusb
+jokay
+spi@01c17000
+2allwinner,sun4i-a10-spi
+jdisabled
+interrupt-controller@01c20400
+2allwinner,sun4i-a10-ic
+pinctrl@01c20800
+2allwinner,sun5i-a13-pinctrl
+i2c0@0
+.i2c0
+i2c1@0
+PB15
+PB16
+.i2c1
+i2c2@0
+PB17
+PB18
+.i2c2
+mmc0@0
+.mmc0
+mmc2@0
+PC10
+PC11
+PC12
+PC13
+PC14
+PC15
+.mmc2
+nand_base0@0
+PC10
+PC11
+PC12
+PC13
+PC14
+PC15
+.nand0
+nand_cs@0
+.nand0
+nand_cs@1
+.nand0
+nand_rb@0
+.nand0
+nand_rb@1
+.nand0
+uart3@0
+PG10
+.uart3
+uart3-cts-rts@0
+PG11
+PG12
+.uart3
+pwm0
+.pwm
+uart1@0
+PE10
+PE11
+.uart1
+uart1@1
+.uart1
+ahci_pwr_pin@0
+.gpio_out
+usb0_vbus_pin@0
+.gpio_out
+usb1_vbus_pin@0
+.gpio_out
+usb2_vbus_pin@0
+.gpio_out
+chip_vbus_pin@0
+PB10
+.gpio_out
+chip_id_det_pin@0
+.gpio_in
+timer@01c20c00
+2allwinner,sun4i-a10-timer
+watchdog@01c20c90
+2allwinner,sun4i-a10-wdt
+lradc@01c22800
+2allwinner,sun4i-a10-lradc-keys
+jdisabled
+eeprom@01c23800
+2allwinner,sun4i-a10-sid
+rtp@01c25000
+2allwinner,sun5i-a13-ts
+serial@01c28400
+2snps,dw-apb-uart
+jokay
+default
+serial@01c28c00
+2snps,dw-apb-uart
+jokay
+default
+i2c@01c2ac00
+2allwinner,sun4i-a10-i2c
+jokay
+default
+pmic@34
+2x-powers,axp209
+regulators
+dcdc2
+cpuvdd
+dcdc3
+corevdd
+ldo1
+rtcvdd
+ldo2
+avcc
+ldo3
+ldo3
+ldo4
+ldo4
+ldo5
+vcc-1v8
+usb_power_supply
+2x-powers,axp202-usb-power-supply
+jokay
+i2c@01c2b000
+2allwinner,sun4i-a10-i2c
+jdisabled
+i2c@01c2b400
+2allwinner,sun4i-a10-i2c
+jokay
+default
+gpio@38
+2nxp,pcf8574a
+timer@01c60000
+2allwinner,sun5i-a13-hstimer
+pwm@01c20e00
+2allwinner,sun5i-a13-pwm
+jdisabled
+thermal-zones
+cpu_thermal
+cooling-maps
+map0
+trips
+cpu_alert0
+passive
+cpu_crit
+critical
+ahci-5v
+2regulator-fixed
+default
+ahci-5v
+jdisabled
+usb0-vbus
+2regulator-fixed
+default
+usb0-vbus
+jokay
+usb1-vbus
+2regulator-fixed
+default
+usb1-vbus
+jdisabled
+usb2-vbus
+2regulator-fixed
+default
+usb2-vbus
+jdisabled
+vcc3v0
+2regulator-fixed
+vcc3v0
+vcc3v3
+2regulator-fixed
+vcc3v3
+vcc5v0
+2regulator-fixed
+vcc5v0
+	#address-cells
+#size-cells
+interrupt-parent
+model
+compatible
+ranges
+stdout-path
+allwinner,pipeline
+clocks
+status
+i2c0
+i2c2
+serial0
+serial1
+device_type
+clock-latency
+operating-points
+#cooling-cells
+cooling-min-level
+cooling-max-level
+linux,phandle
+#clock-cells
+clock-frequency
+clock-output-names
+assigned-clocks
+assigned-clock-parents
+clock-indices
+#reset-cells
+interrupts
+#dma-cells
+clock-names
+pinctrl-names
+pinctrl-0
+allwinner,rb
+nand-ecc-mode
+nand-ecc-step-size
+nand-ecc-strength
+allwinner,randomize
+dmas
+dma-names
+vmmc-supply
+bus-width
+non-removable
+interrupt-names
+phys
+phy-names
+extcon
+allwinner,sram
+dr_mode
+#phy-cells
+reg-names
+resets
+reset-names
+usb0_id_det-gpio
+usb0_vbus_power-supply
+usb0_vbus-supply
+usb1_vbus-supply
+interrupt-controller
+#interrupt-cells
+gpio-controller
+#gpio-cells
+allwinner,pins
+allwinner,function
+allwinner,drive
+allwinner,pull
+#thermal-sensor-cells
+reg-shift
+reg-io-width
+x-powers,dcdc-freq
+regulator-name
+regulator-min-microvolt
+regulator-max-microvolt
+regulator-always-on
+#pwm-cells
+polling-delay-passive
+polling-delay
+thermal-sensors
+trip
+cooling-device
+temperature
+hysteresis
+regulator-boot-on
+enable-active-high
+vin-supply
+(ZIB#
+9th{
+Pz10p
+pvdr)
+38{G
+kBi=XL
+<pWoR
+3o6?
+TQB>u
+EMJ1
+ K)_
+qj_c^
+'UUG
+5AK'
+|&L.
+.dyES
+":z0
+&T]r
+}WwT
+]_5#
+eMX,
+E&Wk_
+wH\w
+Qg7H
+j!WP	?
+]Xcm
+p3r;
+~+,DMnJ
+T]5~
+@\[4HR
+(qg4R
+y?l#5
+SsM}
+UA}i
+Hq@^
+mvjF
+Zmw(
+~8#2
+Nw/Nl
+:cp_,
+!@vX
+>]Ty
+	!C]
+,,{l
+|vZ\
+dI\c=
+iEJ%
+O\!d
+mEWZ
+c;pr
+X=lj
+:^=N
+@,>HbT
+UAdp
+|u\n
+O;	M
+guo;t
+we$;
+ICN0
+ACOXCg
+nO$p[l
+MD #
+TxwG
+|jre
+hm-Q
+U2^:
+G0<'
+{oft+8
+P`^$
+Yc`8D
+yfrE
+_}a5p
+z+O4
+'VQ!a
+!l\gM
+f_;X
+Sjf]
+^B89
+5_@o
+ymzzqUE
+1"Or
+G}F;H
+[ze$;-
+=upb[
+9Lc(L
+uLjC
+	T54
+{]%N
+Q*8u
+h'NxLC
+o1D<
+,JK}
+l{XS
+:'H$
+:3BVl+
+}dD"]K
+/^E`
+c\oMm
+5m9&
+Gef{
+Inh^V
+[ Tt
+w|S	
+zi^-
+}8Rs
+c3~I
+ V^L
+1v[U
+jVrE
+,[`U
+r=6Z99
+)Wj2
+v,yu
+zmY{
+|{%W|
+i%(7
+`E7h
+u}zY	fb
+(]M</0
+AL<]6
+Fh*Q
+wiF'q
+-[T(<R
+-SO-
+4r0N
+AX1 e]~
+]x?}
+cb_Z0
+Mf"\
+L> >;0
+me:`
+K$cN3)!
+Ecm-i
+ywJ`
+:aPA
+MhTtR
+=x'B
+ez*>
+{h4'
+V?U^
+'iFg2[
+L d	
+!/Q_
+yLd!Y
+/Cmr
+tKx~
+N?abN$
+R[a:@
+Z&K-
+f@<;
+?K1N
+p7am
+)*p(
+EylSO
+(wj\2
+>`ZMiW
+uWVEN
+]N $S
+?7h65
+s7Lo
+w#)C
+&S	%
+Q1?7m
+SpsT$L
+zY|]Ww
+`2!q
+&*SX
+:S'+
+Eg[5yF
+bh~I5
+c:bP
+)!/	GC`5u
+[=D	
+vX.[
+;EBf
+[8"	]
+axl~|
+DK-"3
+_,~Mf
+*vJ=`8+x|
+eg?.3
+Jgx8
+LW8`
+l+fc
+@ZDN
+B}6K
+w2Wic
+}*}O
+|yD3
+mz[g
+V|?^
+Tt`i]
+AG'n\
+X- {
+X	C;
+'Rfw
+!&{&
+}KA,
+dM5]
+"*SQ
+Q7M;
+Z+5e
+SrT~x
+KbagP=
+=.Zo
+2"O~
+rCh0
+H<U"
+>+]k
+gGaw p)xk
+k"`T
+b}o\
+:CUH
+P'O=
+AL5j
+!KXv
+3PjL}
+n"hx
+5n<%x&
++r`d\
+J<V5
+P%gx
+r&AG
+14@r%
+ST/Bf
+R6t#
+aS/_Jw
+mt)6
+#BF6
+Vm~-
+|V>F
+?}uj
+e}L_
+q#Wx
+fNSq4$
+xF}8
+-vy_d
+	xx~
+4WB8e
+^e8(O
+NOPy[
+/[Dh
+g2zN
+u/=.
+~F,W@Y
+"`vp	
+@6`G
+8l[1^6
+K/,u
+s|Z,
+/Z'[
+(MP}
+:;lVy
+jT7x
+Zbw^
+;{} dyIt
+HIB5
+K(@z
+^L4/
+^DuE7e
+:~&E
+'yfC|
+'"fu
+m7xS]
+f5$F
+":*\
+Mqn:
+(M+E
+oi6C
+F~6u:
+M%D&E
+S`v"
+XS,n
+fF@|K{:
+guc' 
+ua>!
+W~c}]
+]RJL,Y
+83	l7t
+_8S;
+.\k\
+E8r98
+<	"X`
+wu+e6
+qME`
+Yvh]
+eJ1!"n
+bXH#U
+Y&dk
+_\c.i
+6:JD
+%fr 
+$Q39x2
+Y9-K
+_o.a
+5:_#
+h0}[
+h9wl
+1N//
+(R)2
+=6VTk
+d=#<E
+RIEC"
+=_<N
++'l_
+	.w)yu
+n3;7w
+YsQ-t
+NuMk
+/[d_
+_I;%2
+2@>hxG
+HqO{
+B.!?
+C'I)
+RVgEC
+%~vk
+2aY&
+%JHA
+GChBX,
+I`c)
+}&c[
+(=H|
+p'1:
+X-s>
+<W6I
+k(Pz
+'/j!
+	3+o
+I\Sa&0
+*!\[
+Qj}[
+82Cs@
+},;B
+.Eay
+aO}l
+L/?G
+.DDv
+s1=J
+cJvv
+v(:&<67f
+7vi|
+vV}l
+9`R_2%
+{c@L
+4}) 
+K5=<
+f@K#
+n5JG
+%ZHq9
+\{J 
+~iX-
+Xz3&
+(JI,
+CY@u
+2Oi|
+(fC'
+S:5\A
+G[n!
+O"a Orq
+<eO8
+/tc5y
+:o'8W&
+ Gw-
+Bh_XI
+o+VL
+Ce{Q
+PE=;_
+j&>{}
+_}sK
+Q;)e
+Ma5X.
+MD4k
+Q'ZM
+!L;n
+m&4n
+X&wEa
+l-k(d=
+\"<0<
+X^XY
+G'p>
+35sy
+^y,J
+Aw7X
+N=\|g\AU
+K/d{5
+]r9hc
+'NYh
+S:vYe
+1#	R
+;7gn
+QY5o
+T	3X
+X7k 
+hO#X
+2_[tKC4
+u+=ug)
+`2D,
+E#x]Q!
+y?w1,
+\6{_
+ V\B?
+lMA<
+dURc
+-@|c*
+X-B_
+8bC$
+Ug0o9
+Y.G%
+DUtg]
+f72\
+YnSN,@
+:^I=
+zQu:
+FD(U
+E5HXd5
+,Z>9L
+y= 1
+@!A!
+z4%u2
+T4bB
+wF4z
+:B-4
+hSkA
+XoR=
+6o:\ZWx
+gXe(
+	acM
+tsLdy
+(0}!1
+J?i|
+v#_c\'I
+r,};
+<cn>s
+ -mh
+RJ:\
++<hh
+[%fn
+e,;&:
+v9^8
+Np9	@V
+rFpl
+b0,ou
+-O^xn
+zH\i
+N)d"
+}Qmi
+In8%i
+!GMs
+Avn*
+H@!m(
+"frL^
+u{1Y
+1I0o
+b3rN
+ATb!
++@ >
+R8W^:
+#<Vx:aw
+i::j	t
+Rl85
+UpR7
+aBCV|
+L[P2
+Uu"R
+1r2%
+Dw.J
+!NF/
+4cRs
+Pg>6b0
+*Gr$
++Yf%
+;6))
+j'Bl}d
+zltb
+3 y3
+^vx=
+(a8{
+yqTS
+SbL6
+SULh
+)ITF
++_#JTr
+oj0p+
+{Z^!
+T|kW2f
+`#dc
+^.Wx
+^mf	
+WF5I
+84}g3
+1Fjh:jz
+oxAZ
+"~d;l
+cxCz
+f!%f
+S~y3'G
+,Pi0
+3!9W
+!N-yE
+pB&S:
+t]IU
+B]N"G
+H)V/I
+y{:q<
+Es9Y
+}k+]
+J*q?D
+>`WN[$
+z*\W
+/!m~${
+n48N5J
+VoSd<
+fp;aQn	+#
+2Vg*~\4
+q/>B
+r)Y\k<
+VmF%
+\<}0
+~3m'
+%N4`
+Sc&}X
+zi=fO
+ROF`P
+HnI#
+5K$	
+Dyf]b
+4%Y9
+1\KA~=e
+ci:);Z|XH
+8W p0C
+x@qM~
+\Pt=
+eci'
+ gH(m
+-{V!k
++?w@
+r5?PH9
+&1?p
+liN=Z
+sV=_}1m
+;Aw:
+	n7W
+b.NL
+Q9=H
+Hs$L
+lgYk
+kxkf
+]|(DS
+]@b!
+]F*L@
+|	0!!
+(-5$
+/RN;
+~ZZ!f
+xs7-
+il\?
+[o}i
+_3@6P
+:}g&P
+|,'@
+Tdb:d
+fFmH
+|/WO
+6$Xn 
+(6Jm%
+Ku/X
+H6@{
+t..[U
+Uh{I
+*R%f
+X^!b3
+TjbS
+xpuh
+J>NR
+G@ma
+n"Bk u@
+dqDB
+6&1J
+"ii(
+~	PQ^
+uCN_
+5Mmn
+E"FT
+j-CA
+Y|1C
+sapl1T
+iY-D
+/Bz=
+;?$y#
+~Lb`v
+`Hm6
+;VG+d
+sk&1
+at~`;
+*E7-
+\Ddea3
+|itc
+pk9+
+	_t5
+L~YQ
+d!Of
+EDZ8
+Z'GJ
+P HN
+6.;>[s
+6s.<
+eUUo
+){(N"
+:L@o
+xfC'
+gp@lRk
+n@{	
+0]cN
+a6u/'
+Amp^
+[a!=u+=<
++#A -i9
+;0W-}
+)3"j
+`uQ-
+l$95
+1D8k
+bZBy!z
+0*d}
++`X}
+]q%)Y
+U	S.9
+X([@
+IaIW
+0%21V	
+wt^r
+%Jn9BV(
+MszP^i !aM
+]~_&
+jW2-
+9%1>
+tV/}
+'ut*
+2(XSV
+Q1RX
+	8q.
+JB{^
+v	o_u+
+3%"h
+@VUg
+-YL[
+yL+_|
+B0Ty
+~=hK
+r6soH~5),
+FO7Sj
+_F,Q
+|U2q
+F0_|
+g@m6^
+3>"m
+1%Cz
+OmcUS
+:]oKA
+ _Z%
+:k{u#
+@|oX
+\H,%
+N=I8
+f-yiGv
+FaA>W
+pe<(
+g	}_;
+&Q-A
+0qq(
+gBXR
+ull*
+27zS
+jI;,5*
+8U4>ii9
+tT	=J3
+V0~J
+"m3w+
+ P}p
+n-$`
+WID.K
+pyT)
+nuIo
+.j#.1
+c.SF%~
+y_ZH
+3*mN
+%8Qek
+g)+f
+Y% /
+C7kY
+SU^P
+G+tbNR
+*jIx
+_uQd
+)80S
+h6UOU
+4_;>
+OJi9'
+HbMu
+%^qV Y
+_,oOR
+R]vm
+#4ro
+BTxO
+o1Zz0(
+4p<Vl
+i~*/
+W"Lt
+H_|w
++X0n
+FE&h
+[C2]
+mn `'
+3^X>KRM
+9GcxQ
+o>rJUE
+>y#Ng4ip{~
+Vqws]Q
+s;wnT%
+K<<V8<
+s@)y
+M>+n
+6A&p
+O@v%
+N[${
+&ySO09
+#Q9B\
+}wt?Y^
+Hy\Y
+<-jb
+?q!|
+s95i
+]b\?
+[w2T
+sybF
+W~/=O
+;zB~
+8$j3R
+D3S~
+Po	cS
+[HXq
+dXoq
+Rv6Dck
+\8!2
+,|i!
+DxD`#
+\QXH
+=[.ff
+.D%#
+nz=	J3
+**Rj
+'q	sg
+	,Mh8
+z }#
++hu(
++}i~
+bE#Ozj
+^cB9
+}!H;x
+/+7pXv
+Gl|O3
+Fff^
+sZb}
+!.d*
+_.m"
+W3Mn
+Lnz|
+'@!JNn=
+BnMC
+Un,=
+vlcK^
+*Rbp'
+gm{K
+lF>w>
+P/k@J
+&-)	
+ b'&;
+Z}GQW
+(-N0
+q0xc
+|?ErT
+ALti0q
+(]u'W
+}P|`I
+?v@{{
+>0A;
+9RW*
+BU;g]
+A]D_
+oH0H:
+O~nfv
+kU`TT
+N<>1
+kV#*
+&a&]
+FH8:C
+_:C,8
+wD@$g
+->Lg
+Sx>x
+)^Y6J
+NB13{
+0]vV
+bms	
+VIf!:
+s	9Z=t
+@Y`Z
+w=^?4
+)]Sx"'
+tYLF]U
+W6}J
+>UM}p-
+|wg?
+M[V5
+PGnti9
+@eOa
+A?%N
+z/fs
+PR1-
+PH<o
+lEx1
+|b'or&
+,hsK 
+'>X?
+J/}cij
+2yR)	O
+1U1N
+d|J$
+ZRV&%
+TRI'Ej
+L{(M
+_4x.b
+M'9?
+y#*#
+yPHU
+"Y#C
+7k(Rqg1
+2_`yd
+-8f>
+1g!f
+X`]o6H
+=A+-
+a\qL~x#
+*!<ojm
+AYEEr
+f%/5y
+I^nL;
+Tn&6
+Scbr
+"^3>
+8[Ri38
+aI'k
+[l~[
+3GB~n
+Vi93%&[5
+;FUe95
+"V7(
+Qj6j
+V2P-h#+
+*i't
+F?R7
+U'Pqu
+(/Uo
+xjbb
+u@|m
+{)"/
+Js"j&
+c&/U
+r'.(
+? }7
+4oo~
+_/J$R
+B0vq
+":zc
+sNy5b
+E}bv
+=@lw
+5uPp
+\#,h]
+f*.AQX
+x1#oJ 
+re6}
+r"/lG@
+Q`VwfC
+~<[-@
+P< c
+,kbB;
+@[#/FV
+	=0,
+FVxx
+'TnD_U
+*7D5Hb
+N9;6q
+`_, Qp!
+yW17UM
+e+-W
+e(jpRR
+l}1Iqo	
+v1jKX
+d|>uEx
+J6U)]
+;RP9
+!? :
+&rd7
+L#%G
+R$$~
+4=h5
+^o	EG
+1en&
+{c}%
+kL1!
+vvtx5|
+f`Fi
+b$OO
+stsa
+d|F)
+C[T~
+S3+9
+c<G\<
+hST)oGHp[g=
+\OlY
+oD>u
+Ku'i
++HV	
+ |bd
+3oMq
+=4b8
+Pg9?\
+ :.l
+UYjNspC
+#{tt
+6A2yd
+:]"n!	
+7;!kX
+|(a~}z
+<}-]Ka
+2FL!
+/XJ,s
+si"3
+f6)*
+mtLv!d
+vh5WG!
+XeQB
+V-O]
+olWbF
+&y},c
+{?jAX
+5etT
+Y94z
+?D01)
+TY~t
+4#f<
+kyHC
+q*E(
+`Go	
+XVewG
+ueAx
+Bd5l
+P8;`Z
+$h<g
+7D~V
+/4td
+PL8TI2L
+>gh	_gt
+&5&F
+{7sU3
+P<~U
+9\6P
+OxL"h
+Qx[:Oj-r
+^"	})
+Q<+Xx.
+znxyt
+i7{c
+Ir N
+8`sR
+"# [
+x)Wl*eE(
+,S(:{
+K+j5
+c }.
+RW;M
+vJ^t[
+"fow
+)a)w
+aOfx.^
+QqVa
+PbZT
+3Ck-
+@Hq0
+fk9&
+EeQE
+&<E9
+u./X
+&oW+
+bD	_
+K|Jh
+*e7x-Q
+_Nbe
+W~R)J{
+|!EO
+iCz%|
+P_]@
+s	t7
+xNOW
+D/g+|
+r$'O
+PiG~:
+>nt`$
+81)u
+3ch$
+'t|{
+lLZ*Tw^e
+;wH#
+3{\w
+M+fB
+E<Ob
+Awvy
+QF0V
+3Vz_
+^<X=
+D2W7
+(2Y1
+!C4*
+W"V;
+R>:^
+O%f%
+9x.3
+h7i7
+*Jm/
+8nV\&
+*!<x6
+~[k)LM-
+lY7%
+rst,':
+8y=k
+:WF"w
+^n<h
+J1]B
+\|/~.
+']nh
+cT*_i
+U>nc
+f.lq
+]*Ma
+(qS\
+~V G
+^k5N
+3<3H
+Y>.$
+KO3y?p+*[R
+5Q5!g/
+|il=ZI
+MAnU5!
+9Toc
+5rui
+AFi1nyXyh
+Q\Ya:
+3D#"[
+pdV|.#
+BO,M
++aZ:
+Vsoj"=tW(S`J-
+Kn|1
+Q5R`=
+Mk\n
+lj	l,
+M$2L
+z{!(E-
+%V""
+cWW;
+4-PX
+9Y=>
+J@,P
+X}s;Kt
+Y*QO
+vSsC
+d'Yg
+4=8e
+mRhN
+jTvPP
+b)pdY
+(	rv
+XOv/
+kR[R
+[euN
+.+!5
+uy]P
+IcISr
+|=}k
+S9%z
+6r\W
+86HR
+(J7G
+bt; 
+o1ht4
+afw.
+ieS+
+Ov"nG
+6d/	
+P#Mn
+4FT({
+um.W
+aw2z
+Wy$(
+$lUC
+$WQ/
+H!xL
+]8gHX
+o]uC~
+Pz(}
++:I<%
+UhX8
+LBcQ
+dfeh
+=, '
+uW(Cq&A0
+w`)K
+lRLz
+$}_/
+%jwTO
+( dV
+&PPAAe
+]/;;
+tU	QB
+p^%8
+nEo-
+0f~jB
+[rkT]
+_	Xr
+$;5%B
+Qnyd
+J%Ix
+ -._
+.zdu
+j}Q%y
+y[\P
+o0EF+
+*=E]
+[8$t
+(_bh
+}g#Ef
+F"$ 
+xK=K
+}KQ`
+O/:b@
+?S22
+cwg}
+p/*Q
+N;;s
+P.o>
+JZX!0
+&Fk(
+zmQ{
+)s.]
+	fur
+SVqo
+{bTv
+SeZ2
+fV5f
+{FnW
+%aw^C
+*nBn
+1Z7.
+gyPY
+C|ui~
+uAf[@
+5M'#Gxo5
+*r6pqW
+;1_14
+'<`,
+wr;*
+E?`T
+_!bQ
+D{+8
+ZH3[S
+{r	R
+JB$imOn
+aW23"
+9vz1
+PkS]/j
+6I:+
+xGsT
+qy+ac
++q	KW(Z
+3'7	
+sZ=Y
+V'N3
++_(L
+eh.WE~
+N;GJCg
+bJ[nH
+ZdUd
+tP\1.
+QqqX
+;T#l_
+{ez#
+o>5{
+SF)#
+zFZG9C
+05Qg
+cHG	(
+"m#$V
+7>lF^
+x*#\
+c.[5'
+S8K%
+IT^r<,
+l_:)
+no?A
+:jFJ
+X!{[
+f\.\
+<om=
+i	l1
+M]hB
+df&z
+Xz!"
+|OZJ
+%$/>V+
+ndpG
+1Jl?
+8boK
+iT-6
+>3+[
+y.7)
+U.M@
+/^ft
+fb~e
+<<zn
+EjJ}
+>|7X@B
+IdO2
+TW~QK
+gMGi
+@}GN8
+C e[
+\Qx}
+UCIB
+LDN	
+LY|e
+YT>%
+fD$K1vT!
+5)bt
+XI#Hnm9
+3Oer
+AMav
+|)05
+q9B,
+Q&:^
+uOQZ
+;R#N
+i(Ot
+?6.9~
+D4ui
+R'kk
+YGD9
+XTX-
+;Or|V]3&
+$Jq+
+peuD
+{Js9r
+8.vk~
+M55TDa
+fIzo
+{Dk>`
+l40C/Z
+knW|
++bS\
+T$>j
+whAo
+_QNg
+=;aDYl
+<+lV
+_k+xP
+M;kT
+#mi 
+\>fwu
+1GyZ
+hK-=
+/PAQ
+wcuO
+M?VF=CD
+Qt`p
+E6PS
+ww)Z%
+!V^j
+>}*pY
+{s95I
+p.u W
+nAn^XT
+coJ]Zy[
+Nf'Hc
+MB|'
+	O_5
+hXS)g
+TXc]a
+9|8A
+,YB,
+xlj@
+JytH|
+uNJ`
+',/1
+-RuC
+7-D	=
+/V,@1g
+vtRW
+P/2D
+MCUc'
+.?&vr
+41bH
+jC3G~
+;z@y
+c{S#T<
+,i("C
+(]- 9
+{IwB
+->	!
+umPx
+dp7T
+I;O 
+{6rz
+SS3"
+5#7A
+lq6*\
+ fmS
+(w`3z
+KI<p
+?wG%
+?\g#
+woV{
+&tup
+>80eDi
+u2kn
+2`-\
+rvW]
+6%B''
+)f%I
+Hov=	*
+I_~8 
+"?Sw
+;YVRNJ
+IIqy
+v ;D
+<ad)C>
+	7/w
+1#zq@
+Rd,;6B
+O$"x_
+iD9hb
+SfFg
+q9	X
+<2_>
+*'X?
+Ho%AY{
+>S*E
+a1%&
+xiErV
+Te\J
+?\:\`.rKh
+94	2
+ZTL^
+_|y(
+D`lLu	y
+fu=5
+mfzY[
+'F/'
+}tX2)
+T:g\
+o23luc,
+:h"&v
+ZtJ-
+b*h# 
+9q[M
+z/;4h
+;MY<
+2}O[V7
+Gj^'
+P6c'
+rb;h
+{Zy[
+.JA6
+	I]9
+fg2U
+P<4:&
+#\kKx
+Wm:C
+SQJl+
+(r z
+Esn9
+l8Xy[
+AXF{
+[=gL
+tEQu
+OVBW
+sROx
+yeayb
+m]y%,
+1-c<^X
+SUD/
+^y%Z
+LNK9
+5:x:
+AuO{
+m1f]
+B}!3
+NTJqW
+nN,O
+)rXGV
+7&<	
+zT!u
+FXcU8d
+0)}? #t
+9DIrw
+}4|uy$
+TI|H
+_aG=
+oJ#k
+:E3R?j
+nfDH[
+N(p"`_
+ e~q;
+?r=H=
+3!rM
+VB.d
+bt<#
+|hJh
+pS5	
+Y1uU
+e`jJgnu
+qfWH
+'J")
+BS M
+]kl<
+7oc<:cat.
+K)d3
+rD"q
+:.2;
+e?LxE
+uY_	
+jSu?
+Wy%Z'
+Dh}_
+r`Or
+Qooy
+ib+a.
+Y2~-
+xq1Qu
+p[>$
+cQY6
+"?2G<
+)jwZ
+;#e_
+hm5K
+~TF2
+&l]R`+
+_3T-
+@[;u}c
+o;PT2
+^#\o
+rx$PD
+&+3~rz
+`.B91
+JR	~
+g02V
+ciJOo
+P`GVa
+h-Xc
+NHTV
+@l^J
+5Y17C
+pY$3
+jtGC
+,^SV`
+?WOo
+9,zLt
+$YXI
+'_Q4
+O{zP
+5W-&
+%T{q
+GB8+c
+ZVSx]
+GL|09|
+eTw~m:!
+`1N6(
+H\acTGI
+t{h9S{S
+j2^M
+aU#Q
+@%G=
+CAYK
+,lFY
+6]oG
+:poB
+~os'D]
+-J%p
+t3E5
+>W;8r9
+LPI \
+q:#!
+YO=]
+\Rpr
+}\f#p
+Ob}B
+rY<	
+5)bN,
+4o[kX
+Pt<S&
+&]h.r
+9l\#-m
+ThA_
+}`xy
+P^V1
+fH:eJ
+dZ_?
+63y^J*P
+Ue&?
+3!.PT-
+/@AG[+,
+ctH2/DB%
+_U=H
++8H[9O
+,Ar9g*
+!gQa
+W~^S
+OtU\
+27]4
+O:nP
+QrB`}i.@|
+"w^xq
+sp-f
+>r# 
+^lQ/
+\^z0
+YtM.T$
+T@WI"
+6sH3`B0
+kKPpB&
+Mx5:/
+%x7JfH-I
+er"g
+PMR/3
+F/]dQ
+02wOW
+T%Sibb
+U,'Wu@")
+lB+x
+]`XNx
+*H1i*
+pI'2
+6I=wiH_Z`47
+d1i7
+qD&!
+4%!Z
+m|Qux]
+-E1v
+KbgV
+wdEO4
+W9nHb
+_5T=
+$/O$
+@9se2,
+--8V
+P2KA
+.:ah
+P{s..b
+?ek=
+u?#I
+r0	9
+5klNy
+09.s|
+FWxC"
+'{|~
+*VxD(
+x?6Uf
+?S9GN7
+&&=iP
+NfN#_-X
+gmuj
+QP]a
+ErU/Ln
+Tn:`
+/qKs$U
+>1?Q
+:wqz`c
+]$0G
+k71qb
+~8BZ
+xYKya
+~M3w
+o-'D
+130y
+8F2[`
+3M#6osg)
+oVR{
+#}_E"-
+yz$dF
+Z]6K
+2D9{
+/2d&gq
+zMH9
+2NsO>pI
+R|Nb
+j@#~
+oM([b:>
+L	Jo
+Ii	h>
+~BPB
+j9e)C'05
+grC7
+S\BP	
+'_xG?
+0l_D
+mZX/o
+xD`$+
+wIl|
+yTTr
+ ?5#
+d0Y#g
+f]>F
+*)mQ(
+c)!Z
+q=X3w
+g~fvs
+:H3=
+/u['
+\QBk
+6'J`
+HT:K
+zq{{pkC}
+)Sq6
+p'=@_
+2q[}
+?D}4z
+XmF!
+xvhm
+cmQ'
+Jf{O
+DH}_
+L/EOq
+gih3
+<c^h
+m&21H
+q`:y
+@.wus
+}Q%"
+3!f)
+U=t$
+`>!km
+U2e#
+GZ[kB
+I-8A
+`Pv=
+_S@ZK
+~+];
+O<o_
+5 seCh
+hnL(
+n\y%
+jzX>
+Hr7S
+u?5x@
+MT{n
+l>9=U
+FjtP
+ E<@
+T] n
+%I$> '
+9V](K
+tF*j
+gl^bj
+.)~F
+1d<l%
+0/1x
+Fa9v
+}\6x
+{jG5
+~UsS
+Rght
+9qab
+$"$k1=JZnb\8
+	{DUI
+:nmD'
+WNhE
+C(_;
+8)u^
+9,p'
+:SC!
+Ay<BySA
+/o|n^
+2($ 
+>STX
+/NXm
+_n)|s
+a+6g
+HI.`^
+*ep#/Ri
+OVN,
+dh){Ok
+k! I
+.=r`C
+C\4O
+'!pH
+WY:[
+,/.#
+aB!xz)HyY!Q
+vrW]
+nHU9
+fS,T
+X1af
+5Q9N
+2	-B=
+##nb
++"yR
+88EY;M18#?
+93c%`:d
+/M	0H
+{!i.z
+9eHU
+V)<b>
+j$Vs
+kDns
+Ewy:G
+Cp3)o_
+EB/"
+$h V)
+{3ms
++E	w	
+R;48gt
+p<Hp[<
+04%{:
+@{QL
+TN!R
+@CVC
++Wn|
++@'-
+Q{ua7
+lk^t
+Q	<f0
+NH8!
+#)IL
+/`~KA
+$^Y8
+.-9V
+,_j"1!}x
+6d(#s~T"
+R1TQ~
+wm%_
+`.$gA
+ww}^t
+K{+,sf
+MT]26
+<P$?9
+KKx-aPME
+D ?oi
+}tDc
+1SKF
+sL/%~&
+jUF2
+9j$n
+T~HV1
+v9O)
+s&C8C
+Sj&1
+zt9El
+ *K-
+1CPch
+d#;7q
+aSd4
+S_&2
+"Z>@.y2
+9?6r
+x~f!f
+nuUr
+K<-)u
+zbu8
+\`=G
+txqz
+[p{%Y
+xj@W
+~XXP
+,g=*
+XJ%o
+C	^w
+!cnr6WZ
+]){)
+l'!kq
+Zvp$
+iUpj
+9a\i
+cSZKy
+U2C!
+O8?1
+	_^8,
+v5Nq
+oe<u
+$9F?
+Pi+-
+*fzo
+0u3Z
+b4"1
+\YsJ
+|0vx
+fYZiX
+/qt!
+OL?B
+?,wa
+[`x%
+,`U/
+I\ht`
+mc2U
+XUC_E 
+5-@&/
+YWVM-
+_zR`DpV>lp
+JSeC
+U\_ZwC
+r[T^
+/#-Q
+;=3=8
+nX(9
+P@*I
+QcAo
+~dU`O
+X2O&fjt9
+VC8ik
+awQ3	2
+cZqZ$G
+>@Svp
+QsFE+
+	VJ<
+xIw9
+PWN{
+5s3Z
+C/FD
+{W{8
+Dad#(
+2?tih
+]bTp]
+rmTv
+U)'>^
+~t6w
+)F4F
+	'9Mk
+L"9'
+]*`A
+*g(Y
+>1Qr
+X@cY
+*pc2
+Eo% 
+WJPa
+$m5E
+$ASwB
+m*!(
+zw)w'
+qAEv
+Gaj1
+dH`v
+m(b#
+eYZ_
+_Vjz
+<u4`GU
+66c}
+tmwE@Nq
+TZMTEn
+%aEqW
+| 	9
+T_>5
+JDCr
+/JhzpSx
+-G(6
++$'h
+?/=R/
+;(2O
+t[M\_
+t,r#
+yyGc
+<Qf`
+gHtZ
+#&]3
+Ux|!
+SJ5(6<
+_!ec
+KvKO
+#r:W
+OZ|g@7
+X`V!
+XSUm
+$j~\6
+wklg
+k)R6s
+Q!!m!
+ul#J
+#g)0
+QJV,
+1sH2
+A dc
+r^UF
+zXi(HfK
+gJn&
+CJ"z`7
+!sP8
+PJ/NqH)
+M%VDb'
+SC~p
+`7:G
+6g}#E
+>>l`1
+@$FAC
+/'3B
+U&B~
+!	pU<
+g3,@
+*|)H
+Lx1:
+hVc)
+s62&q
+uu2s
+#I2>
+j"0<
+KO#;9B:
+pGoy|C
+3eg6
+gaoV
+2LLMFV
+:d8OC
+xIa"
+4I8n
+eQcs
+`cBF
+DIk1
+<h@&yV
+~1 HXL
+<>.o
+`-jO
+zd/!
++)lWD
+oEzbE
+Nuq^!6
+Ga?'8
+#~CV
+!B&}U
+67%	
+hffD
+ EqV
+~=T|
+( h>
+jr5k%
+.#<Aaq
+Qi_$A
+G:#T
+1{-F
+@^OY
+{n(+y
+O30?
+'\Yk
+ji2,
+sw)9
+1`+H
+	,g?
+F-6~yBL
+x@w4L
+l(*he
+P	ax
+XdxJ#
+eW*w
+KV\1
+)a{l
+RwqZ
+x&&X'
+.uf+
+V5~b
+EeJ+
+=X3&i
+z$q^
+d3Bc
+0E~Q
+i=j@
+D0o3Wz
+xg/]
++Z+A4
+fB@{dQ
+#^Oy
+L:%4)
+$HGrr
+Q>h\(1M+
+)FkUz/.
+Hd&"
+?jh`
+;C)3
+ya,g
+*z`c
+'p84
+B&D.
+Ox	l_
+@&_Q
+'\.+3s
+; $gn
+;H&-
+!7L\
+6gX  
+RI(Nw
+hS{g	
+c!a!
+js5k
+dm/<
+gxbhW{
+I~<ZW
+?3xs
+LZ__
+,pC.
+BW!u
+`4(@xw
+\g,5C
+t1JT)
+\RC}
+zI]>Vd
+_YJ!
+htV/"
+d-Js,
+I1RZ
+9^|[-
+3!e%
+{!q5
+{<E"62
+: `E
+|u~f
+CaAUS
+%A`u
+lUkE
+L^R>
+9~oNu:X
+#q*J
+W9[F
+!M"R1
+:vTL
+fJ(>
+e:`T
++dB<
+%jfIX
+:~)>
+sx!pzt
+|$N%
+7#Ts
+,hjb
+7hl"R+r%-
+'r2@
+zV#Zl
+e}Fu
+(;'3M
+e9'dp
+2,]?
+"ZPq}?
+`r8}V
+Af=$
+'yD|
+Ne%:I
+Wf8c
+fLwt
+@V{_
+0$Wo
+kG5(0F
+F/gG
+RQsc
+piNW
+Sx}\T
+/a'z
+Ya%`
+g96g
+ie-;
+]R%8b
+uk~x6
+ueJ<
+[\Rm
+Y@y&
+n-&4
+Z05t
+|Ub	P1
+"Ojk
+[3<Ab
+}SE}
+#U&+A
+r?=I
+4Gw Q>
+WmTHYi
+q3/c
+	#E=$
+o~BaNEUtu
+>uUj
+#lZE
+IZkuz
+*>	e 
+rzdB5
+9fNx
+S'JiFe
+BRNf
+B6	r
+V#RV
+jibnm
+DNGQn
+SR7,
+(k^!
+f#@L
+icZo
+}{A,
+igPP
+!bU=
+{N"K
+>pTqo
+*hM<
+ax;,
+f!`5
+T0jp% 
+G1ic
+rk4~:
+)1I2
+!<;$T
+#cm/
+*99~
+s9w.
+"`4Z
+d2{Wv
+@seMS>
+~6N,
+vJ!*/[
+ty-x_
+CJLp
+JC&*
+\|g{o*
+&9GM
+T!?q
+}WR(
+nM$R
+ f;/
+%Q]H
+9oJq
+cN1,
+[mM]
+2&	Jt
+b	]`
+0	4t
+o^2l
+rAg,3U$v'
+p<@]
+=rmR
+`=i^
+[f!]
+	7t%*
+L:Oa
+,@R,
+WxQMrJ
+/Me"#
+aW]g
+x7Bx
+Q%09
+O&Fe
+o+KK9O
+rh-w
+YBuIk
+!NkGN
+Y8o~
+jMZlN
+14(9
+dWZt
+9R,q
+b6rE.8
+_7k~
+&oIA\=c
+HpA6
+"/|N#
+N0g?&LNU
+>euGQy
+t7Qb
+2hHsW
+A??1Z?
+y jc
+ro5"Zh
+1fYC
+Jgm*
+5U1X&
+q6V[
+ZT44g
+b$K.
+$K8_
+_~6Z+E
+1`iA
+5|>/
+GU]]
+XQ75
+x.5Q
+[`\,B^_
+O!jx
+.QZ-
+<&y"F
+ED6U
+:(fy
+*Kt3\
+U/?R\
+|Zgu"
+C}n-
+J)w+
++G<u
+Isyc
+uqfS9
+TRu8ei
+O$$y
+=|l+
+fUA=
+GGhw
+=[9b
+3nj.
+M69dj
+eo6DKeF
+Ts~P@K
+OcIgU?0
+xTIG
++"W[Mg

@@ -1,0 +1,41 @@
+# Following steps were done CHIP to extract this file
+# Edited file : 
+# 	dd if=/dev/mtd2 of=u-boot-2015.10-00003-dtb.bin
+#	strings u-boot-2015.10-00003-dtb.bin > u-boot-2015.10-00003-dtb.bin.txt
+# 
+
+bootcmd=run distro_bootcmd
+bootdelay=2
+baudrate=115200
+preboot=
+preboot=usb start
+stdin=serial,usbkbd
+stdout=serial,vga
+stderr=serial,vga
+bootm_size=0xa000000
+kernel_addr_r=0x42000000
+fdt_addr_r=0x43000000
+scriptaddr=0x43100000
+pxefile_addr_r=0x43200000
+ramdisk_addr_r=0x43300000
+fdtfile=sun5i-r8-chip.dtb
+console=ttyS0,115200
+usbnet_devaddr=de:ad:be:af:00:01
+mtdids=nand0=sunxi-nand.0
+mtdparts=mtdparts=sunxi-nand.0:4m(spl),4m(spl-backup),4m(uboot),4m(env),-(UBI)
+usb_boot=usb start; if usb dev ${devnum}; then setenv devtype usb; run scan_dev_for_boot_part; fi
+boot_prefixes=/ /boot/
+boot_scripts=boot.scr.uimg boot.scr
+boot_script_dhcp=boot.scr.uimg
+boot_targets=fel usb0 pxe dhcp 
+boot_extlinux=sysboot ${devtype} ${devnum}:${bootpart} any ${scriptaddr} ${prefix}extlinux/extlinux.conf
+scan_dev_for_extlinux=if test -e ${devtype} ${devnum}:${bootpart} ${prefix}extlinux/extlinux.conf; then echo Found ${prefix}extlinux/extlinux.conf; run boot_extlinux; echo SCRIPT FAILED: continuing...; fi
+boot_a_script=load ${devtype} ${devnum}:${bootpart} ${scriptaddr} ${prefix}${script}; source ${scriptaddr}
+scan_dev_for_scripts=for script in ${boot_scripts}; do if test -e ${devtype} ${devnum}:${bootpart} ${prefix}${script}; then echo Found U-Boot script ${prefix}${script}; run boot_a_script; echo SCRIPT FAILED: continuing...; fi; done
+scan_dev_for_boot=echo Scanning ${devtype} ${devnum}:${bootpart}...; for prefix in ${boot_prefixes}; do run scan_dev_for_extlinux; run scan_dev_for_scripts; done
+scan_dev_for_boot_part=part list ${devtype} ${devnum} -bootable devplist; env exists devplist || setenv devplist 1; for bootpart in ${devplist}; do if fstype ${devtype} ${devnum}:${bootpart} bootfstype; then run scan_dev_for_boot; fi; done
+bootcmd_fel=if test -n ${fel_booted} && test -n ${scriptaddr}; then echo '(FEL boot)'; source ${scriptaddr}; fi
+bootcmd_usb0=setenv devnum 0; run usb_boot
+bootcmd_pxe=usb start; dhcp; if pxe get; then pxe boot; fi
+bootcmd_dhcp=usb start; if dhcp ${scriptaddr} ${boot_script_dhcp}; then source ${scriptaddr}; fi
+distro_bootcmd=for target in ${boot_targets}; do run bootcmd_${target}; done

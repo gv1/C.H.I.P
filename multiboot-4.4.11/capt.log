@@ -1,0 +1,659 @@
+
+U-Boot SPL 2016.11 (Nov 28 2016 - 07:30:45)
+DRAM: 512 MiB
+CPU: 1008000000Hz, AXI/AHB/APB: 3/2/2
+Trying to boot from FEL
+
+
+U-Boot 2016.11 (Nov 28 2016 - 07:30:45 +0530) Allwinner Technology
+
+CPU:   Allwinner A13 (SUN5I)
+Model: NextThing C.H.I.P.
+I2C:   ready
+DRAM:  512 MiB
+NAND:  8192 MiB
+Using default environment
+
+Setting up a 720x576i composite-pal console (overscan 32x20)
+In:    serial
+Out:   vga
+Err:   vga
+Net:   No ethernet found.
+starting USB...
+USB0:   USB EHCI 1.00
+USB1:   USB OHCI 1.0
+scanning bus 0 for devices... 2 USB Device(s) found
+Hit any key to stop autoboot:  2  1  0 
+(FEL boot)
+## Executing script at 43100000
+## Error: Can't overwrite "serial#"
+## Error inserting "serial#" variable, errno=1
+## Booting kernel from Legacy Image at 42000000 ...
+   Image Name:   Linux-4.4.11
+   Image Type:   ARM Linux Kernel Image (uncompressed)
+   Data Size:    7016120 Bytes = 6.7 MiB
+   Load Address: 42000000
+   Entry Point:  42000000
+   Verifying Checksum ... OK
+## Loading init Ramdisk from Legacy Image at 43300000 ...
+   Image Name:   initrd-4.4.11-multiboot
+   Image Type:   ARM Linux RAMDisk Image (gzip compressed)
+   Data Size:    16413696 Bytes = 15.7 MiB
+   Load Address: 00000000
+   Entry Point:  00000000
+   Verifying Checksum ... OK
+## Flattened Device Tree blob at 43000000
+   Booting using the fdt blob at 0x43000000
+   Loading Kernel Image ... OK
+   Loading Ramdisk to 49058000, end 49fff400 ... OK
+   Loading Device Tree to 4904f000, end 49057e3f ... OK
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.4.11 (george@manga) (gcc version 5.3.1 20160412 (Linaro GCC 5.3-2016.05) ) #2 SMP Fri Nov 25 12:30:59 IST 2016
+[    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine model: NextThing C.H.I.P.
+[    0.000000] cma: Reserved 64 MiB at 0x5b800000
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] PERCPU: Embedded 12 pages/cpu @dfe21000 s19136 r8192 d21824 u49152
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 129645
+[    0.000000] Kernel command line: root=/dev/ram0 earlyprintk rootwait
+[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Memory: 420612K/522664K available (8930K kernel code, 1124K rwdata, 4180K rodata, 1068K init, 345K bss, 36516K reserved, 65536K cma-reserved, 0K highmem)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xe0000000 - 0xff800000   ( 504 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xdfe6a000   ( 510 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0xc0208000 - 0xc0ed6a34   (13115 kB)
+[    0.000000]       .init : 0xc0ed7000 - 0xc0fe2000   (1068 kB)
+[    0.000000]       .data : 0xc0fe2000 - 0xc10fb368   (1125 kB)
+[    0.000000]        .bss : 0xc10fe000 - 0xc1154400   ( 345 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	Build-time adjustment of leaf fanout to 32.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=16 to nr_cpu_ids=1.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=32, nr_cpu_ids=1
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000022] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+[    0.000051] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[    0.000471] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370868154 ns
+[    0.001059] Console: colour dummy device 80x30
+[    0.001457] console [tty0] enabled
+[    0.001494] Calibrating delay loop... 1002.70 BogoMIPS (lpj=2506752)
+[    0.025113] pid_max: default: 32768 minimum: 301
+[    0.025243] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.025266] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.025940] CPU: Testing write buffer coherency: ok
+[    0.026273] CPU0: thread -1, cpu 0, socket -1, mpidr 0
+[    0.026368] Setting up static identity map for 0x40209000 - 0x40209098
+[    0.032641] Brought up 1 CPUs
+[    0.032699] SMP: Total of 1 processors activated (1002.70 BogoMIPS).
+[    0.032719] CPU: All CPU(s) started in SVC mode.
+[    0.033276] devtmpfs: initialized
+[    0.040051] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[    0.040830] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 9556302231375000 ns
+[    0.045264] pinctrl core: initialized pinctrl subsystem
+[    0.047363] NET: Registered protocol family 16
+[    0.049436] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.051359] cpuidle: using governor ladder
+[    0.051405] cpuidle: using governor menu
+[    0.058160] No ATAGs?
+[    0.058192] hw-breakpoint: debug architecture 0x4 unsupported.
+[    0.060881] Serial: AMBA PL011 UART driver
+[    0.074399] reg-fixed-voltage usb0-vbus: could not find pctldev for node /soc@01c00000/pinctrl@01c20800/chip_vbus_pin@0, deferring probe
+[    0.075347] reg-fixed-voltage wifi_reg_on: could not find pctldev for node /soc@01c00000/pinctrl@01c20800/chip_wifi_reg_on_pin@0, deferring probe
+[    0.077503] vgaarb: loaded
+[    0.078495] SCSI subsystem initialized
+[    0.079118] usbcore: registered new interface driver usbfs
+[    0.079212] usbcore: registered new interface driver hub
+[    0.079298] usbcore: registered new device driver usb
+[    0.080474] pps_core: LinuxPPS API ver. 1 registered
+[    0.080506] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.080561] PTP clock support registered
+[    0.080742] EDAC MC: Ver: 3.0.0
+[    0.083207] clocksource: Switched to clocksource timer
+[    0.084685] simple-framebuffer 5fe79000.framebuffer: framebuffer at 0x5fe79000, 0x178e00 bytes, mapped to 0xe0080000
+[    0.084741] simple-framebuffer 5fe79000.framebuffer: format=x8r8g8b8, mode=656x536x32, linelength=2880
+[    0.090776] Console: switching to colour frame buffer device 82x33
+[    0.096053] simple-framebuffer 5fe79000.framebuffer: fb0: simplefb registered!
+[    0.106361] NET: Registered protocol family 2
+[    0.107107] TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.110940] TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.114572] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.118210] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.121789] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.125560] NET: Registered protocol family 1
+[    0.129582] RPC: Registered named UNIX socket transport module.
+[    0.133275] RPC: Registered udp transport module.
+[    0.136863] RPC: Registered tcp transport module.
+[    0.140354] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.144417] Unpacking initramfs...
+[    0.274535] Freeing initrd memory: 16032K (c9058000 - ca000000)
+[    0.279973] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.296361] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.300972] NFS: Registering the id_resolver key type
+[    0.304463] Key type id_resolver registered
+[    0.307816] Key type id_legacy registered
+[    0.311192] ntfs: driver 2.1.32 [Flags: R/O].
+[    0.316390] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    0.323447] io scheduler noop registered
+[    0.326899] io scheduler deadline registered
+[    0.330329] io scheduler cfq registered (default)
+[    0.335435] sun4i-usb-phy 1c13400.phy: could not find pctldev for node /soc@01c00000/pinctrl@01c20800/chip_id_det_pin@0, deferring probe
+[    0.346002] sun5i-a13-pinctrl 1c20800.pinctrl: initialized sunXi PIO driver
+[    0.422457] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    0.449196] 1c28400.serial: ttyS0 at MMIO 0x1c28400 (irq = 26, base_baud = 1500000) is a U6_16550A
+[    1.065287] console [ttyS0] enabled
+[    1.093486] 1c28c00.serial: ttyS1 at MMIO 0x1c28c00 (irq = 27, base_baud = 1500000) is a U6_16550A
+[    1.110322] SuperH (H)SCI(F) driver initialized
+[    1.119013] msm_serial: driver initialized
+[    1.126892] STMicroelectronics ASC driver initialized
+[    1.136433] [drm] Initialized drm 1.1.0 20060810
+[    1.145406] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    1.155512] [drm] No driver support for vblank timestamp query.
+[    1.165267] sun4i-drm display-engine: bound 1e60000.display-backend (ops 0xc1074134)
+[    1.180084] sun4i-tcon 1c0c000.lcd-controller: No panel or bridge found... RGB output disabled
+[    1.195909] sun4i-drm display-engine: bound 1c0c000.lcd-controller (ops 0xc1073fd8)
+[    1.211009] sun4i-drm display-engine: bound 1c0a000.tv-encoder (ops 0xc1074210)
+[    1.222176] fb: switching to sun4i-drm-fb from simple
+[    1.231101] Console: switching to colour dummy device 80x30
+[    1.261611] Console: switching to colour frame buffer device 90x30
+[    1.275088] sun4i-drm display-engine: fb0:  frame buffer device
+[    1.293326] loop: module loaded
+[    1.301995] SSFDC read-only Flash Translation layer
+[    1.310236] mtdoops: mtd device (mtddev=name/number) must be supplied
+[    1.321833] nand: device found, Manufacturer ID: 0xad, Chip ID: 0xde
+[    1.331333] nand: Hynix H27QCG8T2E5R‐BCF 64G 3.3V 8-bit
+[    1.339690] nand: 8192 MiB, MLC, erase size: 4096 KiB, page size: 16384, OOB size: 1664
+[    1.352185] Bad block table found at page 524032, version 0x01
+[    1.361745] Bad block table found at page 523776, version 0x01
+[    1.370838] nand_read_bbt: bad block at 0x000021800000
+[    1.378821] nand_read_bbt: bad block at 0x000028c00000
+[    1.386738] nand_read_bbt: bad block at 0x00002dc00000
+[    1.394574] nand_read_bbt: bad block at 0x000039c00000
+[    1.402304] nand_read_bbt: bad block at 0x000062800000
+[    1.409979] nand_read_bbt: bad block at 0x00008f000000
+[    1.417606] nand_read_bbt: bad block at 0x0000c8800000
+[    1.425176] nand_read_bbt: bad block at 0x0001d6c00000
+[    1.432678] nand_read_bbt: bad block at 0x0001e6800000
+[    1.440114] nand_read_bbt: bad block at 0x0001f4800000
+[    1.460836] libphy: Fixed MDIO Bus: probed
+[    1.468003] CAN device driver interface
+[    1.474958] igb: Intel(R) Gigabit Ethernet Network Driver - version 5.3.0-k
+[    1.484109] igb: Copyright (c) 2007-2014 Intel Corporation.
+[    1.493892] pegasus: v0.9.3 (2013/04/25), Pegasus/Pegasus II USB Ethernet driver
+[    1.503552] usbcore: registered new interface driver pegasus
+[    1.511395] usbcore: registered new interface driver asix
+[    1.518846] usbcore: registered new interface driver ax88179_178a
+[    1.526961] usbcore: registered new interface driver cdc_ether
+[    1.534721] usbcore: registered new interface driver smsc75xx
+[    1.542388] usbcore: registered new interface driver smsc95xx
+[    1.549944] usbcore: registered new interface driver net1080
+[    1.557342] usbcore: registered new interface driver rndis_host
+[    1.564977] usbcore: registered new interface driver cdc_subset
+[    1.572527] usbcore: registered new interface driver zaurus
+[    1.579709] usbcore: registered new interface driver cdc_ncm
+[    1.588129] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.596226] ehci-pci: EHCI PCI platform driver
+[    1.602120] ehci-platform: EHCI generic platform driver
+[    1.609181] ehci-omap: OMAP-EHCI Host Controller driver
+[    1.616025] ehci-orion: EHCI orion driver
+[    1.621627] SPEAr-ehci: EHCI SPEAr driver
+[    1.627244] ehci-st: EHCI STMicroelectronics driver
+[    1.633790] ehci-exynos: EHCI EXYNOS driver
+[    1.639696] ehci-atmel: EHCI Atmel driver
+[    1.645463] tegra-ehci: Tegra EHCI driver
+[    1.651248] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.659220] ohci-pci: OHCI PCI platform driver
+[    1.665524] ohci-platform: OHCI generic platform driver
+[    1.672865] ohci-omap3: OHCI OMAP3 driver
+[    1.678889] SPEAr-ohci: OHCI SPEAr driver
+[    1.684828] ohci-st: OHCI STMicroelectronics driver
+[    1.691615] ohci-atmel: OHCI Atmel driver
+[    1.697787] usbcore: registered new interface driver usb-storage
+[    1.706799] udc-core: couldn't find an available UDC - added [g_cdc] to list of pending drivers
+[    1.719676] mousedev: PS/2 mouse device common for all mice
+[    1.731124] i2c /dev entries driver
+[    1.738494] axp20x 0-0034: AXP20x variant AXP209 found
+[    1.760106] input: axp20x-pek as /devices/platform/soc@01c00000/1c2ac00.i2c/i2c-0/0-0034/axp20x-pek/input/input0
+[    1.781223] axp20x 0-0034: AXP20X driver loaded
+[    1.789957] pcf857x 2-0038: probed
+[    1.797601] Driver for 1-wire Dallas network protocol.
+[    1.826246] sunxi-wdt 1c20c90.watchdog: Watchdog enabled (timeout=16 sec, nowayout=0)
+[    1.838731] sdhci: Secure Digital Host Controller Interface driver
+[    1.847513] sdhci: Copyright(c) Pierre Ossman
+[    1.855387] Synopsys Designware Multimedia Card Interface Driver
+[    1.865154] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.874966] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.883888] usbcore: registered new interface driver usbhid
+[    1.892120] usbhid: USB HID core driver
+[    1.901521] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    1.910800] NET: Registered protocol family 10
+[    1.919185] sit: IPv6 over IPv4 tunneling driver
+[    1.927379] NET: Registered protocol family 17
+[    1.934552] can: controller area network core (rev 20120528 abi 9)
+[    1.943505] NET: Registered protocol family 29
+[    1.950610] can: raw protocol (rev 20120528)
+[    1.957520] can: broadcast manager protocol (rev 20120528 t)
+[    1.965901] can: netlink gateway (rev 20130117) max_hops=1
+[    1.974727] Key type dns_resolver registered
+[    1.987055] ThumbEE CPU extension supported.
+[    1.994238] Registering SWP/SWPB emulation handler
+[    2.004556] sun5i-a13-pinctrl 1c20800.pinctrl: pin PC19 already requested by 1c03000.nand; cannot claim for wifi_reg_on
+[    2.020861] sun5i-a13-pinctrl 1c20800.pinctrl: pin-83 (wifi_reg_on) status -22
+[    2.030867] sun5i-a13-pinctrl 1c20800.pinctrl: could not request pin 83 (PC19) from group PC19  on device 1c20800.pinctrl
+[    2.047270] reg-fixed-voltage wifi_reg_on: Error applying setting, reverse things back
+[    2.059184] usb0-vbus: supplied by vcc5v0
+[    2.068164] ehci-platform 1c14000.usb: EHCI Host Controller
+[    2.076793] ehci-platform 1c14000.usb: new USB bus registered, assigned bus number 1
+[    2.087879] ehci-platform 1c14000.usb: irq 21, io mem 0x01c14000
+[    2.103234] ehci-platform 1c14000.usb: USB 2.0 started, EHCI 1.00
+[    2.113131] hub 1-0:1.0: USB hub found
+[    2.119758] hub 1-0:1.0: 1 port detected
+[    2.128487] ohci-platform 1c14400.usb: Generic Platform OHCI controller
+[    2.137941] ohci-platform 1c14400.usb: new USB bus registered, assigned bus number 2
+[    2.148763] ohci-platform 1c14400.usb: irq 22, io mem 0x01c14400
+[    2.213255] hub 2-0:1.0: USB hub found
+[    2.219749] hub 2-0:1.0: 1 port detected
+[    2.228621] usb_phy_generic.0.auto supply vcc not found, using dummy regulator
+[    2.239526] musb-hdrc musb-hdrc.1.auto: MUSB HDRC host driver
+[    2.248096] musb-hdrc musb-hdrc.1.auto: new USB bus registered, assigned bus number 3
+[    2.260916] hub 3-0:1.0: USB hub found
+[    2.267997] hub 3-0:1.0: 1 port detected
+[    2.275856] using random self ethernet address
+[    2.283468] using random host ethernet address
+[    2.292162] usb0: HOST MAC c2:05:5c:7f:5f:e8
+[    2.299585] usb0: MAC 7e:24:ea:73:f5:e2
+[    2.306416] g_cdc gadget: CDC Composite Gadget, version: King Kamehameha Day 2008
+[    2.316988] g_cdc gadget: g_cdc ready
+[    2.326074] sunxi-mmc 1c0f000.mmc: No vqmmc regulator found
+[    2.363245] sunxi-mmc 1c0f000.mmc: base:0xe06bc000 irq:19
+[    2.372749] hctosys: unable to open rtc device (rtc0)
+[    2.386386] vcc3v0: disabling
+[    2.392392] vcc3v3: disabling
+[    2.398051] usb0-vbus: disabling
+[    2.406678] Freeing unused kernel memory: 1068K (c0ed7000 - c0fe2000)
+[    2.420504] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 8, RTO !!
+[    2.442454] mmc0: new high speed SDIO card at address 0001
+[    2.458813] usb 1-1: new high-speed USB device number 2 using ehci-platform
+
+Choose os to boot 
+	enter 0 for Debian 8.3
+	enter 1 for Slackware 14.2
+  enter 2 for Ubuntu 
+  enter 3 for Slackware setup 
+  enter 4 to boot ubuntu-16.04-mate-odroid-u2u3-20160920.img
+  enter 5 to boot piCore-8.0
+  enter 6 to boot ArchLinux
+  enter 7 to boot Quirky NA
+  enter 8 to boot ubuntu-16.04-minimal-odroid-xu3-20160706.img /dev/sda1
+  enter 9 to drop to shell
+  any other key 
+  or after a delay of 10 seconds boot to slackware 14.2
+        
+[    2.817886] g_cdc gadget: high-speed config #1: CDC Composite (ECM + ACM)
+[    3.249814] usb-storage 1-1:1.0: USB Mass Storage device detected
+[    3.262543] scsi host0: usb-storage 1-1:1.0
+[    4.275498] scsi 0:0:0:0: Direct-Access     MBIL SSM Moser Baer Disk  PMAP PQ: 0 ANSI: 4
+[    4.298044] sd 0:0:0:0: [sda] 30728832 512-byte logical blocks: (15.7 GB/14.7 GiB)
+[    4.312899] sd 0:0:0:0: [sda] Write Protect is off
+[    4.324492] sd 0:0:0:0: [sda] No Caching mode page found
+[    4.335736] sd 0:0:0:0: [sda] Assuming drive cache: write through
+[    4.354199]  sda: sda1
+[    4.366745] sd 0:0:0:0: [sda] Attached SCSI removable disk
+[   12.934467] EXT4-fs (sda1): couldn't mount as ext3 due to feature incompatibilities
+[   12.950043] EXT4-fs (sda1): couldn't mount as ext2 due to feature incompatibilities
+[   14.591739] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+/init: line 219: udevadm: not found
+/init: line 219: pivotroot: not found
+[   15.056576] random: systemd urandom read with 93 bits of entropy available
+[   15.070283] systemd[1]: systemd 215 running in system mode. (+PAM +AUDIT +SELINUX +IMA +SYSVINIT +LIBCRYPTSETUP +GCRYPT +ACL +XZ -SECCOMP -APPARMOR)
+[   15.093695] systemd[1]: Detected architecture 'arm'.
+
+Welcome to Debian GNU/Linux 8 (jessie)!
+
+[   15.155659] systemd[1]: Set hostname to <chip>.
+[   15.642834] systemd[1]: Expecting device dev-ttyS0.device...
+         Expecting device dev-ttyS0.device...
+[   15.663444] systemd[1]: Expecting device dev-ttyGS0.device...
+         Expecting device dev-ttyGS0.device...
+[   15.683388] systemd[1]: Starting Forward Password Requests to Wall Directory Watch.
+[   15.694662] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[   15.705638] systemd[1]: Starting Remote File Systems (Pre).
+[  OK  ] Reached target Remote File Systems (Pre).
+[   15.723361] systemd[1]: Reached target Remote File Systems (Pre).
+[   15.732972] systemd[1]: Starting Encrypted Volumes.
+[  OK  ] Reached target Encrypted Volumes.
+[   15.748381] systemd[1]: Reached target Encrypted Volumes.
+[   15.757305] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[   15.773328] systemd[1]: Starting Dispatch Password Requests to Console Directory Watch.
+[   15.785017] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[   15.796440] systemd[1]: Starting Paths.
+[  OK  ] Reached target Paths.
+[   15.813357] systemd[1]: Reached target Paths.
+[   15.821079] systemd[1]: Starting Swap.
+[  OK  ] Reached target Swap.
+[   15.838374] systemd[1]: Reached target Swap.
+[   15.845827] systemd[1]: Starting Root Slice.
+[  OK  ] Created slice Root Slice.
+[   15.863355] systemd[1]: Created slice Root Slice.
+[   15.871206] systemd[1]: Starting User and Session Slice.
+[  OK  ] Created slice User and Session Slice.
+[   15.888366] systemd[1]: Created slice User and Session Slice.
+[   15.897297] systemd[1]: Starting /dev/initctl Compatibility Named Pipe.
+[  OK  ] Listening on /dev/initctl Compatibility Named Pipe.
+[   15.918365] systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+[   15.928490] systemd[1]: Starting Delayed Shutdown Socket.
+[  OK  ] Listening on Delayed Shutdown Socket.
+[   15.948367] systemd[1]: Listening on Delayed Shutdown Socket.
+[   15.957273] systemd[1]: Starting Journal Socket (/dev/log).
+[  OK  ] Listening on Journal Socket (/dev/log).
+[   15.973379] systemd[1]: Listening on Journal Socket (/dev/log).
+[   15.982386] systemd[1]: Starting udev Control Socket.
+[  OK  ] Listening on udev Control Socket.
+[   15.998371] systemd[1]: Listening on udev Control Socket.
+[   16.006769] systemd[1]: Starting udev Kernel Socket.
+[  OK  ] Listening on udev Kernel Socket.
+[   16.023358] systemd[1]: Listening on udev Kernel Socket.
+[   16.031624] systemd[1]: Starting Journal Socket.
+[  OK  ] Listening on Journal Socket.
+[   16.048390] systemd[1]: Listening on Journal Socket.
+[   16.056391] systemd[1]: Starting System Slice.
+[  OK  ] Created slice System Slice.
+[   16.073380] systemd[1]: Created slice System Slice.
+[   16.081130] systemd[1]: Starting system-getty.slice.
+[  OK  ] Created slice system-getty.slice.
+[   16.098383] systemd[1]: Created slice system-getty.slice.
+[   16.106602] systemd[1]: Starting system-serial\x2dgetty.slice.
+[  OK  ] Created slice system-serial\x2dgetty.slice.
+[   16.123374] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[   16.132551] systemd[1]: Starting Increase datagram queue length...
+         Starting Increase datagram queue length...
+[   16.150382] systemd[1]: Starting Restore / save the current clock...
+         Starting Restore / save the current clock...
+[   16.665946] random: nonblocking pool is initialized
+[   16.693062] systemd[1]: Mounting Debug File System...
+         Mounting Debug File System...
+[   16.734119] systemd[1]: Started Create list of required static device nodes for the current kernel.
+[   16.761204] systemd[1]: Mounted POSIX Message Queue File System.
+[   16.781266] systemd[1]: Started Set Up Additional Binary Formats.
+[   16.793003] systemd[1]: Starting Create Static Device Nodes in /dev...
+         Starting Create Static Device Nodes in /dev...
+[   16.818651] systemd[1]: Mounted Huge Pages File System.
+[   16.835961] systemd[1]: Starting udev Coldplug all Devices...
+         Starting udev Coldplug all Devices...
+[   16.884569] systemd[1]: Starting Load Kernel Modules...
+         Starting Load Kernel Modules...
+[   16.912823] systemd[1]: Starting Slices.
+[  OK  ] Reached target Slices.
+[   16.946769] systemd[1]: Reached target Slices.
+[  OK  ] Mounted Debug File System.
+[   16.978873] systemd[1]: Mounted Debug File System.
+[  OK  ] Started Increase datagram queue length.
+[   17.008777] systemd[1]: Started Increase datagram queue length.
+[  OK  ] Started Create Static Device Nodes in /dev.
+[   17.098574] systemd[1]: Started Create Static Device Nodes in /dev.
+[   17.129271] systemd[1]: systemd-modules-load.service: main process exited, code=exited, status=1/FAILURE
+[FAILED] Failed to start Load Kernel Modules.
+See 'systemctl status systemd-modules-load.service' for details.
+[   17.185857] systemd[1]: Failed to start Load Kernel Modules.
+[   17.208525] systemd[1]: Unit systemd-modules-load.service entered failed state.
+[  OK  ] Started Restore / save the current clock.
+[   17.243587] systemd[1]: Started Restore / save the current clock.
+[   17.280105] systemd[1]: Time has been changed
+[   17.432882] systemd[1]: Mounting Configuration File System...
+         Mounting Configuration File System...
+[   17.451202] systemd[1]: Starting Apply Kernel Variables...
+         Starting Apply Kernel Variables...
+[   17.495761] systemd[1]: Mounted FUSE Control File System.
+[   17.518984] systemd[1]: Starting udev Kernel Device Manager...
+         Starting udev Kernel Device Manager...
+[   17.545623] systemd[1]: Starting Syslog Socket.
+[  OK  ] Listening on Syslog Socket.
+[   17.563412] systemd[1]: Listening on Syslog Socket.
+[   17.571042] systemd[1]: Starting Journal Service...
+         Starting Journal Service...
+[  OK  ] Started Journal Service.
+[   17.598533] systemd[1]: Started Journal Service.
+[  OK  ] Mounted Configuration File System.
+[  OK  ] Started udev Coldplug all Devices.
+[  OK  [   18.109207] systemd-udevd[121]: starting version 215
+] Started udev Kernel Device Manager.
+         Starting Copy rules generated while the root was ro...
+         Starting LSB: Set preliminary keymap...
+[  OK  ] Started Apply Kernel Variables.
+[  OK  ] Started Copy rules generated while the root was ro.
+[  OK  ] Started LSB: Set preliminary keymap.
+         Starting Remount Root and Kernel File Systems...
+[  OK  ] Started Remount Root and Kernel File Systems.
+         Starting Load/Save Random Seed...
+[  OK  ] Reached target Local File Systems (Pre).
+[  OK  ] Reached target Local File Systems.
+         Starting Create Volatile Files and Directories...
+[  OK  ] Reached target Remote File Systems.
+         Starting Trigger Flushing of Journal to Persistent Storage...
+         Starting LSB: Set console font and keymap...
+[  OK  ] Started Load/Save Random Seed.
+[  OK  ] Started LSB: Set console font and keymap.
+[  OK  ] Started Create Volatile Files and Directories.
+[   18.997494] systemd-journald[122]: Received request to flush runtime journal from PID 1
+         Starting Update UTMP about System Boot/Shutdown...
+         Starting LSB: Raise network interfaces....
+[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
+[  OK  ] Started Update UTMP about System Boot/Shutdown.
+[  OK  ] Found device /dev/ttyS0.
+[  OK  ] Created slice system-bt_rtk_hciattach.slice.
+         Starting Load Kernel Modules...
+         Starting Trigger Flushing of Journal to Persistent Storage...
+[FAILED] Failed to start Load Kernel Modules.
+See 'systemctl status systemd-modules-load.service' for details.
+[   20.760207] systemd-journald[122]: Received request to flush runtime journal from PID 1
+[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
+[  OK  ] Found device /dev/ttyGS0.
+[  OK  ] Started LSB: Raise network interfaces..
+[  OK  ] Reached target Network.
+[  OK  ] Reached target Network is Online.
+[  OK  ] Reached target System Initialization.
+[  OK  ] Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+[  OK  ] Listening on D-Bus System Message Bus Socket.
+[  OK  ] Reached target Sockets.
+[  OK  ] Reached target Timers.
+         Starting Restore Sound Card State...
+[  OK  ] Reached target Basic System.
+         Starting 8723bs Bluetooth hciattach...
+         Starting OpenBSD Secure Shell server...
+[  OK  ] Started OpenBSD Secure Shell server.
+         Starting Modem Manager...
+         Starting Regular background program processing daemon...
+[  OK  ] Started Regular background program processing daemon.
+         Starting Network Manager...
+         Starting Restore /etc/resolv.conf if the system cras...s shut down....
+         Starting /etc/rc.local Compatibility...
+         Starting Login Service...
+         Starting LSB: Start NTP daemon...
+         Starting LSB: Advanced IEEE 802.11 management daemon...
+         Starting Avahi mDNS/DNS-SD Stack...
+         Starting D-Bus System Message Bus...
+[  OK  ] Started D-Bus System Message Bus.
+[  OK  ] Started Avahi mDNS/DNS-SD Stack.
+         Starting LSB: SANE network scanner server...
+         Starting System Logging Service...
+         Starting Permit User Sessions...
+[  OK  ] Started Restore Sound Card State.
+[  OK  ] Started 8723bs Bluetooth hciattach.
+[  OK  ] Started Restore /etc/resolv.conf if the system crash...was shut down..
+[  OK  ] Started /etc/rc.local Compatibility.
+[  OK  ] Started LSB: Advanced IEEE 802.11 management daemon.
+[  OK  ] Started Permit User Sessions.
+[  OK  ] Started LSB: SANE network scanner server.
+[  OK  ] Started System Logging Service.
+[  OK  ] Started Login Service.
+         Starting Authenticate and Authorize Users to Run Privileged Tasks...
+         Starting Light Display Manager...
+         Starting Serial Getty on ttyGS0...
+[  OK  ] Started Serial Getty on ttyGS0.
+         Starting Getty on tty1...
+[  OK  ] Started Getty on tty1.
+         Starting Serial Getty on ttyS0...
+[  OK  ] Started Serial Getty on ttyS0.
+[  OK  ] Reached target Login Prompts.
+[  OK  ] Started Authenticate and Authorize Users to Run Privileged Tasks.
+[  OK  ] Started Light Display Manager.
+         Starting chip-local.service...
+[  OK  ] Started chip-local.service.
+[  OK  ] Started Network Manager.
+[  OK  ] Started Modem Manager.
+[  OK  ] Created slice user-1000.slice.
+         Starting User Manager for UID 1000...
+[  OK  ] Started User Manager for UID 1000.
+         Stopping User Manager for UID 1000...
+[  OK  ] Stopped User Manager for UID 1000.
+[  OK  ] Started LSB: Start NTP daemon.
+[  OK  ] Reached target Multi-User System.
+[  OK  ] Reached target Graphical Interface.
+         Starting Update UTMP about System Runlevel Changes...
+[  OK  ] Removed slice user-1000.slice.
+[  OK  ] Started Update UTMP about System Runlevel Changes.
+
+Debian GNU/Linux 8 chip ttyS0
+
+chip login: chip
+Password: 
+Last login: Thu Jan  1 00:17:30 UTC 1970 on ttyS0
+Linux chip 4.4.11 #2 SMP Fri Nov 25 12:30:59 IST 2016 armv7l
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+/sbNo directory, logging in with HOME=/
+chip@chip:/$ /sbin/poweroff 
+==== AUTHENTICATING FOR org.freedesktop.login1.power-off ===
+Authentication is required for powering off the system.
+Authenticating as: ,,, (chip)
+Password: 
+==== AUTHENTICATION COMPLETE ===
+chip@chip:/$ [  OK  ] Removed slice system-bt_rtk_hciattach.slice.
+         Stopping User Manager for UID 1000...
+         Stopping User Manager for UID 111...
+         Stopping Authenticate and Authorize Users to Run Privileged Tasks...
+[  OK  ] Stopped target Graphical Interface.
+         Stopping chip-local.service...
+[  OK  ] Stopped chip-local.service.
+         Stopping Light Display Manager...
+[  OK  ] Stopped target Multi-User System.
+         Stopping OpenBSD Secure Shell server...
+         Stopping Modem Manager...
+         Stopping Regular background program processing daemon...
+         Stopping Network Manager...
+[  OK  ] Stopped target Login Prompts.
+         Stopping Serial Getty on ttyGS0...
+         Stopping Getty on tty1...
+         Stopping Serial Getty on ttyS0...
+         Stopping LSB: SANE network scanner server...
+         Stopping LSB: Start NTP daemon...
+         Stopping LSB: Advanced IEEE 802.11 management daemon...
+         Stopping D-Bus System Message Bus...
+         Stopping System Logging Service...
+         Starting Store Sound Card State...
+[  OK  ] Stopped OpenBSD Secure Shell server.
+[  OK  ] Stopped Modem Manager.
+[  OK  ] Stopped Regular background program processing daemon.
+[  OK  ] Stopped Avahi mDNS/DNS-SD Stack.
+[  OK  ] Stopped D-Bus System Message Bus.
+[  OK  ] Stopped System Logging Service.
+[  OK  ] Stopped Authenticate and Authorize Users to Run Privileged Tasks.
+[  OK  ] Stopped Serial Getty on ttyGS0.
+[  OK  ] Stopped Getty on tty1.
+[  OK  ] Stopped Serial Getty on ttyS0.
+         Stopping Login Service...
+[  OK  ] Removed slice system-getty.slice.
+[  OK  ] Removed slice system-serial\x2dgetty.slice.
+         Stopping /etc/rc.local Compatibility...
+[  OK  ] Stopped /etc/rc.local Compatibility.
+[  OK  ] Stopped Login Service.
+[  OK  ] Stopped LSB: Advanced IEEE 802.11 management daemon.
+[FAILED] Failed to start Store Sound Card State.
+See 'systemctl status alsa-store.service' for details.
+[  OK  ] Stopped LSB: SANE network scanner server.
+[  OK  ] Stopped LSB: Start NTP daemon.
+[  OK  ] Stopped Light Display Manager.
+[  OK  ] Stopped User Manager for UID 111.
+[  OK  ] Stopped User Manager for UID 1000.
+[  OK  ] Removed slice user-1000.slice.
+[  OK  ] Removed slice user-111.slice.
+         Stopping Permit User Sessions...
+[  OK  ] Stopped target Network is Online.
+[  OK  ] Stopped target Network.
+[  OK  ] Stopped Permit User Sessions.
+[  OK  ] Stopped target Remote File Systems.
+[  OK  ] Stopped target Remote File Systems (Pre).
+[   46.663119] IPv6: ADDRCONF(NETDEV_UP): usb0: link is not ready
+[  OK  ] Stopped Network Manager.
+[  OK  ] Stopped target Basic System.
+[  OK  ] Stopped target Slices.
+[  OK  ] Removed slice User and Session Slice.
+[  OK  ] Stopped target Paths.
+[  OK  ] Stopped target Timers.
+[  OK  ] Stopped target Sockets.
+[  OK  ] Closed Avahi mDNS/DNS-SD Stack Activation Socket.
+[  OK  ] Closed D-Bus System Message Bus Socket.
+[  OK  ] Closed Syslog Socket.
+[  OK  ] Stopped target System Initialization.
+         Stopping Restore / save the current clock...
+         Stopping Update UTMP about System Boot/Shutdown...
+         Stopping Apply Kernel Variables...
+[  OK  ] Stopped Apply Kernel Variables.
+[  OK  ] Stopped target Encrypted Volumes.
+         Stopping LSB: Raise network interfaces....
+[  OK  ] Stopped target Swap.
+[  OK  ] Stopped Update UTMP about System Boot/Shutdown.
+[  OK  ] Stopped Restore / save the current clock.
+         Stopping Create Volatile Files and Directories...
+[  OK  ] Stopped Create Volatile Files and Directories.
+[  OK  ] Stopped LSB: Raise network interfaces..
+         Stopping Load/Save Random Seed...
+[  OK  ] Stopped target Local File Systems.
+         Unmounting /run/user/1000...
+         Unmounting /run/user/111...
+[  OK  ] Stopped Load/Save Random Seed.
+[  OK  ] Unmounted /run/user/1000.
+[  OK  ] Unmounted /run/user/111.
+[  OK  ] Reached target Unmount All Filesystems.
+[  OK  ] Stopped target Local File Systems (Pre).
+         Stopping Create Static Device Nodes in /dev...
+[  OK  ] Stopped Create Static Device Nodes in /dev.
+         Stopping Remount Root and Kernel File Systems...
+[  OK  ] Stopped Remount Root and Kernel File Systems.
+[  OK  ] Reached target Shutdown.
+[   48.387179] systemd-shutdown[1]: Sending SIGTERM to remaining processes...
+[   48.434712] systemd-journald[122]: Received SIGTERM from PID 1 (systemd-shutdow).
+[   48.455312] systemd-shutdown[1]: Sending SIGKILL to remaining processes...
+[   48.495591] systemd-shutdown[1]: Unmounting file systems.
+[   48.502777] systemd-shutdown[1]: Unmounting /sys/kernel/config.
+[   48.509517] systemd-shutdown[1]: Unmounting /sys/kernel/debug.
+[   48.677203] EXT4-fs (sda1): re-mounted. Opts: (null)
+[   48.690039] EXT4-fs (sda1): re-mounted. Opts: (null)
+[   48.695441] EXT4-fs (sda1): re-mounted. Opts: (null)
+[   48.700721] systemd-shutdown[1]: All filesystems unmounted.
+[   48.706488] systemd-shutdown[1]: Deactivating swaps.
+[   48.711988] systemd-shutdown[1]: All swaps deactivated.
+[   48.717464] systemd-shutdown[1]: Detaching loop devices.
+[   48.731529] systemd-shutdown[1]: All loop devices detached.
+[   48.737441] systemd-shutdown[1]: Detaching DM devices.
+[   48.743363] systemd-shutdown[1]: All DM devices detached.
+[   48.767338] systemd-shutdown[1]: Powering off.
+[   48.772274] musb-hdrc musb-hdrc.1.auto: remove, state 4
+[   48.777758] usb usb3: USB disconnect, device number 1
+[   48.783771] musb-hdrc musb-hdrc.1.auto: USB bus 3 deregistered
+[   48.805284] reboot: Power down

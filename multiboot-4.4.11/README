@@ -1,0 +1,89 @@
+This version works using FEL. uboot and other files are not installed on 
+the boot media. Hence requries to be booted in FEL mode. ( connect FEL -> GND )
+FEL uploads requires the micro usb connector on CHIP to be connected to host USB connector. ( An Android phone charger cable probably will work )
+To view the serial console output, use a pl2303 like USB serial adatper.
+
+	CHIP			Linux HOST
+	----------------------------------
+	micro USB -> -------->	USB 
+	rx,tx,gnd -> pl2303 ->  USB
+	FEL -> GND
+
+
+Cross compiler used: gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf
+
+Files in here:
+
+update.sh:
+	grab u-boot files built from u-boot source
+	
+upload.sh:
+	multi boot startup 
+	
+Makefile Makefile.uInitrd:
+	Makefiles  for reference
+
+boot.txt boot.scr:
+	boot script compiled and source.
+
+capt.debug.log capt.log:
+	minicom log (capture) files 
+do:
+	sample script for extractng initrd ( gzipped )
+
+sun5i-r8-chip.dtb:
+	dtb file	
+sunxi-spl.bin:
+	spl file
+	
+u-boot-dtb.bin:
+	u-boot file
+
+uImage-4.4.11:
+	kernel
+
+uInitrd-4.4.11-multiboot:
+	initrd
+
+upload.log:
+	FEL upload log
+
+
+
+SPL.img:
+	from /dev/mtd0 ( dd if=/dev/mtd0 of=SPL.img ). This file is not used here. 	
+boot.txt:
+	u-boot boot script, compile to boot.scr using makefile.
+boot.scr:
+	boot script.	
+
+capt1.log capt2.log capt3.log:
+	minicom log ( capture ) files
+
+env.img.txt:
+	file generated from /dev/mtd3, boot script
+
+sun5i-r8-chip.dtb:
+	dtb file from /boot on CHIP debian. ( mtd4 )
+
+sunxi-spl.bin:
+	spl file.	
+
+u-boot-2015.10-00003-dtb.bin
+	u-boot file from /dev/mtd2 	
+
+u-boot-2015.10-00003-dtb.bin.txt
+	default boot "script" in u-boot-2015.10-00003-dtb.bin
+
+uImage-4.3.0:
+	Kernel from /boot/zImage on CHIP.
+
+uInitrd-4.3.0-multiboot:
+	multiboot initrd
+
+uInitrd.img-4.3.0-ntc:
+	mkinitrd from CHIP	
+
+# update.sh:
+
+Note:

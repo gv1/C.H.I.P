@@ -1,0 +1,25 @@
+UBI version:                    1
+Count of UBI devices:           1
+UBI control device major/minor: 10:59
+Present UBI devices:            ubi0
+
+ubi0
+Volumes count:                           1
+Logical eraseblock size:                 2064384 bytes, 2.0 MiB
+Total amount of logical eraseblocks:     2034 (4198957056 bytes, 3.9 GiB)
+Amount of available logical eraseblocks: 0 (0 bytes)
+Maximum count of volumes                 128
+Count of bad physical eraseblocks:       10
+Count of reserved physical eraseblocks:  30
+Current maximum erase counter value:     2
+Minimum input/output unit size:          16384 bytes
+Character device major/minor:            247:0
+Present volumes:                         0
+
+Volume ID:   0 (on ubi0)
+Type:        dynamic
+Alignment:   1
+Size:        2000 LEBs (4128768000 bytes, 3.8 GiB)
+State:       OK
+Name:        rootfs
+Character device major/minor: 247:1

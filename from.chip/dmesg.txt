@@ -1,0 +1,346 @@
+[Nov25 05:50] Booting Linux on physical CPU 0x0
+[  +0.000000] Initializing cgroup subsys cpuset
+[  +0.000000] Initializing cgroup subsys cpu
+[  +0.000000] Initializing cgroup subsys cpuacct
+[  +0.000000] Linux version 4.3.0-ntc (alex@kihei) (gcc version 4.9.2 20140904 (prerelease) (crosstool-NG linaro-1.13.1-4.9-2014.09 - Linaro GCC 4.9-2014.09) ) #1 SMP Fri Feb 19 09:37:25 PST 2016
+[  +0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=10c5387d
+[  +0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[  +0.000000] Machine model: NextThing C.H.I.P.
+[  +0.000000] Memory policy: Data cache writeback
+[  +0.000000] On node 0 totalpages: 130733
+[  +0.000000] free_area_init_node: node 0, pgdat c0a8d900, node_mem_map df97f000
+[  +0.000000]   Normal zone: 1150 pages used for memmap
+[  +0.000000]   Normal zone: 0 pages reserved
+[  +0.000000]   Normal zone: 130733 pages, LIFO batch:31
+[  +0.000000] CPU: All CPU(s) started in SVC mode.
+[  +0.000000] PERCPU: Embedded 13 pages/cpu @dfe85000 s21888 r8192 d23168 u53248
+[  +0.000000] pcpu-alloc: s21888 r8192 d23168 u53248 alloc=13*4096
+[  +0.000000] pcpu-alloc: [0] 0 
+[  +0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 129583
+[  +0.000000] Kernel command line: root=ubi0:rootfs rootfstype=ubifs rw earlyprintk ubi.mtd=4
+[  +0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[  +0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[  +0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[  +0.000000] Memory: 506584K/522932K available (7232K kernel code, 675K rwdata, 2408K rodata, 524K init, 298K bss, 16348K reserved, 0K cma-reserved, 0K highmem)
+[  +0.000000] Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+    vmalloc : 0xe0000000 - 0xff000000   ( 496 MB)
+    lowmem  : 0xc0000000 - 0xdfead000   ( 510 MB)
+    pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+    modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+      .text : 0xc0008000 - 0xc097260c   (9642 kB)
+      .init : 0xc0973000 - 0xc09f6000   ( 524 kB)
+      .data : 0xc09f6000 - 0xc0a9ef00   ( 676 kB)
+       .bss : 0xc0aa1000 - 0xc0aebb14   ( 299 kB)
+[  +0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[  +0.000000] Hierarchical RCU implementation.
+[  +0.000000] 	Build-time adjustment of leaf fanout to 32.
+[  +0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+[  +0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=32, nr_cpu_ids=1
+[  +0.000000] NR_IRQS:16 nr_irqs:16 16
+[  +0.000000] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[  +0.000000] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370868154 ns
+[  +0.000000] sched_clock: 32 bits at 100 Hz, resolution 10000000ns, wraps every 21474836475000000ns
+[  +0.000000] Console: colour dummy device 80x30
+[  +0.000000] console [tty0] enabled
+[  +0.000000] Calibrating delay loop... 1001.88 BogoMIPS (lpj=5009408)
+[  +0.000000] pid_max: default: 32768 minimum: 301
+[  +0.000000] Security Framework initialized
+[  +0.000000] Yama: becoming mindful.
+[  +0.000000] AppArmor: AppArmor disabled by boot time parameter
+[  +0.000000] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[  +0.000000] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[  +0.000000] Initializing cgroup subsys io
+[  +0.000000] Initializing cgroup subsys memory
+[  +0.000000] Initializing cgroup subsys devices
+[  +0.000000] Initializing cgroup subsys freezer
+[  +0.000000] Initializing cgroup subsys perf_event
+[  +0.000000] CPU: Testing write buffer coherency: ok
+[  +0.000000] ftrace: allocating 23777 entries in 70 pages
+[  +0.030000] CPU0: thread -1, cpu 0, socket -1, mpidr 0
+[  +0.000000] Setting up static identity map for 0x40008280 - 0x400082d8
+[  +0.010000] Brought up 1 CPUs
+[  +0.000000] SMP: Total of 1 processors activated (1001.88 BogoMIPS).
+[  +0.000000] CPU: All CPU(s) started in SVC mode.
+[  +0.000000] devtmpfs: initialized
+[  +0.010000] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[  +0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[  +0.000000] pinctrl core: initialized pinctrl subsystem
+[  +0.000000] NET: Registered protocol family 16
+[  +0.000000] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[  +0.000000] hw-breakpoint: debug architecture 0x4 unsupported.
+[  +0.010000] reg-fixed-voltage usb0_vbus: could not find pctldev for node /soc@01c00000/pinctrl@01c20800/chip_vbus_pin@0, deferring probe
+[  +0.000000] reg-fixed-voltage wifi_reg_on: could not find pctldev for node /soc@01c00000/pinctrl@01c20800/chip_wifi_reg_on_pin@0, deferring probe
+[  +0.000000] SCSI subsystem initialized
+[  +0.000000] usbcore: registered new interface driver usbfs
+[  +0.000000] usbcore: registered new interface driver hub
+[  +0.000000] usbcore: registered new device driver usb
+[  +0.010000] pps_core: LinuxPPS API ver. 1 registered
+[  +0.000000] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[  +0.000000] PTP clock support registered
+[  +0.000000] Advanced Linux Sound Architecture Driver Initialized.
+[  +0.000000] clocksource: Switched to clocksource timer
+[  +0.050000] simple-framebuffer 5febc000.framebuffer: framebuffer at 0x5febc000, 0x135600 bytes, mapped to 0xe0200000
+[  +0.000000] simple-framebuffer 5febc000.framebuffer: format=x8r8g8b8, mode=640x440x32, linelength=2880
+[  +0.010000] Console: switching to colour frame buffer device 80x27
+[  +0.010000] simple-framebuffer 5febc000.framebuffer: fb0: simplefb registered!
+[  +0.010000] NET: Registered protocol family 2
+[  +0.010000] TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+[  +0.000000] TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+[  +0.000000] TCP: Hash tables configured (established 4096 bind 4096)
+[  +0.010000] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[  +0.000000] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[  +0.000000] NET: Registered protocol family 1
+[  +0.010000] RPC: Registered named UNIX socket transport module.
+[  +0.000000] RPC: Registered udp transport module.
+[  +0.000000] RPC: Registered tcp transport module.
+[  +0.010000] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[  +0.000000] futex hash table entries: 256 (order: 2, 16384 bytes)
+[  +0.000000] audit: initializing netlink subsys (disabled)
+[  +0.010000] audit: type=2000 audit(0.290:1): initialized
+[  +0.010000] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[  +0.010000] NFS: Registering the id_resolver key type
+[  +0.000000] Key type id_resolver registered
+[  +0.000000] Key type id_legacy registered
+[  +0.010000] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+[  +0.000000] io scheduler noop registered
+[  +0.010000] io scheduler deadline registered
+[  +0.000000] io scheduler cfq registered (default)
+[  +0.000000] sun4i-usb-phy 1c13400.phy: could not find pctldev for node /soc@01c00000/pinctrl@01c20800/chip_id_det_pin@0, deferring probe
+[  +0.010000] sun5i-a13-pinctrl 1c20800.pinctrl: initialized sunXi PIO driver
+[  +0.010000] coupled-voltage-regulator wifi_reg: Couldn't get regulator vin0
+[  +0.070000] Serial: 8250/16550 driver, 8 ports, IRQ sharing disabled
+[  +0.030000] 1c28400.serial: ttyS0 at MMIO 0x1c28400 (irq = 27, base_baud = 1500000) is a U6_16550A
+[  +0.660000] console [ttyS0] enabled
+[  +0.020000] 1c28c00.serial: ttyS1 at MMIO 0x1c28c00 (irq = 28, base_baud = 1500000) is a U6_16550A
+[  +0.020000] nand: device found, Manufacturer ID: 0xad, Chip ID: 0xde
+[  +0.010000] nand: Hynix H27QCG8T2E5R\xffffffe2\xffffff80\xffffff90BCF 64G 3.3V 8-bit
+[  +0.010000] nand: 8192 MiB, MLC, erase size: 4096 KiB, page size: 16384, OOB size: 1664
+[  +0.010000] Scanning device for bad blocks
+[  +0.040000] Bad eraseblock 134 at 0x000021bfc000
+[  +0.020000] Bad eraseblock 163 at 0x000028ffc000
+[  +0.010000] Bad eraseblock 183 at 0x00002dffc000
+[  +0.020000] Bad eraseblock 231 at 0x000039ffc000
+[  +0.040000] Bad eraseblock 394 at 0x000062bfc000
+[  +0.030000] random: nonblocking pool is initialized
+[  +0.030000] Bad eraseblock 572 at 0x00008f3fc000
+[  +0.070000] Bad eraseblock 802 at 0x0000c8bfc000
+[  +0.270000] Bad eraseblock 1883 at 0x0001d6ffc000
+[  +0.020000] Bad eraseblock 1946 at 0x0001e6bfc000
+[  +0.020000] Bad eraseblock 2002 at 0x0001f4bfc000
+[  +0.020000] 5 ofpart partitions found on MTD device H27QCG8T2E5R\xffffffe2\xffffff80\xffffff90BCF 64G 3.3V 8-bit
+[  +0.010000] Creating 5 MTD partitions on "H27QCG8T2E5R\xffffffe2\xffffff80\xffffff90BCF 64G 3.3V 8-bit":
+[  +0.010000] 0x000000000000-0x000000400000 : "SPL"
+[  +0.010000] 0x000000400000-0x000000800000 : "SPL.backup"
+[  +0.000000] 0x000000800000-0x000000c00000 : "U-Boot"
+[  +0.010000] 0x000000c00000-0x000001000000 : "env"
+[  +0.010000] 0x000001000000-0x000200000000 : "rootfs"
+[  +0.010000] usbcore: registered new interface driver asix
+[  +0.010000] usbcore: registered new interface driver ax88179_178a
+[  +0.000000] usbcore: registered new interface driver cdc_ether
+[  +0.010000] usbcore: registered new interface driver net1080
+[  +0.010000] usbcore: registered new interface driver rndis_host
+[  +0.010000] usbcore: registered new interface driver cdc_subset
+[  +0.000000] usbcore: registered new interface driver zaurus
+[  +0.010000] usbcore: registered new interface driver cdc_ncm
+[  +0.010000] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[  +0.010000] ehci-platform: EHCI generic platform driver
+[  +0.000000] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[  +0.010000] ohci-platform: OHCI generic platform driver
+[  +0.010000] usbcore: registered new interface driver usb-storage
+[  +0.010000] mousedev: PS/2 mouse device common for all mice
+[  +0.010000] i2c /dev entries driver
+[  +0.000000] axp20x 0-0034: AXP20x variant AXP209 found
+[  +0.020000] input: axp20x-pek as /devices/platform/soc@01c00000/1c2ac00.i2c/i2c-0/0-0034/axp20x-pek/input/input0
+[  +0.020000] axp20x 0-0034: AXP20X driver loaded
+[  +0.000000] pcf857x 2-0038: probed
+[  +0.010000] Driver for 1-wire Dallas network protocol.
+[  +0.010000] sunxi-wdt 1c20c90.watchdog: Watchdog enabled (timeout=16 sec, nowayout=0)
+[  +0.010000] vcc-3v3: supplied by ipsout
+[  +0.010000] sunxi-mmc 1c0f000.mmc: No vqmmc regulator found
+[  +0.050000] sunxi-mmc 1c0f000.mmc: base:0xe00ee000 irq:20
+[  +0.000000] ledtrig-cpu: registered to indicate activity on CPUs
+[  +0.010000] hidraw: raw HID events driver (C) Jiri Kosina
+[  +0.010000] usbcore: registered new interface driver usbhid
+[  +0.010000] usbhid: USB HID core driver
+[  +0.010000] sun4i-codec 1c22c00.codec: Codec <-> 1c22c00.codec mapping ok
+[  +0.010000] ip_tables: (C) 2000-2006 Netfilter Core Team
+[  +0.010000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 8, RTO !!
+[  +0.010000] NET: Registered protocol family 10
+[  +0.010000] mip6: Mobile IPv6
+[  +0.000000] sit: IPv6 over IPv4 tunneling driver
+[  +0.010000] NET: Registered protocol family 17
+[  +0.010000] Key type dns_resolver registered
+[  +0.010000] Registering SWP/SWPB emulation handler
+[  +0.010000] registered taskstats version 1
+[  +0.010000] vcc-5v0: supplied by ipsout
+[  +0.000000] vbus-usb0: supplied by vcc-5v0
+[  +0.010000] ehci-platform 1c14000.usb: EHCI Host Controller
+[  +0.010000] ehci-platform 1c14000.usb: new USB bus registered, assigned bus number 1
+[  +0.010000] ehci-platform 1c14000.usb: irq 22, io mem 0x01c14000
+[  +0.020000] mmc0: new high speed SDIO card at address 0001
+[  +0.010000] ehci-platform 1c14000.usb: USB 2.0 started, EHCI 1.00
+[  +0.010000] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[  +0.010000] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[  +0.010000] usb usb1: Product: EHCI Host Controller
+[  +0.000000] usb usb1: Manufacturer: Linux 4.3.0-ntc ehci_hcd
+[  +0.010000] usb usb1: SerialNumber: 1c14000.usb
+[  +0.010000] hub 1-0:1.0: USB hub found
+[  +0.010000] hub 1-0:1.0: 1 port detected
+[  +0.000000] ohci-platform 1c14400.usb: Generic Platform OHCI controller
+[  +0.010000] ohci-platform 1c14400.usb: new USB bus registered, assigned bus number 2
+[  +0.020000] ohci-platform 1c14400.usb: irq 23, io mem 0x01c14400
+[  +0.060000] usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+[  +0.010000] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[  +0.010000] usb usb2: Product: Generic Platform OHCI controller
+[  +0.010000] usb usb2: Manufacturer: Linux 4.3.0-ntc ohci_hcd
+[  +0.010000] usb usb2: SerialNumber: 1c14400.usb
+[  +0.010000] hub 2-0:1.0: USB hub found
+[  +0.000000] hub 2-0:1.0: 1 port detected
+[  +0.010000] usb_phy_generic.0.auto supply vcc not found, using dummy regulator
+[  +0.010000] musb-hdrc: ConfigData=0xde (UTMI-8, dyn FIFOs, bulk combine, bulk split, HB-ISO Rx, HB-ISO Tx, SoftConn)
+[  +0.000000] musb-hdrc: MHDRC RTL version 0.0 
+[  +0.000000] musb-hdrc: 11/11 max ep, 5184/8192 memory
+[  +0.000000] musb-hdrc musb-hdrc.1.auto: MUSB HDRC host driver
+[  +0.010000] musb-hdrc musb-hdrc.1.auto: new USB bus registered, assigned bus number 3
+[  +0.020000] usb usb3: New USB device found, idVendor=1d6b, idProduct=0002
+[  +0.010000] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[  +0.010000] usb usb3: Product: MUSB HDRC host driver
+[  +0.010000] usb usb3: Manufacturer: Linux 4.3.0-ntc musb-hcd
+[  +0.000000] usb usb3: SerialNumber: musb-hdrc.1.auto
+[  +0.010000] hub 3-0:1.0: USB hub found
+[  +0.010000] hub 3-0:1.0: 1 port detected
+[  +0.010000] ubi0: attaching mtd4
+[  +1.360000] ubi0: scanning is finished
+[  +0.030000] ubi0: attached mtd4 (name "rootfs", size 8176 MiB)
+[  +0.000000] ubi0: PEB size: 4194304 bytes (2048 KiB), LEB size: 2064384 bytes
+[  +0.010000] ubi0: min./max. I/O unit sizes: 16384/16384, sub-page size 16384
+[  +0.010000] ubi0: VID header offset: 16384 (aligned 16384), data offset: 32768
+[  +0.020000] ubi0: good PEBs: 2034, bad PEBs: 10, corrupted PEBs: 0
+[  +0.010000] ubi0: user volume: 1, internal volumes: 1, max. volumes count: 128
+[  +0.010000] ubi0: max/mean erase counter: 2/1, WL threshold: 4096, image sequence number: 1098611298
+[  +0.010000] ubi0: available PEBs: 0, total reserved PEBs: 2034, PEBs reserved for bad PEB handling: 30
+[  +0.020000] hctosys: unable to open rtc device (rtc0)
+[  +0.010000] vbus-usb0: disabling
+[  +0.010000] ALSA device list:
+[  +0.000000]   #0: sun4i-codec
+[  +0.010000] ubi0: background thread "ubi_bgt0d" started, PID 50
+[  +0.020000] UBIFS (ubi0:0): background thread "ubifs_bgt0_0" started, PID 51
+[  +0.870000] UBIFS (ubi0:0): recovery needed
+[  +1.510000] UBIFS (ubi0:0): recovery completed
+[  +0.010000] UBIFS (ubi0:0): UBIFS: mounted UBI device 0, volume 0, name "rootfs"
+[  +0.010000] UBIFS (ubi0:0): LEB size: 2064384 bytes (2016 KiB), min./max. I/O unit sizes: 16384 bytes/16384 bytes
+[  +0.020000] UBIFS (ubi0:0): FS size: 4108124160 bytes (3917 MiB, 1990 LEBs), journal size 18579457 bytes (17 MiB, 9 LEBs)
+[  +0.020000] UBIFS (ubi0:0): reserved for root: 0 bytes (0 KiB)
+[  +0.010000] UBIFS (ubi0:0): media format: w4/r0 (latest is w4/r0), UUID 6BCEE06C-CCC9-42CF-B11E-A4A92824F204, small LPT model
+[  +0.020000] VFS: Mounted root (ubifs filesystem) on device 0:14.
+[  +0.010000] devtmpfs: mounted
+[  +0.000000] Freeing unused kernel memory: 524K (c0973000 - c09f6000)
+[  +0.420000] systemd[1]: systemd 215 running in system mode. (+PAM +AUDIT +SELINUX +IMA +SYSVINIT +LIBCRYPTSETUP +GCRYPT +ACL +XZ -SECCOMP -APPARMOR)
+[  +0.020000] systemd[1]: Detected architecture 'arm'.
+[  +0.090000] systemd[1]: Failed to insert module 'autofs4'
+[  +0.010000] systemd[1]: Set hostname to <chip>.
+[  +1.020000] systemd[1]: Starting Forward Password Requests to Wall Directory Watch.
+[  +0.010000] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[  +0.010000] systemd[1]: Expecting device dev-ttyS0.device...
+[  +0.030000] systemd[1]: Expecting device dev-ttyGS0.device...
+[  +0.030000] systemd[1]: Starting Remote File Systems (Pre).
+[  +0.030000] systemd[1]: Reached target Remote File Systems (Pre).
+[  +0.000000] systemd[1]: Starting Dispatch Password Requests to Console Directory Watch.
+[  +0.020000] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[  +0.010000] systemd[1]: Starting Paths.
+[  +0.030000] systemd[1]: Reached target Paths.
+[  +0.000000] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[  +0.020000] systemd[1]: Starting Encrypted Volumes.
+[  +0.030000] systemd[1]: Reached target Encrypted Volumes.
+[  +0.000000] systemd[1]: Starting Swap.
+[  +0.030000] systemd[1]: Reached target Swap.
+[  +0.000000] systemd[1]: Starting Root Slice.
+[  +0.030000] systemd[1]: Created slice Root Slice.
+[  +0.000000] systemd[1]: Starting User and Session Slice.
+[  +0.030000] systemd[1]: Created slice User and Session Slice.
+[  +0.000000] systemd[1]: Starting /dev/initctl Compatibility Named Pipe.
+[  +0.040000] systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+[  +0.000000] systemd[1]: Starting Delayed Shutdown Socket.
+[  +0.040000] systemd[1]: Listening on Delayed Shutdown Socket.
+[  +0.000000] systemd[1]: Starting Journal Socket (/dev/log).
+[  +0.030000] systemd[1]: Listening on Journal Socket (/dev/log).
+[  +0.000000] systemd[1]: Starting udev Control Socket.
+[  +0.030000] systemd[1]: Listening on udev Control Socket.
+[  +0.000000] systemd[1]: Starting udev Kernel Socket.
+[  +0.030000] systemd[1]: Listening on udev Kernel Socket.
+[  +0.000000] systemd[1]: Starting Journal Socket.
+[  +0.030000] systemd[1]: Listening on Journal Socket.
+[  +0.000000] systemd[1]: Starting System Slice.
+[  +0.030000] systemd[1]: Created slice System Slice.
+[  +0.000000] systemd[1]: Starting system-getty.slice.
+[  +0.030000] systemd[1]: Created slice system-getty.slice.
+[  +0.000000] systemd[1]: Starting system-serial\x2dgetty.slice.
+[  +0.030000] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[  +0.000000] systemd[1]: Starting Increase datagram queue length...
+[  +0.030000] systemd[1]: Starting Restore / save the current clock...
+[  +0.060000] systemd[1]: Mounted POSIX Message Queue File System.
+[  +0.020000] systemd[1]: Starting Create list of required static device nodes for the current kernel...
+[  +0.110000] systemd[1]: Starting udev Coldplug all Devices...
+[  +0.230000] systemd[1]: Mounting Debug File System...
+[  +0.040000] systemd[1]: Mounted Huge Pages File System.
+[  +0.050000] systemd[1]: Starting Load Kernel Modules...
+[  +0.150000] systemd[1]: Started Set Up Additional Binary Formats.
+[  +0.020000] systemd[1]: Starting Slices.
+[  +0.020000] systemd[1]: Reached target Slices.
+[  +0.090000] fuse init (API version 7.23)
+[  +0.030000] systemd[1]: Started Increase datagram queue length.
+[  +0.150000] systemd[1]: Started Create list of required static device nodes for the current kernel.
+[  +0.040000] systemd[1]: Started Restore / save the current clock.
+[  +0.030000] g_serial gadget: Gadget Serial v2.4
+[  +0.010000] g_serial gadget: g_serial ready
+[  +0.040000] systemd[1]: Mounted Debug File System.
+[  +0.040000] systemd[1]: Started Load Kernel Modules.
+[  +0.060000] systemd[1]: Time has been changed
+[  +0.180000] systemd[1]: Started udev Coldplug all Devices.
+[  +0.020000] systemd[1]: Mounting Configuration File System...
+[  +0.030000] systemd[1]: Mounting FUSE Control File System...
+[  +0.040000] systemd[1]: Starting Apply Kernel Variables...
+[  +0.040000] systemd[1]: Starting Create Static Device Nodes in /dev...
+[  +0.070000] systemd[1]: Starting Syslog Socket.
+[  +0.030000] g_serial gadget: high-speed config #2: CDC ACM config
+[  +0.080000] systemd[1]: Listening on Syslog Socket.
+[  +0.000000] systemd[1]: Starting Journal Service...
+[  +0.050000] systemd[1]: Started Journal Service.
+[  +0.420000] systemd-udevd[92]: starting version 215
+[  +0.790000] systemd-journald[91]: Received request to flush runtime journal from PID 1
+[ +10.080000] Bluetooth: Core ver 2.20
+[  +0.000000] Bluetooth: Starting self testing
+[  +0.070000] Bluetooth: ECDH test passed in 61168 usecs
+[  +0.730000] Bluetooth: SMP test passed in 119 usecs
+[  +0.000000] Bluetooth: Finished self testing
+[  +0.010000] NET: Registered protocol family 31
+[  +0.000000] Bluetooth: HCI device and connection manager initialized
+[  +0.010000] Bluetooth: HCI socket layer initialized
+[  +0.000000] Bluetooth: L2CAP socket layer initialized
+[  +0.010000] Bluetooth: SCO socket layer initialized
+[  +0.510000] Bluetooth: HCI UART driver ver 2.3
+[  +0.010000] Bluetooth: HCI UART protocol H4 registered
+[  +0.000000] Bluetooth: HCI UART protocol BCSP registered
+[  +0.010000] Bluetooth: HCI UART protocol LL registered
+[  +0.000000] Bluetooth: HCI UART protocol ATH3K registered
+[  +0.010000] Bluetooth: HCI UART protocol Three-wire (H5) registered
+[  +0.000000] Bluetooth: HCI UART protocol Intel registered
+[  +0.010000] Bluetooth: HCI UART protocol BCM registered
+[Nov25 05:51] cfg80211: World regulatory domain updated:
+[  +0.010000] cfg80211:  DFS Master region: unset
+[  +0.000000] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp), (dfs_cac_time)
+[  +0.010000] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (N/A, 2000 mBm), (N/A)
+[  +0.010000] cfg80211:   (2457000 KHz - 2482000 KHz @ 40000 KHz), (N/A, 2000 mBm), (N/A)
+[  +0.010000] cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (N/A, 2000 mBm), (N/A)
+[  +0.000000] cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz, 160000 KHz AUTO), (N/A, 2000 mBm), (N/A)
+[  +0.010000] cfg80211:   (5250000 KHz - 5330000 KHz @ 80000 KHz, 160000 KHz AUTO), (N/A, 2000 mBm), (0 s)
+[  +0.010000] cfg80211:   (5490000 KHz - 5730000 KHz @ 160000 KHz), (N/A, 2000 mBm), (0 s)
+[  +0.010000] cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (N/A, 2000 mBm), (N/A)
+[  +0.010000] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm), (N/A)
+[  +0.160000] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[  +0.010000] Bluetooth: BNEP socket layer initialized
+[ +27.880000] Bluetooth: RFCOMM TTY layer initialized
+[  +0.000000] Bluetooth: RFCOMM socket layer initialized
+[  +0.000000] Bluetooth: RFCOMM ver 1.11

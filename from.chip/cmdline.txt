@@ -1,0 +1,2 @@
+root=ubi0:rootfs rootfstype=ubifs rw earlyprintk ubi.mtd=4
+

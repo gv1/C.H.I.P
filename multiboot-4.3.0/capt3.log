@@ -1,0 +1,1121 @@
+
+U-Boot SPL 2015.10 (Nov 29 2016 - 05:06:28)
+DRAM: 512 MiB
+CPU: 1008000000Hz, AXI/AHB/APB: 3/2/2
+
+
+U-Boot 2015.10-00003-gaf62f4a-dirty (Feb 19 2016 - 16:54:25 -0800) Allwinner Technology
+
+CPU:   Allwinner A13 (SUN5I)
+I2C:   ready
+DRAM:  512 MiB
+NAND:  8192 MiB
+Setting up a 720x480i composite-ntsc console (overscan 40x20)
+In:    serial
+Out:   serial
+Err:   serial
+Net:   usb_ether
+starting USB...
+No controllers found
+Hit any key to stop autoboot:  2  1  0 
+(FEL boot)
+## Executing script at 43100000
+starting USB...
+No controllers found
+## Error: Can't overwrite "serial#"
+## Error inserting "serial#" variable, errno=1
+
+device nand0 <sunxi-nand.0>, # parts = 5
+ #: name		size		offset		mask_flags
+ 0: spl                 0x00400000	0x00000000	0
+ 1: spl-backup          0x00400000	0x00400000	0
+ 2: uboot               0x00400000	0x00800000	0
+ 3: env                 0x00400000	0x00c00000	0
+ 4: UBI                 0x1ff000000	0x01000000	0
+
+active partition: nand0,0 - (spl) 0x00400000 @ 0x00000000
+
+defaults:
+mtdids  : none
+mtdparts: none
+UBI: attaching mtd1 to ubi0
+UBI: scanning is finished
+UBI: attached mtd1 (name "mtd=4", size 8176 MiB) to ubi0
+UBI: PEB size: 2097152 bytes (4096 KiB), LEB size: 2064384 bytes
+UBI: min./max. I/O unit sizes: 16384/16384, sub-page size 16384
+UBI: VID header offset: 16384 (aligned 16384), data offset: 32768
+UBI: good PEBs: 2034, bad PEBs: 10, corrupted PEBs: 0
+UBI: user volume: 1, internal volumes: 1, max. volumes count: 128
+UBI: max/mean erase counter: 2/1, WL threshold: 4096, image sequence number: 1098611298
+UBI: available PEBs: 0, total reserved PEBs: 2034, PEBs reserved for bad PEB handling: 30
+## Booting kernel from Legacy Image at 42000000 ...
+   Image Name:   Linux--4.3.0
+   Image Type:   ARM Linux Kernel Image (uncompressed)
+   Data Size:    5619496 Bytes = 5.4 MiB
+   Load Address: 42000000
+   Entry Point:  42000000
+   Verifying Checksum ... OK
+## Loading init Ramdisk from Legacy Image at 43300000 ...
+   Image Name:   initrd-4.3.0-multiboot
+   Image Type:   ARM Linux RAMDisk Image (gzip compressed)
+   Data Size:    17498112 Bytes = 16.7 MiB
+   Load Address: 00000000
+   Entry Point:  00000000
+   Verifying Checksum ... OK
+## Flattened Device Tree blob at 43000000
+   Booting using the fdt blob at 0x43000000
+   Loading Kernel Image ... OK
+   Loading Ramdisk to 48f50000, end 4a000000 ... OK
+   Loading Device Tree to 48f48000, end 48f4fa40 ... OK
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 4.3.0-ntc (alex@kihei) (gcc version 4.9.2 20140904 (prerelease) (crosstool-NG linaro-1.13.1-4.9-2014.09 - Linaro GCC 4.9-2014.09) ) #1 SMP Fri Feb 19 09:37:25 PST 2016
+[    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine model: NextThing C.H.I.P.
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] PERCPU: Embedded 13 pages/cpu @dfe88000 s21888 r8192 d23168 u53248
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 129583
+[    0.000000] Kernel command line: root=/dev/ram0 earlyprintk rootwait
+[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Memory: 489508K/522932K available (7232K kernel code, 675K rwdata, 2408K rodata, 524K init, 298K bss, 33424K reserved, 0K cma-reserved, 0K highmem)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xe0000000 - 0xff000000   ( 496 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xdfead000   ( 510 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0xc0008000 - 0xc097260c   (9642 kB)
+[    0.000000]       .init : 0xc0973000 - 0xc09f6000   ( 524 kB)
+[    0.000000]       .data : 0xc09f6000 - 0xc0a9ef00   ( 676 kB)
+[    0.000000]        .bss : 0xc0aa1000 - 0xc0aebb14   ( 299 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	Build-time adjustment of leaf fanout to 32.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=32, nr_cpu_ids=1
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[    0.000000] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370868154 ns
+[    0.000000] sched_clock: 32 bits at 100 Hz, resolution 10000000ns, wraps every 21474836475000000ns
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] console [tty0] enabled
+[    0.090000] Calibrating delay loop... 1001.88 BogoMIPS (lpj=5009408)
+[    0.090000] pid_max: default: 32768 minimum: 301
+[    0.090000] Security Framework initialized
+[    0.090000] Yama: becoming mindful.
+[    0.090000] AppArmor: AppArmor disabled by boot time parameter
+[    0.090000] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.090000] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.090000] Initializing cgroup subsys io
+[    0.090000] Initializing cgroup subsys memory
+[    0.090000] Initializing cgroup subsys devices
+[    0.090000] Initializing cgroup subsys freezer
+[    0.090000] Initializing cgroup subsys perf_event
+[    0.090000] CPU: Testing write buffer coherency: ok
+[    0.090000] ftrace: allocating 23777 entries in 70 pages
+[    0.120000] CPU0: thread -1, cpu 0, socket -1, mpidr 0
+[    0.120000] Setting up static identity map for 0x40008280 - 0x400082d8
+[    0.130000] Brought up 1 CPUs
+[    0.130000] SMP: Total of 1 processors activated (1001.88 BogoMIPS).
+[    0.130000] CPU: All CPU(s) started in SVC mode.
+[    0.130000] devtmpfs: initialized
+[    0.130000] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[    0.130000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.140000] pinctrl core: initialized pinctrl subsystem
+[    0.140000] NET: Registered protocol family 16
+[    0.140000] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.140000] hw-breakpoint: debug architecture 0x4 unsupported.
+[    0.150000] reg-fixed-voltage usb0-vbus: could not find pctldev for node /soc@01c00000/pinctrl@01c20800/chip_vbus_pin@0, deferring probe
+[    0.150000] SCSI subsystem initialized
+[    0.150000] usbcore: registered new interface driver usbfs
+[    0.150000] usbcore: registered new interface driver hub
+[    0.150000] usbcore: registered new device driver usb
+[    0.150000] pps_core: LinuxPPS API ver. 1 registered
+[    0.150000] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.150000] PTP clock support registered
+[    0.150000] Advanced Linux Sound Architecture Driver Initialized.
+[    0.150000] clocksource: Switched to clocksource timer
+[    0.200000] simple-framebuffer 5febc000.framebuffer: framebuffer at 0x5febc000, 0x135600 bytes, mapped to 0xe0200000
+[    0.200000] simple-framebuffer 5febc000.framebuffer: format=x8r8g8b8, mode=640x440x32, linelength=2880
+[    0.210000] Console: switching to colour frame buffer device 80x27
+[    0.220000] simple-framebuffer 5febc000.framebuffer: fb0: simplefb registered!
+[    0.230000] NET: Registered protocol family 2
+[    0.240000] TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.240000] TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.240000] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.250000] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.250000] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.250000] NET: Registered protocol family 1
+[    0.260000] RPC: Registered named UNIX socket transport module.
+[    0.260000] RPC: Registered udp transport module.
+[    0.260000] RPC: Registered tcp transport module.
+[    0.270000] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.270000] Unpacking initramfs...
+[    0.440000] Freeing initrd memory: 17088K (c8f50000 - ca000000)
+[    0.440000] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.450000] audit: initializing netlink subsys (disabled)
+[    0.450000] audit: type=2000 audit(0.450:1): initialized
+[    0.470000] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.470000] NFS: Registering the id_resolver key type
+[    0.470000] Key type id_resolver registered
+[    0.480000] Key type id_legacy registered
+[    0.480000] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+[    0.490000] io scheduler noop registered
+[    0.490000] io scheduler deadline registered
+[    0.490000] io scheduler cfq registered (default)
+[    0.500000] sun4i-usb-phy 1c13400.phy: could not find pctldev for node /soc@01c00000/pinctrl@01c20800/chip_id_det_pin@0, deferring probe
+[    0.500000] sun5i-a13-pinctrl 1c20800.pinctrl: initialized sunXi PIO driver
+[    0.580000] Serial: 8250/16550 driver, 8 ports, IRQ sharing disabled
+[    0.610000] 1c28400.serial: ttyS0 at MMIO 0x1c28400 (irq = 26, base_baud = 1500000) is a U6_16550A
+[    1.250000] console [ttyS0] enabled
+[    1.280000] 1c28c00.serial: ttyS1 at MMIO 0x1c28c00 (irq = 27, base_baud = 1500000) is a U6_16550A
+[    1.300000] nand: device found, Manufacturer ID: 0xad, Chip ID: 0xde
+[    1.310000] nand: Hynix H27QCG8T2E5R‐BCF 64G 3.3V 8-bit
+[    1.320000] nand: 8192 MiB, MLC, erase size: 4096 KiB, page size: 16384, OOB size: 1664
+[    1.330000] Bad block table not found for chip 0
+[    1.340000] Bad block table not found for chip 0
+[    1.350000] Scanning device for bad blocks
+[    1.390000] Bad eraseblock 134 at 0x000021bfc000
+[    1.400000] Bad eraseblock 163 at 0x000028ffc000
+[    1.420000] Bad eraseblock 183 at 0x00002dffc000
+[    1.430000] Bad eraseblock 231 at 0x000039ffc000
+[    1.480000] Bad eraseblock 394 at 0x000062bfc000
+[    1.500000] random: nonblocking pool is initialized
+[    1.540000] Bad eraseblock 572 at 0x00008f3fc000
+[    1.600000] Bad eraseblock 802 at 0x0000c8bfc000
+[    1.870000] Bad eraseblock 1883 at 0x0001d6ffc000
+[    1.890000] Bad eraseblock 1946 at 0x0001e6bfc000
+[    1.910000] Bad eraseblock 2002 at 0x0001f4bfc000
+[    1.940000] Bad block table written to 0x0001ffc00000, version 0x01
+[    1.950000] Bad block table written to 0x0001ff800000, version 0x01
+[    1.990000] usbcore: registered new interface driver asix
+[    2.000000] usbcore: registered new interface driver ax88179_178a
+[    2.010000] usbcore: registered new interface driver cdc_ether
+[    2.020000] usbcore: registered new interface driver net1080
+[    2.030000] usbcore: registered new interface driver rndis_host
+[    2.030000] usbcore: registered new interface driver cdc_subset
+[    2.040000] usbcore: registered new interface driver zaurus
+[    2.050000] usbcore: registered new interface driver cdc_ncm
+[    2.060000] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    2.060000] ehci-platform: EHCI generic platform driver
+[    2.070000] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    2.080000] ohci-platform: OHCI generic platform driver
+[    2.080000] usbcore: registered new interface driver usb-storage
+[    2.090000] mousedev: PS/2 mouse device common for all mice
+[    2.100000] i2c /dev entries driver
+[    2.110000] axp20x 0-0034: AXP20x variant AXP209 found
+[    2.120000] input: axp20x-pek as /devices/platform/soc@01c00000/1c2ac00.i2c/i2c-0/0-0034/axp20x-pek/input/input0
+[    2.140000] axp20x 0-0034: AXP20X driver loaded
+[    2.150000] pcf857x 2-0038: probed
+[    2.150000] Driver for 1-wire Dallas network protocol.
+[    2.160000] sunxi-wdt 1c20c90.watchdog: Watchdog enabled (timeout=16 sec, nowayout=0)
+[    2.180000] sunxi-mmc 1c0f000.mmc: No vqmmc regulator found
+[    2.220000] sunxi-mmc 1c0f000.mmc: base:0xe00de000 irq:20
+[    2.220000] ledtrig-cpu: registered to indicate activity on CPUs
+[    2.230000] hidraw: raw HID events driver (C) Jiri Kosina
+[    2.240000] usbcore: registered new interface driver usbhid
+[    2.250000] usbhid: USB HID core driver
+[    2.260000] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    2.260000] NET: Registered protocol family 10
+[    2.270000] mip6: Mobile IPv6
+[    2.280000] sit: IPv6 over IPv4 tunneling driver
+[    2.290000] NET: Registered protocol family 17
+[    2.290000] Key type dns_resolver registered
+[    2.300000] Registering SWP/SWPB emulation handler
+[    2.310000] registered taskstats version 1
+[    2.320000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 8, RTO !!
+[    2.330000] hctosys: unable to open rtc device (rtc0)
+[    2.340000] vcc3v0: disabling
+[    2.350000] vcc5v0: disabling
+[    2.350000] ldo3: disabling
+[    2.360000] ldo4: disabling
+[    2.360000] usb0-vbus: disabling
+[    2.370000] ALSA device list:
+[    2.380000]   No soundcards found.
+[    2.380000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 52, RE !!
+[    2.390000] Freeing unused kernel memory: 524K (c0973000 - c09f6000)
+[    2.400000] mmc0: error -110 whilst initialising SDIO card
+[    2.410000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 55, RE !!
+[    2.410000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 55, RE !!
+[    2.420000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 55, RE !!
+[    2.430000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 55, RE !!
+[    3.190000] sunxi-mmc 1c0f000.mmc: fatal err update clk timeout
+
+Choose os to boot 
+	enter 0 for Debian 8.3
+	enter 1 for Slackware 14.2
+  enter 2 for Ubuntu 
+  enter 3 for Slackware setup 
+  enter 4 to boot ubuntu-16.04-mate-odroid-u2u3-20160920.img
+  enter 5 to boot piCore-8.0
+  enter 6 to boot ArchLinux
+  enter 7 to boot Quirky NA
+  enter 8 ti boot ubuntu-16.04-minimal-odroid-xu3-20160706.img /dev/sda1
+  any other key 
+  or after a delay of 10 seconds boot to slackware 14.2
+        
+0
+mount: mounting /dev/sda1 on /mnt1 failed: No such file or directory
+Fatal error: fail to mount /dev/sda1 at /mnt1
+
+Fatal Error : debian.8.3.chip not found on /dev/sda1
+
+[   24.880000] Kernel panic - not syncing: Attempted to kill init! exitcode=0x00000100
+[   24.880000] 
+[   24.880000] CPU: 0 PID: 1 Comm: init Not tainted 4.3.0-ntc #1
+[   24.880000] Hardware name: Allwinner sun4i/sun5i Families
+[   24.880000] [<c00191dc>] (unwind_backtrace) from [<c0015160>] (show_stack+0x20/0x24)
+[   24.880000] [<c0015160>] (show_stack) from [<c0356658>] (dump_stack+0x90/0xa0)
+[   24.880000] [<c0356658>] (dump_stack) from [<c0107b64>] (panic+0xb0/0x218)
+[   24.880000] [<c0107b64>] (panic) from [<c002b058>] (complete_and_exit+0x0/0x2c)
+[   24.880000] [<c002b058>] (complete_and_exit) from [<c002b0f0>] (do_group_exit+0x4c/0xe0)
+[   24.880000] [<c002b0f0>] (do_group_exit) from [<c002b1a4>] (__wake_up_parent+0x0/0x30)
+[   24.880000] [<c002b1a4>] (__wake_up_parent) from [<c0010900>] (ret_fast_syscall+0x0/0x3c)
+[   24.880000] ---[ end Kernel panic - not syncing: Attempted to kill init! exitcode=0x00000100
+[   24.880000] 
+
+U-Boot SPL 2015.10 (Nov 29 2016 - 05:06:28)
+DRAM: 512 MiB
+CPU: 1008000000Hz, AXI/AHB/APB: 3/2/2
+
+
+U-Boot 2015.10-00003-gaf62f4a-dirty (Feb 19 2016 - 16:54:25 -0800) Allwinner Technology
+
+CPU:   Allwinner A13 (SUN5I)
+I2C:   ready
+DRAM:  512 MiB
+NAND:  8192 MiB
+Setting up a 720x480i composite-ntsc console (overscan 40x20)
+In:    serial
+Out:   serial
+Err:   serial
+Net:   usb_ether
+starting USB...
+No controllers found
+Hit any key to stop autoboot:  2  1  0 
+(FEL boot)
+## Executing script at 43100000
+starting USB...
+No controllers found
+## Error: Can't overwrite "serial#"
+## Error inserting "serial#" variable, errno=1
+
+device nand0 <sunxi-nand.0>, # parts = 5
+ #: name		size		offset		mask_flags
+ 0: spl                 0x00400000	0x00000000	0
+ 1: spl-backup          0x00400000	0x00400000	0
+ 2: uboot               0x00400000	0x00800000	0
+ 3: env                 0x00400000	0x00c00000	0
+ 4: UBI                 0x1ff000000	0x01000000	0
+
+active partition: nand0,0 - (spl) 0x00400000 @ 0x00000000
+
+defaults:
+mtdids  : none
+mtdparts: none
+UBI: attaching mtd1 to ubi0
+UBI: scanning is finished
+UBI: attached mtd1 (name "mtd=4", size 8176 MiB) to ubi0
+UBI: PEB size: 2097152 bytes (4096 KiB), LEB size: 2064384 bytes
+UBI: min./max. I/O unit sizes: 16384/16384, sub-page size 16384
+UBI: VID header offset: 16384 (aligned 16384), data offset: 32768
+UBI: good PEBs: 2034, bad PEBs: 10, corrupted PEBs: 0
+UBI: user volume: 1, internal volumes: 1, max. volumes count: 128
+UBI: max/mean erase counter: 2/1, WL threshold: 4096, image sequence number: 1098611298
+UBI: available PEBs: 0, total reserved PEBs: 2034, PEBs reserved for bad PEB handling: 30
+## Booting kernel from Legacy Image at 42000000 ...
+   Image Name:   Linux--4.3.0
+   Image Type:   ARM Linux Kernel Image (uncompressed)
+   Data Size:    5619496 Bytes = 5.4 MiB
+   Load Address: 42000000
+   Entry Point:  42000000
+   Verifying Checksum ... OK
+## Loading init Ramdisk from Legacy Image at 43300000 ...
+   Image Name:   initrd-4.3.0-multiboot
+   Image Type:   ARM Linux RAMDisk Image (gzip compressed)
+   Data Size:    17498112 Bytes = 16.7 MiB
+   Load Address: 00000000
+   Entry Point:  00000000
+   Verifying Checksum ... OK
+## Flattened Device Tree blob at 43000000
+   Booting using the fdt blob at 0x43000000
+   Loading Kernel Image ... OK
+   Loading Ramdisk to 48f50000, end 4a000000 ... OK
+   Loading Device Tree to 48f48000, end 48f4fa40 ... OK
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 4.3.0-ntc (alex@kihei) (gcc version 4.9.2 20140904 (prerelease) (crosstool-NG linaro-1.13.1-4.9-2014.09 - Linaro GCC 4.9-2014.09) ) #1 SMP Fri Feb 19 09:37:25 PST 2016
+[    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine model: NextThing C.H.I.P.
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] PERCPU: Embedded 13 pages/cpu @dfe88000 s21888 r8192 d23168 u53248
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 129583
+[    0.000000] Kernel command line: root=/dev/ram0 earlyprintk rootwait
+[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Memory: 489508K/522932K available (7232K kernel code, 675K rwdata, 2408K rodata, 524K init, 298K bss, 33424K reserved, 0K cma-reserved, 0K highmem)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xe0000000 - 0xff000000   ( 496 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xdfead000   ( 510 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0xc0008000 - 0xc097260c   (9642 kB)
+[    0.000000]       .init : 0xc0973000 - 0xc09f6000   ( 524 kB)
+[    0.000000]       .data : 0xc09f6000 - 0xc0a9ef00   ( 676 kB)
+[    0.000000]        .bss : 0xc0aa1000 - 0xc0aebb14   ( 299 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	Build-time adjustment of leaf fanout to 32.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=32, nr_cpu_ids=1
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[    0.000000] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370868154 ns
+[    0.000000] sched_clock: 32 bits at 100 Hz, resolution 10000000ns, wraps every 21474836475000000ns
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] console [tty0] enabled
+[    0.090000] Calibrating delay loop... 1001.88 BogoMIPS (lpj=5009408)
+[    0.090000] pid_max: default: 32768 minimum: 301
+[    0.090000] Security Framework initialized
+[    0.090000] Yama: becoming mindful.
+[    0.090000] AppArmor: AppArmor disabled by boot time parameter
+[    0.090000] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.090000] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.090000] Initializing cgroup subsys io
+[    0.090000] Initializing cgroup subsys memory
+[    0.090000] Initializing cgroup subsys devices
+[    0.090000] Initializing cgroup subsys freezer
+[    0.090000] Initializing cgroup subsys perf_event
+[    0.090000] CPU: Testing write buffer coherency: ok
+[    0.090000] ftrace: allocating 23777 entries in 70 pages
+[    0.120000] CPU0: thread -1, cpu 0, socket -1, mpidr 0
+[    0.120000] Setting up static identity map for 0x40008280 - 0x400082d8
+[    0.130000] Brought up 1 CPUs
+[    0.130000] SMP: Total of 1 processors activated (1001.88 BogoMIPS).
+[    0.130000] CPU: All CPU(s) started in SVC mode.
+[    0.130000] devtmpfs: initialized
+[    0.130000] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[    0.130000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.140000] pinctrl core: initialized pinctrl subsystem
+[    0.140000] NET: Registered protocol family 16
+[    0.140000] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.140000] hw-breakpoint: debug architecture 0x4 unsupported.
+[    0.150000] reg-fixed-voltage usb0-vbus: could not find pctldev for node /soc@01c00000/pinctrl@01c20800/chip_vbus_pin@0, deferring probe
+[    0.150000] SCSI subsystem initialized
+[    0.150000] usbcore: registered new interface driver usbfs
+[    0.150000] usbcore: registered new interface driver hub
+[    0.150000] usbcore: registered new device driver usb
+[    0.150000] pps_core: LinuxPPS API ver. 1 registered
+[    0.150000] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.150000] PTP clock support registered
+[    0.150000] Advanced Linux Sound Architecture Driver Initialized.
+[    0.150000] clocksource: Switched to clocksource timer
+[    0.200000] simple-framebuffer 5febc000.framebuffer: framebuffer at 0x5febc000, 0x135600 bytes, mapped to 0xe0200000
+[    0.200000] simple-framebuffer 5febc000.framebuffer: format=x8r8g8b8, mode=640x440x32, linelength=2880
+[    0.210000] Console: switching to colour frame buffer device 80x27
+[    0.220000] simple-framebuffer 5febc000.framebuffer: fb0: simplefb registered!
+[    0.230000] NET: Registered protocol family 2
+[    0.240000] TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.240000] TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.240000] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.250000] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.250000] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.250000] NET: Registered protocol family 1
+[    0.260000] RPC: Registered named UNIX socket transport module.
+[    0.260000] RPC: Registered udp transport module.
+[    0.260000] RPC: Registered tcp transport module.
+[    0.270000] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.270000] Unpacking initramfs...
+[    0.440000] Freeing initrd memory: 17088K (c8f50000 - ca000000)
+[    0.450000] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.450000] audit: initializing netlink subsys (disabled)
+[    0.450000] audit: type=2000 audit(0.450:1): initialized
+[    0.470000] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.470000] NFS: Registering the id_resolver key type
+[    0.470000] Key type id_resolver registered
+[    0.480000] Key type id_legacy registered
+[    0.480000] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+[    0.490000] io scheduler noop registered
+[    0.490000] io scheduler deadline registered
+[    0.490000] io scheduler cfq registered (default)
+[    0.500000] sun4i-usb-phy 1c13400.phy: could not find pctldev for node /soc@01c00000/pinctrl@01c20800/chip_id_det_pin@0, deferring probe
+[    0.500000] sun5i-a13-pinctrl 1c20800.pinctrl: initialized sunXi PIO driver
+[    0.580000] Serial: 8250/16550 driver, 8 ports, IRQ sharing disabled
+[    0.610000] 1c28400.serial: ttyS0 at MMIO 0x1c28400 (irq = 26, base_baud = 1500000) is a U6_16550A
+[    1.250000] console [ttyS0] enabled
+[    1.280000] 1c28c00.serial: ttyS1 at MMIO 0x1c28c00 (irq = 27, base_baud = 1500000) is a U6_16550A
+[    1.300000] nand: device found, Manufacturer ID: 0xad, Chip ID: 0xde
+[    1.310000] nand: Hynix H27QCG8T2E5R‐BCF 64G 3.3V 8-bit
+[    1.320000] nand: 8192 MiB, MLC, erase size: 4096 KiB, page size: 16384, OOB size: 1664
+[    1.330000] Bad block table not found for chip 0
+[    1.340000] Bad block table not found for chip 0
+[    1.350000] Scanning device for bad blocks
+[    1.390000] Bad eraseblock 134 at 0x000021bfc000
+[    1.400000] Bad eraseblock 163 at 0x000028ffc000
+[    1.420000] Bad eraseblock 183 at 0x00002dffc000
+[    1.430000] Bad eraseblock 231 at 0x000039ffc000
+[    1.480000] Bad eraseblock 394 at 0x000062bfc000
+[    1.500000] random: nonblocking pool is initialized
+[    1.540000] Bad eraseblock 572 at 0x00008f3fc000
+[    1.600000] Bad eraseblock 802 at 0x0000c8bfc000
+[    1.870000] Bad eraseblock 1883 at 0x0001d6ffc000
+[    1.890000] Bad eraseblock 1946 at 0x0001e6bfc000
+[    1.910000] Bad eraseblock 2002 at 0x0001f4bfc000
+[    1.940000] Bad block table written to 0x0001ffc00000, version 0x01
+[    1.950000] Bad block table written to 0x0001ff800000, version 0x01
+[    1.990000] usbcore: registered new interface driver asix
+[    2.000000] usbcore: registered new interface driver ax88179_178a
+[    2.010000] usbcore: registered new interface driver cdc_ether
+[    2.020000] usbcore: registered new interface driver net1080
+[    2.030000] usbcore: registered new interface driver rndis_host
+[    2.030000] usbcore: registered new interface driver cdc_subset
+[    2.040000] usbcore: registered new interface driver zaurus
+[    2.050000] usbcore: registered new interface driver cdc_ncm
+[    2.060000] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    2.060000] ehci-platform: EHCI generic platform driver
+[    2.070000] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    2.080000] ohci-platform: OHCI generic platform driver
+[    2.080000] usbcore: registered new interface driver usb-storage
+[    2.090000] mousedev: PS/2 mouse device common for all mice
+[    2.100000] i2c /dev entries driver
+[    2.110000] axp20x 0-0034: AXP20x variant AXP209 found
+[    2.120000] input: axp20x-pek as /devices/platform/soc@01c00000/1c2ac00.i2c/i2c-0/0-0034/axp20x-pek/input/input0
+[    2.140000] axp20x 0-0034: AXP20X driver loaded
+[    2.150000] pcf857x 2-0038: probed
+[    2.150000] Driver for 1-wire Dallas network protocol.
+[    2.160000] sunxi-wdt 1c20c90.watchdog: Watchdog enabled (timeout=16 sec, nowayout=0)
+[    2.180000] sunxi-mmc 1c0f000.mmc: No vqmmc regulator found
+[    2.220000] sunxi-mmc 1c0f000.mmc: base:0xe00de000 irq:20
+[    2.220000] ledtrig-cpu: registered to indicate activity on CPUs
+[    2.230000] hidraw: raw HID events driver (C) Jiri Kosina
+[    2.240000] usbcore: registered new interface driver usbhid
+[    2.250000] usbhid: USB HID core driver
+[    2.260000] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    2.260000] NET: Registered protocol family 10
+[    2.270000] mip6: Mobile IPv6
+[    2.280000] sit: IPv6 over IPv4 tunneling driver
+[    2.290000] NET: Registered protocol family 17
+[    2.290000] Key type dns_resolver registered
+[    2.300000] Registering SWP/SWPB emulation handler
+[    2.310000] registered taskstats version 1
+[    2.320000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 8, RTO !!
+[    2.330000] hctosys: unable to open rtc device (rtc0)
+[    2.340000] vcc3v0: disabling
+[    2.350000] vcc5v0: disabling
+[    2.350000] ldo3: disabling
+[    2.360000] ldo4: disabling
+[    2.360000] usb0-vbus: disabling
+[    2.370000] ALSA device list:
+[    2.380000]   No soundcards found.
+[    2.380000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 52, RE !!
+[    2.390000] Freeing unused kernel memory: 524K (c0973000 - c09f6000)
+[    2.400000] mmc0: error -110 whilst initialising SDIO card
+[    2.410000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 55, RE !!
+[    2.410000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 55, RE !!
+[    2.420000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 55, RE !!
+[    2.430000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 55, RE !!
+[    3.190000] sunxi-mmc 1c0f000.mmc: fatal err update clk timeout
+
+Choose os to boot 
+	enter 0 for Debian 8.3
+	enter 1 for Slackware 14.2
+  enter 2 for Ubuntu 
+  enter 3 for Slackware setup 
+  enter 4 to boot ubuntu-16.04-mate-odroid-u2u3-20160920.img
+  enter 5 to boot piCore-8.0
+  enter 6 to boot ArchLinux
+  enter 7 to boot Quirky NA
+  enter 8 ti boot ubuntu-16.04-minimal-odroid-xu3-20160706.img /dev/sda1
+  any other key 
+  or after a delay of 10 seconds boot to slackware 14.2
+        
+mount: mounting /dev/sda1 on /mnt1 failed: No such file or directory
+Fatal error: fail to mount /dev/sda1 at /mnt1
+
+Fatal Error : debian.8.3.chip not found on /dev/sda1
+
+[  215.950000] Kernel panic - not syncing: Attempted to kill init! exitcode=0x00000100
+[  215.950000] 
+[  215.950000] CPU: 0 PID: 1 Comm: init Not tainted 4.3.0-ntc #1
+[  215.950000] Hardware name: Allwinner sun4i/sun5i Families
+[  215.950000] [<c00191dc>] (unwind_backtrace) from [<c0015160>] (show_stack+0x20/0x24)
+[  215.950000] [<c0015160>] (show_stack) from [<c0356658>] (dump_stack+0x90/0xa0)
+[  215.950000] [<c0356658>] (dump_stack) from [<c0107b64>] (panic+0xb0/0x218)
+[  215.950000] [<c0107b64>] (panic) from [<c002b058>] (complete_and_exit+0x0/0x2c)
+[  215.950000] [<c002b058>] (complete_and_exit) from [<c002b0f0>] (do_group_exit+0x4c/0xe0)
+[  215.950000] [<c002b0f0>] (do_group_exit) from [<c002b1a4>] (__wake_up_parent+0x0/0x30)
+[  215.950000] [<c002b1a4>] (__wake_up_parent) from [<c0010900>] (ret_fast_syscall+0x0/0x3c)
+[  215.950000] ---[ end Kernel panic - not syncing: Attempted to kill init! exitcode=0x00000100
+[  215.950000] 
+
+U-Boot SPL 2015.10 (Nov 29 2016 - 05:06:28)
+DRAM: 512 MiB
+CPU: 1008000000Hz, AXI/AHB/APB: 3/2/2
+
+
+U-Boot 2015.10-00003-gaf62f4a-dirty (Feb 19 2016 - 16:54:25 -0800) Allwinner Technology
+
+CPU:   Allwinner A13 (SUN5I)
+I2C:   ready
+DRAM:  512 MiB
+NAND:  8192 MiB
+Setting up a 720x480i composite-ntsc console (overscan 40x20)
+In:    serial
+Out:   serial
+Err:   serial
+Net:   usb_ether
+starting USB...
+No controllers found
+Hit any key to stop autoboot:  2  1  0 
+(FEL boot)
+## Executing script at 43100000
+starting USB...
+No controllers found
+## Error: Can't overwrite "serial#"
+## Error inserting "serial#" variable, errno=1
+
+device nand0 <sunxi-nand.0>, # parts = 5
+ #: name		size		offset		mask_flags
+ 0: spl                 0x00400000	0x00000000	0
+ 1: spl-backup          0x00400000	0x00400000	0
+ 2: uboot               0x00400000	0x00800000	0
+ 3: env                 0x00400000	0x00c00000	0
+ 4: UBI                 0x1ff000000	0x01000000	0
+
+active partition: nand0,0 - (spl) 0x00400000 @ 0x00000000
+
+defaults:
+mtdids  : none
+mtdparts: none
+UBI: attaching mtd1 to ubi0
+UBI: scanning is finished
+UBI: attached mtd1 (name "mtd=4", size 8176 MiB) to ubi0
+UBI: PEB size: 2097152 bytes (4096 KiB), LEB size: 2064384 bytes
+UBI: min./max. I/O unit sizes: 16384/16384, sub-page size 16384
+UBI: VID header offset: 16384 (aligned 16384), data offset: 32768
+UBI: good PEBs: 2034, bad PEBs: 10, corrupted PEBs: 0
+UBI: user volume: 1, internal volumes: 1, max. volumes count: 128
+UBI: max/mean erase counter: 2/1, WL threshold: 4096, image sequence number: 1098611298
+UBI: available PEBs: 0, total reserved PEBs: 2034, PEBs reserved for bad PEB handling: 30
+## Booting kernel from Legacy Image at 42000000 ...
+   Image Name:   Linux--4.3.0
+   Image Type:   ARM Linux Kernel Image (uncompressed)
+   Data Size:    5619496 Bytes = 5.4 MiB
+   Load Address: 42000000
+   Entry Point:  42000000
+   Verifying Checksum ... OK
+## Loading init Ramdisk from Legacy Image at 43300000 ...
+   Image Name:   initrd-4.3.0-multiboot
+   Image Type:   ARM Linux RAMDisk Image (gzip compressed)
+   Data Size:    17498112 Bytes = 16.7 MiB
+   Load Address: 00000000
+   Entry Point:  00000000
+   Verifying Checksum ... OK
+## Flattened Device Tree blob at 43000000
+   Booting using the fdt blob at 0x43000000
+   Loading Kernel Image ... OK
+   Loading Ramdisk to 48f50000, end 4a000000 ... OK
+   Loading Device Tree to 48f48000, end 48f4fa40 ... OK
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 4.3.0-ntc (alex@kihei) (gcc version 4.9.2 20140904 (prerelease) (crosstool-NG linaro-1.13.1-4.9-2014.09 - Linaro GCC 4.9-2014.09) ) #1 SMP Fri Feb 19 09:37:25 PST 2016
+[    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine model: NextThing C.H.I.P.
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] PERCPU: Embedded 13 pages/cpu @dfe88000 s21888 r8192 d23168 u53248
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 129583
+[    0.000000] Kernel command line: root=/dev/ram0 earlyprintk rootwait
+[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Memory: 489508K/522932K available (7232K kernel code, 675K rwdata, 2408K rodata, 524K init, 298K bss, 33424K reserved, 0K cma-reserved, 0K highmem)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xe0000000 - 0xff000000   ( 496 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xdfead000   ( 510 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0xc0008000 - 0xc097260c   (9642 kB)
+[    0.000000]       .init : 0xc0973000 - 0xc09f6000   ( 524 kB)
+[    0.000000]       .data : 0xc09f6000 - 0xc0a9ef00   ( 676 kB)
+[    0.000000]        .bss : 0xc0aa1000 - 0xc0aebb14   ( 299 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	Build-time adjustment of leaf fanout to 32.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=32, nr_cpu_ids=1
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[    0.000000] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370868154 ns
+[    0.000000] sched_clock: 32 bits at 100 Hz, resolution 10000000ns, wraps every 21474836475000000ns
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] console [tty0] enabled
+[    0.090000] Calibrating delay loop... 1001.88 BogoMIPS (lpj=5009408)
+[    0.090000] pid_max: default: 32768 minimum: 301
+[    0.090000] Security Framework initialized
+[    0.090000] Yama: becoming mindful.
+[    0.090000] AppArmor: AppArmor disabled by boot time parameter
+[    0.090000] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.090000] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.090000] Initializing cgroup subsys io
+[    0.090000] Initializing cgroup subsys memory
+[    0.090000] Initializing cgroup subsys devices
+[    0.090000] Initializing cgroup subsys freezer
+[    0.090000] Initializing cgroup subsys perf_event
+[    0.090000] CPU: Testing write buffer coherency: ok
+[    0.090000] ftrace: allocating 23777 entries in 70 pages
+[    0.120000] CPU0: thread -1, cpu 0, socket -1, mpidr 0
+[    0.120000] Setting up static identity map for 0x40008280 - 0x400082d8
+[    0.130000] Brought up 1 CPUs
+[    0.130000] SMP: Total of 1 processors activated (1001.88 BogoMIPS).
+[    0.130000] CPU: All CPU(s) started in SVC mode.
+[    0.130000] devtmpfs: initialized
+[    0.130000] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[    0.130000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.140000] pinctrl core: initialized pinctrl subsystem
+[    0.140000] NET: Registered protocol family 16
+[    0.140000] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.140000] hw-breakpoint: debug architecture 0x4 unsupported.
+[    0.150000] reg-fixed-voltage usb0-vbus: could not find pctldev for node /soc@01c00000/pinctrl@01c20800/chip_vbus_pin@0, deferring probe
+[    0.150000] SCSI subsystem initialized
+[    0.150000] usbcore: registered new interface driver usbfs
+[    0.150000] usbcore: registered new interface driver hub
+[    0.150000] usbcore: registered new device driver usb
+[    0.150000] pps_core: LinuxPPS API ver. 1 registered
+[    0.150000] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.150000] PTP clock support registered
+[    0.150000] Advanced Linux Sound Architecture Driver Initialized.
+[    0.150000] clocksource: Switched to clocksource timer
+[    0.200000] simple-framebuffer 5febc000.framebuffer: framebuffer at 0x5febc000, 0x135600 bytes, mapped to 0xe0200000
+[    0.200000] simple-framebuffer 5febc000.framebuffer: format=x8r8g8b8, mode=640x440x32, linelength=2880
+[    0.210000] Console: switching to colour frame buffer device 80x27
+[    0.220000] simple-framebuffer 5febc000.framebuffer: fb0: simplefb registered!
+[    0.230000] NET: Registered protocol family 2
+[    0.240000] TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.240000] TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.240000] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.250000] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.250000] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.250000] NET: Registered protocol family 1
+[    0.260000] RPC: Registered named UNIX socket transport module.
+[    0.260000] RPC: Registered udp transport module.
+[    0.260000] RPC: Registered tcp transport module.
+[    0.270000] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.270000] Unpacking initramfs...
+[    0.440000] Freeing initrd memory: 17088K (c8f50000 - ca000000)
+[    0.450000] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.450000] audit: initializing netlink subsys (disabled)
+[    0.450000] audit: type=2000 audit(0.450:1): initialized
+[    0.470000] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.470000] NFS: Registering the id_resolver key type
+[    0.470000] Key type id_resolver registered
+[    0.480000] Key type id_legacy registered
+[    0.480000] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+[    0.490000] io scheduler noop registered
+[    0.490000] io scheduler deadline registered
+[    0.490000] io scheduler cfq registered (default)
+[    0.500000] sun4i-usb-phy 1c13400.phy: could not find pctldev for node /soc@01c00000/pinctrl@01c20800/chip_id_det_pin@0, deferring probe
+[    0.500000] sun5i-a13-pinctrl 1c20800.pinctrl: initialized sunXi PIO driver
+[    0.580000] Serial: 8250/16550 driver, 8 ports, IRQ sharing disabled
+[    0.610000] 1c28400.serial: ttyS0 at MMIO 0x1c28400 (irq = 26, base_baud = 1500000) is a U6_16550A
+[    1.250000] console [ttyS0] enabled
+[    1.280000] 1c28c00.serial: ttyS1 at MMIO 0x1c28c00 (irq = 27, base_baud = 1500000) is a U6_16550A
+[    1.300000] nand: device found, Manufacturer ID: 0xad, Chip ID: 0xde
+[    1.310000] nand: Hynix H27QCG8T2E5R‐BCF 64G 3.3V 8-bit
+[    1.320000] nand: 8192 MiB, MLC, erase size: 4096 KiB, page size: 16384, OOB size: 1664
+[    1.330000] Bad block table not found for chip 0
+[    1.340000] Bad block table not found for chip 0
+[    1.350000] Scanning device for bad blocks
+[    1.390000] Bad eraseblock 134 at 0x000021bfc000
+[    1.400000] Bad eraseblock 163 at 0x000028ffc000
+[    1.420000] Bad eraseblock 183 at 0x00002dffc000
+[    1.430000] Bad eraseblock 231 at 0x000039ffc000
+[    1.480000] Bad eraseblock 394 at 0x000062bfc000
+[    1.500000] random: nonblocking pool is initialized
+[    1.540000] Bad eraseblock 572 at 0x00008f3fc000
+[    1.600000] Bad eraseblock 802 at 0x0000c8bfc000
+[    1.870000] Bad eraseblock 1883 at 0x0001d6ffc000
+[    1.890000] Bad eraseblock 1946 at 0x0001e6bfc000
+[    1.910000] Bad eraseblock 2002 at 0x0001f4bfc000
+[    1.940000] Bad block table written to 0x0001ffc00000, version 0x01
+[    1.950000] Bad block table written to 0x0001ff800000, version 0x01
+[    1.990000] usbcore: registered new interface driver asix
+[    2.000000] usbcore: registered new interface driver ax88179_178a
+[    2.010000] usbcore: registered new interface driver cdc_ether
+[    2.020000] usbcore: registered new interface driver net1080
+[    2.030000] usbcore: registered new interface driver rndis_host
+[    2.030000] usbcore: registered new interface driver cdc_subset
+[    2.040000] usbcore: registered new interface driver zaurus
+[    2.050000] usbcore: registered new interface driver cdc_ncm
+[    2.060000] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    2.060000] ehci-platform: EHCI generic platform driver
+[    2.070000] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    2.080000] ohci-platform: OHCI generic platform driver
+[    2.080000] usbcore: registered new interface driver usb-storage
+[    2.090000] mousedev: PS/2 mouse device common for all mice
+[    2.100000] i2c /dev entries driver
+[    2.110000] axp20x 0-0034: AXP20x variant AXP209 found
+[    2.120000] input: axp20x-pek as /devices/platform/soc@01c00000/1c2ac00.i2c/i2c-0/0-0034/axp20x-pek/input/input0
+[    2.140000] axp20x 0-0034: AXP20X driver loaded
+[    2.150000] pcf857x 2-0038: probed
+[    2.150000] Driver for 1-wire Dallas network protocol.
+[    2.160000] sunxi-wdt 1c20c90.watchdog: Watchdog enabled (timeout=16 sec, nowayout=0)
+[    2.180000] sunxi-mmc 1c0f000.mmc: No vqmmc regulator found
+[    2.220000] sunxi-mmc 1c0f000.mmc: base:0xe00de000 irq:20
+[    2.220000] ledtrig-cpu: registered to indicate activity on CPUs
+[    2.230000] hidraw: raw HID events driver (C) Jiri Kosina
+[    2.240000] usbcore: registered new interface driver usbhid
+[    2.250000] usbhid: USB HID core driver
+[    2.260000] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    2.260000] NET: Registered protocol family 10
+[    2.270000] mip6: Mobile IPv6
+[    2.280000] sit: IPv6 over IPv4 tunneling driver
+[    2.290000] NET: Registered protocol family 17
+[    2.290000] Key type dns_resolver registered
+[    2.300000] Registering SWP/SWPB emulation handler
+[    2.310000] registered taskstats version 1
+[    2.320000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 8, RTO !!
+[    2.330000] hctosys: unable to open rtc device (rtc0)
+[    2.340000] vcc3v0: disabling
+[    2.350000] vcc5v0: disabling
+[    2.350000] ldo3: disabling
+[    2.360000] ldo4: disabling
+[    2.360000] usb0-vbus: disabling
+[    2.370000] ALSA device list:
+[    2.380000]   No soundcards found.
+[    2.380000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 52, RE !!
+[    2.390000] Freeing unused kernel memory: 524K (c0973000 - c09f6000)
+[    2.400000] mmc0: error -110 whilst initialising SDIO card
+[    2.410000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 55, RE !!
+[    2.410000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 55, RE !!
+[    2.420000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 55, RE !!
+[    2.430000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 55, RE !!
+[    3.190000] sunxi-mmc 1c0f000.mmc: fatal err update clk timeout
+
+Choose os to boot 
+	enter 0 for Debian 8.3
+	enter 1 for Slackware 14.2
+  enter 2 for Ubuntu 
+  enter 3 for Slackware setup 
+  enter 4 to boot ubuntu-16.04-mate-odroid-u2u3-20160920.img
+  enter 5 to boot piCore-8.0
+  enter 6 to boot ArchLinux
+  enter 7 to boot Quirky NA
+  enter 8 ti boot ubuntu-16.04-minimal-odroid-xu3-20160706.img /dev/sda1
+  any other key 
+  or after a delay of 10 seconds boot to slackware 14.2
+        
+1
+mount: mounting /dev/sda1 on /mnt1 failed: No such file or directory
+Fatal error: fail to mount /dev/sda1 at /mnt1
+
+U-Boot SPL 2015.10 (Nov 29 2016 - 05:06:28)
+DRAM: 512 MiB
+CPU: 1008000000Hz, AXI/AHB/APB: 3/2/2
+
+
+U-Boot 2015.10-00003-gaf62f4a-dirty (Feb 19 2016 - 16:54:25 -0800) Allwinner Technology
+
+CPU:   Allwinner A13 (SUN5I)
+I2C:   ready
+DRAM:  512 MiB
+NAND:  8192 MiB
+Setting up a 720x480i composite-ntsc console (overscan 40x20)
+In:    serial
+Out:   serial
+Err:   serial
+Net:   usb_ether
+starting USB...
+No controllers found
+Hit any key to stop autoboot:  2  1  0 
+(FEL boot)
+## Executing script at 43100000
+starting USB...
+No controllers found
+## Error: Can't overwrite "serial#"
+## Error inserting "serial#" variable, errno=1
+
+device nand0 <sunxi-nand.0>, # parts = 5
+ #: name		size		offset		mask_flags
+ 0: spl                 0x00400000	0x00000000	0
+ 1: spl-backup          0x00400000	0x00400000	0
+ 2: uboot               0x00400000	0x00800000	0
+ 3: env                 0x00400000	0x00c00000	0
+ 4: UBI                 0x1ff000000	0x01000000	0
+
+active partition: nand0,0 - (spl) 0x00400000 @ 0x00000000
+
+defaults:
+mtdids  : none
+mtdparts: none
+UBI: attaching mtd1 to ubi0
+UBI: scanning is finished
+UBI: attached mtd1 (name "mtd=4", size 8176 MiB) to ubi0
+UBI: PEB size: 2097152 bytes (4096 KiB), LEB size: 2064384 bytes
+UBI: min./max. I/O unit sizes: 16384/16384, sub-page size 16384
+UBI: VID header offset: 16384 (aligned 16384), data offset: 32768
+UBI: good PEBs: 2034, bad PEBs: 10, corrupted PEBs: 0
+UBI: user volume: 1, internal volumes: 1, max. volumes count: 128
+UBI: max/mean erase counter: 2/1, WL threshold: 4096, image sequence number: 1098611298
+UBI: available PEBs: 0, total reserved PEBs: 2034, PEBs reserved for bad PEB handling: 30
+## Booting kernel from Legacy Image at 42000000 ...
+   Image Name:   Linux--4.3.0
+   Image Type:   ARM Linux Kernel Image (uncompressed)
+   Data Size:    5619496 Bytes = 5.4 MiB
+   Load Address: 42000000
+   Entry Point:  42000000
+   Verifying Checksum ... OK
+## Loading init Ramdisk from Legacy Image at 43300000 ...
+   Image Name:   initrd-4.3.0-multiboot
+   Image Type:   ARM Linux RAMDisk Image (gzip compressed)
+   Data Size:    17498112 Bytes = 16.7 MiB
+   Load Address: 00000000
+   Entry Point:  00000000
+   Verifying Checksum ... OK
+## Flattened Device Tree blob at 43000000
+   Booting using the fdt blob at 0x43000000
+   Loading Kernel Image ... OK
+   Loading Ramdisk to 48f50000, end 4a000000 ... OK
+   Loading Device Tree to 48f48000, end 48f4fa40 ... OK
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 4.3.0-ntc (alex@kihei) (gcc version 4.9.2 20140904 (prerelease) (crosstool-NG linaro-1.13.1-4.9-2014.09 - Linaro GCC 4.9-2014.09) ) #1 SMP Fri Feb 19 09:37:25 PST 2016
+[    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine model: NextThing C.H.I.P.
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] PERCPU: Embedded 13 pages/cpu @dfe88000 s21888 r8192 d23168 u53248
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 129583
+[    0.000000] Kernel command line: root=/dev/ram0 earlyprintk rootwait
+[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] Memory: 489508K/522932K available (7232K kernel code, 675K rwdata, 2408K rodata, 524K init, 298K bss, 33424K reserved, 0K cma-reserved, 0K highmem)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xe0000000 - 0xff000000   ( 496 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xdfead000   ( 510 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0xc0008000 - 0xc097260c   (9642 kB)
+[    0.000000]       .init : 0xc0973000 - 0xc09f6000   ( 524 kB)
+[    0.000000]       .data : 0xc09f6000 - 0xc0a9ef00   ( 676 kB)
+[    0.000000]        .bss : 0xc0aa1000 - 0xc0aebb14   ( 299 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	Build-time adjustment of leaf fanout to 32.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=1.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=32, nr_cpu_ids=1
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[    0.000000] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370868154 ns
+[    0.000000] sched_clock: 32 bits at 100 Hz, resolution 10000000ns, wraps every 21474836475000000ns
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] console [tty0] enabled
+[    0.090000] Calibrating delay loop... 1001.88 BogoMIPS (lpj=5009408)
+[    0.090000] pid_max: default: 32768 minimum: 301
+[    0.090000] Security Framework initialized
+[    0.090000] Yama: becoming mindful.
+[    0.090000] AppArmor: AppArmor disabled by boot time parameter
+[    0.090000] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.090000] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.090000] Initializing cgroup subsys io
+[    0.090000] Initializing cgroup subsys memory
+[    0.090000] Initializing cgroup subsys devices
+[    0.090000] Initializing cgroup subsys freezer
+[    0.090000] Initializing cgroup subsys perf_event
+[    0.090000] CPU: Testing write buffer coherency: ok
+[    0.090000] ftrace: allocating 23777 entries in 70 pages
+[    0.120000] CPU0: thread -1, cpu 0, socket -1, mpidr 0
+[    0.120000] Setting up static identity map for 0x40008280 - 0x400082d8
+[    0.130000] Brought up 1 CPUs
+[    0.130000] SMP: Total of 1 processors activated (1001.88 BogoMIPS).
+[    0.130000] CPU: All CPU(s) started in SVC mode.
+[    0.130000] devtmpfs: initialized
+[    0.130000] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[    0.130000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.140000] pinctrl core: initialized pinctrl subsystem
+[    0.140000] NET: Registered protocol family 16
+[    0.140000] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.140000] hw-breakpoint: debug architecture 0x4 unsupported.
+[    0.150000] reg-fixed-voltage usb0-vbus: could not find pctldev for node /soc@01c00000/pinctrl@01c20800/chip_vbus_pin@0, deferring probe
+[    0.150000] SCSI subsystem initialized
+[    0.150000] usbcore: registered new interface driver usbfs
+[    0.150000] usbcore: registered new interface driver hub
+[    0.150000] usbcore: registered new device driver usb
+[    0.150000] pps_core: LinuxPPS API ver. 1 registered
+[    0.150000] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.150000] PTP clock support registered
+[    0.150000] Advanced Linux Sound Architecture Driver Initialized.
+[    0.150000] clocksource: Switched to clocksource timer
+[    0.200000] simple-framebuffer 5febc000.framebuffer: framebuffer at 0x5febc000, 0x135600 bytes, mapped to 0xe0200000
+[    0.200000] simple-framebuffer 5febc000.framebuffer: format=x8r8g8b8, mode=640x440x32, linelength=2880
+[    0.210000] Console: switching to colour frame buffer device 80x27
+[    0.220000] simple-framebuffer 5febc000.framebuffer: fb0: simplefb registered!
+[    0.230000] NET: Registered protocol family 2
+[    0.240000] TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.240000] TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.240000] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.250000] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.250000] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.250000] NET: Registered protocol family 1
+[    0.260000] RPC: Registered named UNIX socket transport module.
+[    0.260000] RPC: Registered udp transport module.
+[    0.260000] RPC: Registered tcp transport module.
+[    0.270000] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.270000] Unpacking initramfs...
+[    0.440000] Freeing initrd memory: 17088K (c8f50000 - ca000000)
+[    0.450000] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.450000] audit: initializing netlink subsys (disabled)
+[    0.450000] audit: type=2000 audit(0.450:1): initialized
+[    0.470000] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.470000] NFS: Registering the id_resolver key type
+[    0.470000] Key type id_resolver registered
+[    0.480000] Key type id_legacy registered
+[    0.480000] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 250)
+[    0.490000] io scheduler noop registered
+[    0.490000] io scheduler deadline registered
+[    0.490000] io scheduler cfq registered (default)
+[    0.500000] sun4i-usb-phy 1c13400.phy: could not find pctldev for node /soc@01c00000/pinctrl@01c20800/chip_id_det_pin@0, deferring probe
+[    0.500000] sun5i-a13-pinctrl 1c20800.pinctrl: initialized sunXi PIO driver
+[    0.580000] Serial: 8250/16550 driver, 8 ports, IRQ sharing disabled
+[    0.610000] 1c28400.serial: ttyS0 at MMIO 0x1c28400 (irq = 26, base_baud = 1500000) is a U6_16550A
+[    1.250000] console [ttyS0] enabled
+[    1.280000] 1c28c00.serial: ttyS1 at MMIO 0x1c28c00 (irq = 27, base_baud = 1500000) is a U6_16550A
+[    1.300000] nand: device found, Manufacturer ID: 0xad, Chip ID: 0xde
+[    1.310000] nand: Hynix H27QCG8T2E5R‐BCF 64G 3.3V 8-bit
+[    1.320000] nand: 8192 MiB, MLC, erase size: 4096 KiB, page size: 16384, OOB size: 1664
+[    1.330000] Bad block table not found for chip 0
+[    1.340000] Bad block table not found for chip 0
+[    1.350000] Scanning device for bad blocks
+[    1.390000] Bad eraseblock 134 at 0x000021bfc000
+[    1.400000] Bad eraseblock 163 at 0x000028ffc000
+[    1.420000] Bad eraseblock 183 at 0x00002dffc000
+[    1.430000] Bad eraseblock 231 at 0x000039ffc000
+[    1.480000] Bad eraseblock 394 at 0x000062bfc000
+[    1.500000] random: nonblocking pool is initialized
+[    1.540000] Bad eraseblock 572 at 0x00008f3fc000
+[    1.600000] Bad eraseblock 802 at 0x0000c8bfc000
+[    1.870000] Bad eraseblock 1883 at 0x0001d6ffc000
+[    1.890000] Bad eraseblock 1946 at 0x0001e6bfc000
+[    1.910000] Bad eraseblock 2002 at 0x0001f4bfc000
+[    1.940000] Bad block table written to 0x0001ffc00000, version 0x01
+[    1.950000] Bad block table written to 0x0001ff800000, version 0x01
+[    1.990000] usbcore: registered new interface driver asix
+[    2.000000] usbcore: registered new interface driver ax88179_178a
+[    2.010000] usbcore: registered new interface driver cdc_ether
+[    2.020000] usbcore: registered new interface driver net1080
+[    2.030000] usbcore: registered new interface driver rndis_host
+[    2.030000] usbcore: registered new interface driver cdc_subset
+[    2.040000] usbcore: registered new interface driver zaurus
+[    2.050000] usbcore: registered new interface driver cdc_ncm
+[    2.060000] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    2.060000] ehci-platform: EHCI generic platform driver
+[    2.070000] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    2.080000] ohci-platform: OHCI generic platform driver
+[    2.080000] usbcore: registered new interface driver usb-storage
+[    2.090000] mousedev: PS/2 mouse device common for all mice
+[    2.100000] i2c /dev entries driver
+[    2.110000] axp20x 0-0034: AXP20x variant AXP209 found
+[    2.120000] input: axp20x-pek as /devices/platform/soc@01c00000/1c2ac00.i2c/i2c-0/0-0034/axp20x-pek/input/input0
+[    2.140000] axp20x 0-0034: AXP20X driver loaded
+[    2.150000] pcf857x 2-0038: probed
+[    2.150000] Driver for 1-wire Dallas network protocol.
+[    2.160000] sunxi-wdt 1c20c90.watchdog: Watchdog enabled (timeout=16 sec, nowayout=0)
+[    2.180000] sunxi-mmc 1c0f000.mmc: No vqmmc regulator found
+[    2.220000] sunxi-mmc 1c0f000.mmc: base:0xe00de000 irq:20
+[    2.220000] ledtrig-cpu: registered to indicate activity on CPUs
+[    2.230000] hidraw: raw HID events driver (C) Jiri Kosina
+[    2.240000] usbcore: registered new interface driver usbhid
+[    2.250000] usbhid: USB HID core driver
+[    2.260000] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    2.260000] NET: Registered protocol family 10
+[    2.270000] mip6: Mobile IPv6
+[    2.280000] sit: IPv6 over IPv4 tunneling driver
+[    2.290000] NET: Registered protocol family 17
+[    2.290000] Key type dns_resolver registered
+[    2.300000] Registering SWP/SWPB emulation handler
+[    2.310000] registered taskstats version 1
+[    2.320000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 8, RTO !!
+[    2.330000] hctosys: unable to open rtc device (rtc0)
+[    2.340000] vcc3v0: disabling
+[    2.350000] vcc5v0: disabling
+[    2.350000] ldo3: disabling
+[    2.360000] ldo4: disabling
+[    2.360000] usb0-vbus: disabling
+[    2.370000] ALSA device list:
+[    2.380000]   No soundcards found.
+[    2.380000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 52, RE !!
+[    2.390000] Freeing unused kernel memory: 524K (c0973000 - c09f6000)
+[    2.400000] mmc0: error -110 whilst initialising SDIO card
+[    2.410000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 55, RE !!
+[    2.410000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 55, RE !!
+[    2.420000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 55, RE !!
+[    2.430000] sunxi-mmc 1c0f000.mmc: smc 0 err, cmd 55, RE !!
+[    3.190000] sunxi-mmc 1c0f000.mmc: fatal err update clk timeout
+
+Choose os to boot 
+	enter 0 for Debian 8.3 /dev/sda1
+	enter 1 for Debian 8.3 ubi0:rootfs
+	enter 2 for Slackware 14.2
+  enter 3 for Ubuntu 
+  enter 4 for Slackware setup 
+  enter 5 to boot ubuntu-16.04-mate-odroid-u2u3-20160920.img
+  enter 6 to boot piCore-8.0
+  enter 7 to boot ArchLinux
+  enter 8 to boot Quirky NA
+  enter 9 ti boot ubuntu-16.04-minimal-odroid-xu3-20160706.img /dev/sda1
+  any other key 
+  or after a delay of 10 seconds boot to slackware 14.2
+        
+1
+Fatal error: ubi0:rootfs not found
+-^H^H^H^H^H^[[3~^[[3~^[[3~^H^H
+[   18.430000] Kernel panic - not syncing: Attempted to kill init! exitcode=0x00000100
+[   18.430000] 
+[   18.430000] CPU: 0 PID: 1 Comm: init Not tainted 4.3.0-ntc #1
+[   18.430000] Hardware name: Allwinner sun4i/sun5i Families
+[   18.430000] [<c00191dc>] (unwind_backtrace) from [<c0015160>] (show_stack+0x20/0x24)
+[   18.430000] [<c0015160>] (show_stack) from [<c0356658>] (dump_stack+0x90/0xa0)
+[   18.430000] [<c0356658>] (dump_stack) from [<c0107b64>] (panic+0xb0/0x218)
+[   18.430000] [<c0107b64>] (panic) from [<c002b058>] (complete_and_exit+0x0/0x2c)
+[   18.430000] [<c002b058>] (complete_and_exit) from [<c002b0f0>] (do_group_exit+0x4c/0xe0)
+[   18.430000] [<c002b0f0>] (do_group_exit) from [<c002b1a4>] (__wake_up_parent+0x0/0x30)
+[   18.430000] [<c002b1a4>] (__wake_up_parent) from [<c0010900>] (ret_fast_syscall+0x0/0x3c)
+[   18.430000] ---[ end Kernel panic - not syncing: Attempted to kill init! exitcode=0x00000100
+[   18.430000] 

@@ -1,0 +1,17 @@
+
+setenv bootdelay 2
+setenv bootm_size 0xa000000
+
+setenv mtdids "nand0=sunxi-nand.0"
+setenv mtdparts "mtdparts=sunxi-nand.0:4m(spl),4m(spl-backup),4m(uboot),4m(env),-(UBI)"
+setenv console "ttyS0,115200"
+setenv preboot "usb start"
+setenv serial# "1625428d02426156"
+setenv stderr serial
+setenv stdin serial,usbkbd
+setenv stdout serial
+setenv video-mode "sunxi:640x480-24@60,monitor=composite-ntsc,overscan_x=40,overscan_y=20"
+# setenv bootargs "root=/dev/ram0 earlyprintk rootwait debug loglevel=7"
+setenv bootargs "root=/dev/ram0 earlyprintk rootwait"
+setenv bootcmd "bootm $kernel_addr_r $ramdisk_addr_r $fdt_addr_r"
+boot
