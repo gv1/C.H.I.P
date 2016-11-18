@@ -1,0 +1,72 @@
+ROOTFS_URL=http://opensource.nextthing.co.s3.amazonaws.com/chip/buildroot/stable/71/images
+BUILD=71
+BR_URL=http://opensource.nextthing.co.s3.amazonaws.com/chip/buildroot/stable/71/images
+BR_BUILD=71
+/home/doge/gits/CHIP-tools/.firmware/images/rootfs.ubi exists... comparing to http://opensource.nextthing.co.s3.amazonaws.com/chip/buildroot/stable/71/images/rootfs.ubi
+MD5: 90315ca1fb8ff95fc6878ce8126bdf02
+S3_MD5: 6d59af4a0f673e1d61147e4a06dd7ba8
+md5sum differs
+--2015-10-21 15:59:16--  http://opensource.nextthing.co.s3.amazonaws.com/chip/buildroot/stable/71/images/rootfs.ubi
+Resolving opensource.nextthing.co.s3.amazonaws.com (opensource.nextthing.co.s3.amazonaws.com)... 54.231.176.13
+Connecting to opensource.nextthing.co.s3.amazonaws.com (opensource.nextthing.co.s3.amazonaws.com)|54.231.176.13|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 54525952 (52M) [binary/octet-stream]
+Saving to: `/home/doge/gits/CHIP-tools/.firmware/images/rootfs.ubi'
+
+100%[======================================>] 54,525,952  1.83MB/s   in 29s
+
+2015-10-21 15:59:45 (1.82 MB/s) - `/home/doge/gits/CHIP-tools/.firmware/images/rootfs.ubi' saved [54525952/54525952]
+
+/home/doge/gits/CHIP-tools/.firmware/images/sun5i-r8-chip.dtb exists... comparing to http://opensource.nextthing.co.s3.amazonaws.com/chip/buildroot/stable/71/images/sun5i-r8-chip.dtb
+MD5: de0beb674eeb382901251febfbf1cf9b
+S3_MD5: de0beb674eeb382901251febfbf1cf9b
+file already downloaded
+/home/doge/gits/CHIP-tools/.firmware/images/sunxi-spl.bin exists... comparing to http://opensource.nextthing.co.s3.amazonaws.com/chip/buildroot/stable/71/images/sunxi-spl.bin
+MD5: dd3f9c9c0984a6c1d7cdca2921f6f448
+S3_MD5: dd3f9c9c0984a6c1d7cdca2921f6f448
+file already downloaded
+/home/doge/gits/CHIP-tools/.firmware/images/uboot-env.bin exists... comparing to http://opensource.nextthing.co.s3.amazonaws.com/chip/buildroot/stable/71/images/uboot-env.bin
+MD5: 6f2b79a781f9f490911012ec3aa653e9
+S3_MD5: 6f2b79a781f9f490911012ec3aa653e9
+file already downloaded
+/home/doge/gits/CHIP-tools/.firmware/images/zImage exists... comparing to http://opensource.nextthing.co.s3.amazonaws.com/chip/buildroot/stable/71/images/zImage
+MD5: 0d35ad764564a2cee9281715823597a2
+S3_MD5: 0d35ad764564a2cee9281715823597a2
+file already downloaded
+/home/doge/gits/CHIP-tools/.firmware/images/u-boot-dtb.bin exists... comparing to http://opensource.nextthing.co.s3.amazonaws.com/chip/buildroot/stable/71/images/u-boot-dtb.bin
+MD5: 97340d221bcbcc8f0bf27e26adc26f0a
+S3_MD5: 97340d221bcbcc8f0bf27e26adc26f0a
+file already downloaded
+BUILDROOT_OUTPUT_DIR = /home/doge/gits/CHIP-tools/.firmware
+== preparing images ==
+/home/doge/gits/CHIP-tools/spl-image-builder -d -r 3 -u 4096 -o 1664 -p 16384 -c 1024 -s 64 /home/doge/gits/CHIP-tools/.firmware/images/sunxi-spl.bin /tmp/chipflashqVYEIs/sunxi-padded-spl
+filesize= 3573504
+PADDED_SPL_SIZE=0x000000c6
+35+1 records in
+36+0 records out
+589824 bytes (590 kB) copied, 0.00082507 s, 715 MB/s
+12+0 records in
+12+0 records out
+196608 bytes (197 kB) copied, 0.0176519 s, 11.1 MB/s
+Image Name:   flash CHIP
+Created:      Wed Oct 21 15:59:46 2015
+Image Type:   ARM Linux Script (uncompressed)
+Data Size:    736 Bytes = 0.72 kB = 0.00 MB
+Load Address: 00000000
+Entry Point:  00000000
+Contents:
+   Image 0: 728 Bytes = 0.71 kB = 0.00 MB
+== upload the SPL to SRAM and execute it ==
+waiting for fel...OK
+== upload spl ==
+== upload u-boot ==
+== upload u-boot script ==
+== upload ubi ==
+100% [============================================================]
+== execute the main u-boot binary ==
+== write ubi ==
+flashing................OK
+login... OK
+password... OK
+poweroff... OK
+
