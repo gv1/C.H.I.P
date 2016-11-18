@@ -3,9 +3,10 @@ Rootfs is just a copy from Odroid U3.
 
 Likely require change to 
 	uboot-env.bin
+		add uInitrd, and distributions on mtd, usb storage etc.
 	rootfs.tgz
+		binaries- busybox etc.
 	rootfs/init
-	All installations to be on /dev/sda1 or so under subdirs etc.
 
 Ref:
 	http://www.chip-community.org/index.php/Bootstrapping_Arch_Linux_ARM_with_arch-bootstrap.sh
