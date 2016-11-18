@@ -1,14 +1,36 @@
-This is not tried, just guidelines.
-Rootfs is just a copy from Odroid U3.
+== This is not tried, just guidelines. ==
 
-Likely require change to 
-	uboot-env.bin
-		add uInitrd, and distributions on mtd, usb storage etc.
-	rootfs.tgz
-		binaries- busybox etc.
-	rootfs/init
+=== C.H.I.P ===
+	R8 - 1GHz
+	512MB RAM
+	4GB high-speed storage
+	WiFi B/G/N
+	Bluetooth 4.0
+	I/O 3v3	
 
-Ref:
-	http://www.chip-community.org/index.php/Bootstrapping_Arch_Linux_ARM_with_arch-bootstrap.sh
+=== Likely require change to ===
+=== uboot-env.bin ===
+add uInitrd, and distributions on mtd, usb storage etc.
+=== rootfs.tgz ===
+binaries- busybox etc.
+=== rootfs/init ===
+Probably read some .rc file from pendrive to get distro menu.  ( No more flash required to NAND.) Add a distribution subdir, and modify the .rc file
+=== Rootfs is just a copy from Odroid U3. ===
+		
+
+=== Ref: ===
+[http://getchip.com/ Get C.H.I.P]
+[http://docs.getchip.com/chip.html C.H.I.P docs]
+[http://docs.nextthing.co C.H.I.P info]
+[http://github.com/NextThingCo/ github]
+[https://github.com/NextThingCo/CHIP-u-boot CHIP-u-boot]
+[https://github.com/NextThingCo/CHIP-linux CHIP-linux]
+[https://github.com/NextThingCo/CHIP-buildroot CHIP-buildroot]
+[http://chip.hackster.io C.H.I.P Projects]
+[http://bbs.nextthing.co BBS]
+[http://www.chip-community.org/index.php/Bootstrapping_A_Distro_For_C.H.I.P Bootstrapping_A_Distro_For_C.H.I.P]
+[http://www.chip-community.org/index.php/Bootstrapping_Arch_Linux_ARM_with_arch-bootstrap.sh Bootstrapping Arch Linux ARM with arch-bootstrap.sh]
+[http://www.chip-community.org chip-community]
+[https://www.google.com/search?q=nexthing+chip google search]
 	
 
