@@ -16,3 +16,10 @@ multiboot-4.4.11:
 
 slackware.installer:
 	Slackware installation.
+
+lrzsz.tgz:
+	Useful for transferring files to CHIP Debian etc. from minicom on host.
+
+from.chip  
+	Files grabbed from CHIP, Debian 8
+
